@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGCSE Chemistry Past Paper - States of Matter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0056b3;
+            text-align: center;
+        }
+        .question-block {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .question-header {
+            font-weight: bold;
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .question-content p {
+            margin: 0 0 10px 0;
+        }
+        .answer {
+            background-color: #e9f5ff;
+            border: 1px solid #b3d7ff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .answer-content {
+            display: none;
+            padding-top: 10px;
+        }
+        .keyword {
+            color: #d9534f;
+            font-weight: bold;
+        }
+    
+        .home-button {
+            position: fixed;
+            bottom: clamp(16px, 4vw, 32px);
+            right: clamp(16px, 4vw, 32px);
+            padding: 0.75rem 1.1rem;
+            border-radius: 999px;
+            background: #0056b3;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 10px 25px rgba(0, 86, 179, 0.35);
+            opacity: 0.88;
+            transition: opacity 0.15s ease, transform 0.15s ease;
+            z-index: 1000;
+        }
+        .home-button:hover {
+            opacity: 1;
+            transform: translateY(-2px);
+        }
+
+    </style>
+</head>
+<body>
+
+    <a class="home-button" href="index.html" aria-label="Back to index">Home</a>
+
+    <div class="container">
+        <h1>States of Matter</h1>
+
+        <!-- Question 9 -->
+        <div class="question-block">
+            <div class="question-header">Question 9 (0620/41_Winter_2022_Q1) - Acids And Bases, Air And Water, States Of Matter</div>
+            <div class="question-content">
+                <p>The names of the elements of Period 2 of the Periodic Table are shown.</p>
+                <p>lithium beryllium boron carbon nitrogen oxygen fluorine neon</p>
+                <p>Answer the following questions about these elements. Each element may be used once, more than once or not at all.</p>
+                <p>Identify the element which:</p>
+                <p>(a) is a product of photosynthesis [1]</p>
+                <div class="answer" onclick="toggleAnswer(this)">
+                    <strong>Tap to reveal answer</strong>
+                    <div class="answer-content"><span class="keyword">oxygen</span></div>
+                </div>
+                <p>(b) has an oxide found in clean, dry air [1]</p>
+                <div class="answer" onclick="toggleAnswer(this)">
+                    <strong>Tap to reveal answer</strong>
+                    <div class="answer-content"><span class="keyword">carbon</span></div>
+                </div>
+                <p>(c) forms a basic oxide with the formula XO [1]</p>
+                <div class="answer" onclick="toggleAnswer(this)">
+                    <strong>Tap to reveal answer</strong>
+                    <div class="answer-content"><span class="keyword">lithium</span></div>
+                </div>
+                <p>(d) is a main component of fertilisers used to improve crop growth [1]</p>
+                <div class="answer" onclick="toggleAnswer(this)">
+                    <strong>Tap to reveal answer</strong>
+                    <div class="answer-content"><span class="keyword">nitrogen</span></div>
+                </div>
+                <p>(e) has the highest rate of diffusion at room temperature [1]</p>
+                <div class="answer" onclick="toggleAnswer(this)">
+                    <strong>Tap to reveal answer</strong>
+                    <div class="answer-content"><span class="keyword">neon</span></div>
+                </div>
+                <p>(f) produces a red flame in a flame test [1]</p>
+                <div class="answer" onclick="toggleAnswer(this)">
+                    <strong>Tap to reveal answer</strong>
+                    <div class="answer-content"><span class="keyword">lithium</span></div>
+                </div>
+                <p>(g) has only 5 electrons in each of its atoms [1]</p>
+                <div class="answer" onclick="toggleAnswer(this)">
+                    <strong>Tap to reveal answer</strong>
+                    <div class="answer-content"><span class="keyword">boron</span></div>
+                </div>
+                <p>(h) has an oxide responsible for acid rain. [1]</p>
+                <div class="answer" onclick="toggleAnswer(this)">
+                    <strong>Tap to reveal answer</strong>
+                    <div class="answer-content"><span class="keyword">nitrogen</span></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleAnswer(element) {
+            const content = element.querySelector('.answer-content');
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
