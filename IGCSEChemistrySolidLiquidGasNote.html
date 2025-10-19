@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solids, Liquids & Gases</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f4f8;
+            color: #2c3e50;
+        }
+        .header-main {
+            background: linear-gradient(135deg, #43a047, #1e88e5);
+            color: white;
+            padding: 4rem 1rem;
+            border-bottom-left-radius: 50% 20%;
+            border-bottom-right-radius: 50% 20%;
+        }
+        .content-card {
+            background-color: white;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .particle-box {
+            height: 200px;
+            width: 100%;
+            background-color: #e0f2fe;
+            border-radius: 1rem;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #bae6fd;
+        }
+        .particle {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background-color: #0ea5e9;
+            border-radius: 50%;
+        }
+
+        /* Solid Animation */
+        .solid .particle { animation: vibrate 0.2s linear infinite alternate; }
+        @keyframes vibrate {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(0.5px, -0.5px); }
+        }
+
+        /* Liquid Animation */
+        .liquid .particle:nth-child(1) { animation: flow 8s linear infinite; }
+        .liquid .particle:nth-child(2) { animation: flow 7s linear infinite reverse; }
+        .liquid .particle:nth-child(3) { animation: flow 9s linear infinite; }
+        .liquid .particle:nth-child(4) { animation: flow 6s linear infinite reverse; }
+        .liquid .particle:nth-child(5) { animation: flow 8.5s linear infinite; }
+        .liquid .particle:nth-child(6) { animation: flow 7.5s linear infinite reverse; }
+        @keyframes flow {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(40px, 80px); }
+            50% { transform: translate(-30px, 120px); }
+            75% { transform: translate(20px, 40px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        /* Gas Animation */
+        .gas .particle { animation: zoom 3s linear infinite; }
+        .gas .particle:nth-child(2) { animation-delay: -0.5s; animation-duration: 2.5s; }
+        .gas .particle:nth-child(3) { animation-delay: -1s; animation-duration: 3.5s; }
+        .gas .particle:nth-child(4) { animation-delay: -1.5s; animation-duration: 2s; }
+        .gas .particle:nth-child(5) { animation-delay: -2s; animation-duration: 4s; }
+        @keyframes zoom {
+            0% { transform: translate(50px, 50px); }
+            25% { transform: translate(180px, 20px); }
+            50% { transform: translate(150px, 150px); }
+            75% { transform: translate(20px, 180px); }
+            100% { transform: translate(50px, 50px); }
+        }
+        
+        .diagram-placeholder {
+            border: 3px dashed #9ca3af;
+            border-radius: 1rem;
+            padding: 2rem;
+            text-align: center;
+            color: #4b5563;
+            background-color: #f9fafb;
+        }
+
+        .change-state-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            text-align: center;
+        }
+        .state-item {
+            background-color: #f3f4f6;
+            padding: 1rem;
+            border-radius: 1rem;
+            font-weight: 600;
+        }
+        
+        .diffusion-tube {
+            height: 60px;
+            width: 100%;
+            background-color: #e0f7fa;
+            border-radius: 30px;
+            border: 2px solid #b2ebf2;
+            position: relative;
+            margin-top: 1rem;
+        }
+        .diffusion-particle-nh3, .diffusion-particle-hcl {
+            position: absolute;
+            top: 50%;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            opacity: 0;
+        }
+        .diffusion-particle-nh3 { background-color: #ef4444; animation: diffuse-nh3 5s linear forwards; }
+        .diffusion-particle-hcl { background-color: #3b82f6; animation: diffuse-hcl 5s linear forwards; }
+        .reaction-ring {
+            position: absolute;
+            top: 50%;
+            left: 65%; /* Closer to HCl end */
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 3px solid #4b5563;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: form-ring 1s 4s linear forwards;
+        }
+        @keyframes diffuse-nh3 {
+            0% { left: 5%; opacity: 1; }
+            100% { left: 65%; opacity: 0; }
+        }
+        @keyframes diffuse-hcl {
+            0% { left: 95%; opacity: 1; }
+            100% { left: 65%; opacity: 0; }
+        }
+        @keyframes form-ring {
+            100% { opacity: 1; }
+        }
+
+        .quiz-option {
+            transition: all 0.2s ease-in-out;
+            background-color: #f3f4f6;
+            border-color: #d1d5db;
+        }
+        .quiz-option:hover {
+            background-color: #e5e7eb;
+            border-color: #9ca3af;
+        }
+        .correct { background-color: #d1fae5 !important; border-color: #10b981 !important; color: #065f46; }
+        .incorrect { background-color: #fee2e2 !important; border-color: #ef4444 !important; color: #991b1b; }
+    </style>
+</head>
+<body class="p-4 sm:p-0">
+    <header class="header-main text-center mb-10">
+        <h1 class="text-4xl md:text-5xl font-bold">Solids, Liquids & Gases</h1>
+        <p class="text-lg mt-2 max-w-2xl mx-auto">An animated guide to the kinetic theory of matter and how particles behave.</p>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4">
+        <!-- The Three States of Matter -->
+        <section class="content-card">
+            <h2 class="text-3xl font-bold mb-4 text-center">The Three States of Matter</h2>
+            <p class="text-center mb-8">According to the <strong class="text-blue-600">Kinetic Theory</strong>, all matter is made of tiny particles that are in constant, random motion. The amount of energy these particles have determines their state.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Solid -->
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-gray-700 mb-2">Solid</h3>
+                    <div class="particle-box solid">
+                        <!-- Generate particles with JS -->
+                    </div>
+                    <ul class="text-left list-disc list-inside mt-4 space-y-1">
+                        <li><strong class="font-semibold">Arrangement:</strong> Regular lattice</li>
+                        <li><strong class="font-semibold">Energy:</strong> Low</li>
+                        <li><strong class="font-semibold">Movement:</strong> Vibrate in fixed positions</li>
+                        <li><strong class="font-semibold">Properties:</strong> Fixed shape & volume</li>
+                        <li><strong class="font-semibold">Density:</strong> High</li>
+                    </ul>
+                </div>
+                <!-- Liquid -->
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-gray-700 mb-2">Liquid</h3>
+                    <div class="particle-box liquid">
+                        <!-- Generate particles with JS -->
+                    </div>
+                     <ul class="text-left list-disc list-inside mt-4 space-y-1">
+                        <li><strong class="font-semibold">Arrangement:</strong> Randomly arranged</li>
+                        <li><strong class="font-semibold">Energy:</strong> More than solids</li>
+                        <li><strong class="font-semibold">Movement:</strong> Slide past each other</li>
+                        <li><strong class="font-semibold">Properties:</strong> Fixed volume, takes shape of container</li>
+                        <li><strong class="font-semibold">Density:</strong> High (usually less than solid)</li>
+                    </ul>
+                </div>
+                <!-- Gas -->
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-gray-700 mb-2">Gas</h3>
+                    <div class="particle-box gas">
+                        <!-- Generate particles with JS -->
+                    </div>
+                     <ul class="text-left list-disc list-inside mt-4 space-y-1">
+                        <li><strong class="font-semibold">Arrangement:</strong> Far apart, random</li>
+                        <li><strong class="font-semibold">Energy:</strong> Highest energy</li>
+                        <li><strong class="font-semibold">Movement:</strong> Move quickly (~500 m/s)</li>
+                        <li><strong class="font-semibold">Properties:</strong> No fixed shape or volume</li>
+                        <li><strong class="font-semibold">Density:</strong> Very low; can be compressed</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Changes of State -->
+        <section class="content-card">
+             <h2 class="text-3xl font-bold mb-6 text-center">Changes of State</h2>
+             <div class="change-state-grid">
+                 <div class="state-item bg-blue-100 text-blue-800">Melting <i class="fas fa-arrow-right"></i></div>
+                 <div class="state-item bg-green-100 text-green-800">Boiling <i class="fas fa-arrow-right"></i></div>
+                 <div class="state-item bg-purple-100 text-purple-800">Freezing <i class="fas fa-arrow-left"></i></div>
+                 <div class="state-item bg-yellow-100 text-yellow-800">Condensation <i class="fas fa-arrow-left"></i></div>
+                 <div class="state-item bg-red-100 text-red-800 col-span-1 md:col-span-2">Sublimation <i class="fas fa-exchange-alt"></i></div>
+             </div>
+             <p class="mt-6">These changes happen when particles <strong class="text-green-600">gain</strong> or <strong class="text-red-600">lose</strong> thermal energy. During melting and boiling, energy is absorbed to overcome forces between particles, so the temperature <strong class="font-semibold">does not rise</strong> until the change is complete. This is shown as a plateau on a heating curve.</p>
+             <div class="my-4 text-center">
+                <img src="data:image/jpeg;base64,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" alt="Space for Diagram: A Heating Curve Graph, showing temperature plateaus during melting and boiling." style="max-width:100%; height:auto; border-radius:1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display:block; margin:0 auto;">
+            </div>
+        </section>
+        
+        <!-- Gas Pressure & Temperature -->
+        <section class="content-card">
+            <h2 class="text-3xl font-bold mb-4 text-center">Gas Pressure & Temperature</h2>
+            <p class="text-center mb-6">Gas pressure is caused by particles colliding with the walls of their container. The temperature of a gas is a measure of the average kinetic energy of its particles. Changing the temperature has a direct effect on the pressure.</p>
+            <div class="p-4 bg-gray-100 rounded-lg">
+                <h3 class="text-xl font-bold text-center text-blue-600 mb-2">Heating a Gas in a Sealed Container <i class="fas fa-temperature-high"></i></h3>
+                <p class="text-center">Increasing the temperature leads to an <strong class="text-green-600">increase in pressure</strong> because:</p>
+                <ul class="list-disc list-inside space-y-1 mt-4 max-w-md mx-auto">
+                    <li>Particles gain kinetic energy.</li>
+                    <li>They move <strong class="font-semibold">faster</strong> and more randomly.</li>
+                    <li>They collide with the container walls more <strong class="font-semibold">frequently</strong> and with more <strong class="font-semibold">force</strong>.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Diffusion -->
+        <section class="content-card">
+            <h2 class="text-3xl font-bold mb-4 text-center">Diffusion</h2>
+            <p class="text-center mb-2"><strong class="text-blue-600">Diffusion</strong> is the net movement of particles from a region of higher concentration to a region of lower concentration due to their random movement.</p>
+            <p class="text-center text-sm text-gray-500 mb-6">(Note: Diffusion does not occur in solids as the particles are fixed in place and can only vibrate.)</p>
+            <p class="text-center mb-2"><strong class="font-semibold">Key Factor:</strong> Lighter particles (lower Mᵣ) diffuse faster than heavier particles at the same temperature.</p>
+            <div class="my-4 text-center">
+                <img src="data:image/jpeg;base64,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" alt="Space for Diagram: The experiment showing ammonia and hydrogen chloride diffusing in a tube." style="max-width:100%; height:auto; border-radius:1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display:block; margin:0 auto;">
+            </div>
+            <div class="mt-4 p-4 bg-gray-100 rounded-lg">
+                <h4 class="font-bold text-center">Ammonia (NH₃) vs. Hydrogen Chloride (HCl)</h4>
+                <p class="text-center text-sm">NH₃ (Mᵣ=17) is lighter than HCl (Mᵣ=36.5). It diffuses faster, so the white ring of NH₄Cl forms closer to the HCl end.</p>
+                <div class="diffusion-tube">
+                    <div class="diffusion-particle-nh3" style="top: 20%"></div>
+                    <div class="diffusion-particle-nh3" style="top: 50%"></div>
+                    <div class="diffusion-particle-nh3" style="top: 80%"></div>
+                    <div class="diffusion-particle-hcl" style="top: 30%"></div>
+                    <div class="diffusion-particle-hcl" style="top: 70%"></div>
+                    <div class="reaction-ring"></div>
+                </div>
+                <div class="flex justify-between px-2 mt-1">
+                    <span class="font-semibold text-red-500">NH₃ end</span>
+                    <span class="font-semibold text-blue-500">HCl end</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz -->
+        <section class="content-card">
+            <h2 class="text-3xl font-bold mb-6 text-center">Test Your Knowledge</h2>
+            <div id="quiz-container"></div>
+        </section>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Particle Generation
+        function generateParticles(containerClass, count, gridLayout) {
+            const box = document.querySelector(`.${containerClass}`);
+            if(!box) return;
+            let particlesHTML = '';
+            for (let i = 0; i < count; i++) {
+                let style = '';
+                if (gridLayout) {
+                    const row = Math.floor(i / 5);
+                    const col = i % 5;
+                    style = `top: ${20 + row * 30}px; left: ${20 + col * 30}px;`;
+                } else {
+                    style = `top: ${Math.random() * 85}%; left: ${Math.random() * 85}%;`;
+                }
+                particlesHTML += `<div class="particle" style="${style}"></div>`;
+            }
+            box.innerHTML = particlesHTML;
+        }
+
+        generateParticles('solid', 25, true);
+        generateParticles('liquid', 15, false);
+        generateParticles('gas', 5, false);
+        
+        // Quiz Logic
+        const quizData = [
+            { q: "Which state of matter has particles that only vibrate in fixed positions?", a: "Solid", o: ["Solid", "Liquid", "Gas", "Plasma"] },
+            { q: "What is the process of a gas turning directly into a solid called?", a: "Sublimation", o: ["Condensation", "Freezing", "Melting", "Sublimation"] },
+            { q: "In the kinetic theory, more energy means the particles...", a: "Move faster", o: ["Move slower", "Move faster", "Get smaller", "Stick together"] },
+            { q: "Why does diffusion happen faster in gases than in liquids?", a: "Gas particles are further apart and move faster", o: ["Gases are lighter", "Liquid particles are smaller", "Gas particles are further apart and move faster", "Liquids are denser"] },
+            { q: "What happens to the temperature of a liquid while it is boiling?", a: "It stays the same", o: ["It increases", "It decreases", "It stays the same", "It fluctuates"] },
+            { q: "A gas with a lower relative molecular mass (Mᵣ) will diffuse...", a: "Faster than a gas with a higher Mᵣ", o: ["Slower than a gas with a higher Mᵣ", "Faster than a gas with a higher Mᵣ", "At the same speed as any other gas", "Only at high temperatures"] },
+            { q: "Which of the following describes the particles in a liquid?", a: "They slide past one another", o: ["They are in a regular lattice", "They slide past one another", "They are very far apart", "They do not move"] },
+            { q: "In the NH₃ and HCl experiment, why does the product form closer to the HCl end?", a: "NH₃ particles are lighter and diffuse faster", o: ["HCl particles are lighter and diffuse faster", "NH₃ particles are lighter and diffuse faster", "The tube is tilted", "HCl is more reactive"] },
+            { q: "The change from a liquid to a gas is called...", a: "Boiling / Evaporation", o: ["Melting", "Condensation", "Freezing", "Boiling / Evaporation"] },
+            { q: "If you heat a gas in a sealed container, what happens to the pressure?", a: "It increases", o: ["It decreases", "It stays the same", "It increases", "It becomes zero"] }
+        ];
+
+        const container = document.getElementById('quiz-container');
+        let quizHTML = "";
+        quizData.forEach((item, index) => {
+            quizHTML += `<div class="pt-4 mt-4 border-t quiz-item">
+                <p class="font-semibold mb-2">${index + 1}. ${item.q}</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">`;
+            item.o.forEach(option => {
+                quizHTML += `<button class="quiz-option p-3 text-left border-2 rounded-lg" data-correct="${option === item.a}">${option}</button>`;
+            });
+            quizHTML += `</div><p class="feedback mt-2 text-sm font-bold hidden"></p></div>`;
+        });
+        container.innerHTML = quizHTML;
+        container.querySelector('.quiz-item:first-child').classList.remove('pt-4', 'mt-4', 'border-t');
+
+        container.querySelectorAll('.quiz-option').forEach(button => {
+            button.addEventListener('click', () => {
+                const itemEl = button.closest('.quiz-item');
+                const feedbackEl = itemEl.querySelector('.feedback');
+                const isCorrect = button.dataset.correct === 'true';
+                itemEl.querySelectorAll('.quiz-option').forEach(btn => btn.disabled = true);
+                if (isCorrect) {
+                    button.classList.add('correct');
+                    feedbackEl.textContent = 'Correct! Great job.';
+                    feedbackEl.classList.add('text-green-700');
+                } else {
+                    button.classList.add('incorrect');
+                    const correctAnswer = itemEl.querySelector('[data-correct="true"]').textContent;
+                    feedbackEl.textContent = `Not quite. The correct answer is: ${correctAnswer}`;
+                    feedbackEl.classList.add('text-red-700');
+                    itemEl.querySelector('[data-correct="true"]').classList.add('correct');
+                }
+                feedbackEl.classList.remove('hidden');
+            });
+        });
+    });
+    </script>
+</body>
+</html>
+
