@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGCSE Chemistry - The Periodic Table (17-24)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0056b3;
+            text-align: center;
+        }
+        .question-block {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        .question-header {
+            font-size: 0.9em;
+            color: #555;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #0056b3;
+            font-size: 1.2em;
+        }
+        .answer {
+            cursor: pointer;
+            background-color: #e9f5ff;
+            border: 1px solid #b3d7ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .answer-content {
+            display: none;
+            padding-top: 10px;
+        }
+        .keyword {
+            color: #d9534f;
+            font-weight: bold;
+        }
+        .equation {
+            font-style: italic;
+        }
+        .placeholder {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            margin: 15px 0;
+            color: #888;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        sup, sub {
+            vertical-align: baseline;
+            position: relative;
+            top: -0.4em;
+        }
+        sub { 
+            top: 0.4em; 
+        }
+    
+        .home-button {
+            position: fixed;
+            bottom: clamp(16px, 4vw, 32px);
+            right: clamp(16px, 4vw, 32px);
+            padding: 0.75rem 1.1rem;
+            border-radius: 999px;
+            background: #0056b3;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 10px 25px rgba(0, 86, 179, 0.35);
+            opacity: 0.88;
+            transition: opacity 0.15s ease, transform 0.15s ease;
+            z-index: 1000;
+        }
+        .home-button:hover {
+            opacity: 1;
+            transform: translateY(-2px);
+        }
+
+    </style>
+</head>
+<body>
+
+    <a class="home-button" href="index.html" aria-label="Back to index">Home</a>
+
+    <div class="container">
+        <h1>IGCSE Chemistry: The Periodic Table (17-24)</h1>
+
+        <!-- Question 17 -->
+        <div class="question-block">
+            <div class="question-header">Question 17 (0620/42_Summer_2022_Q1) - Atoms And Elements, The Periodic Table, Air And Water</div>
+            <h2>The symbols of the elements of Period 3 of the Periodic Table are shown.</h2>
+            <p>Na Mg Al Si P S Cl Ar</p>
+            <p>Answer the following questions about these elements. Each symbol may be used once, more than once or not at all.</p>
+            <p>Write the symbol of the element which:</p>
+            <p>(a) forms a stable ion with a 2+ charge [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Mg</span></p></div></div>
+            <p>(b) is the least reactive in the period [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Ar</span></p></div></div>
+            <p>(c) is used in water treatment [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Cl</span></p></div></div>
+            <p>(d) forms an oxide which is the main impurity in iron ore [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Si</span></p></div></div>
+            <p>(e) is an important component of fertilisers [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">P</span></p></div></div>
+            <p>(f) is stored under oil [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Na</span></p></div></div>
+            <p>(g) is used in food containers [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Al</span></p></div></div>
+            <p>(h) is found in the ore zinc blende. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">S</span></p></div></div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question-block">
+            <div class="question-header">Question 18 (0620/42_Summer_2022_Q3) - Atoms And Elements, The Periodic Table</div>
+            <h2>Transition elements are found in the middle block of the Periodic Table.</h2>
+            <p>(a) Chromium has several isotopes. Manganese has only one isotope.</p>
+            <p>(i) State what is meant by the term isotopes. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>Isotopes are <span class="keyword">atoms of the same element</span> with the same number of protons but <span class="keyword">different numbers of neutrons</span>.</p></div></div>
+            <p>(ii) State the nucleon number of manganese. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>The nucleon number of manganese is <span class="keyword">55</span>.</p></div></div>
+            <p>(iii) Complete the table to show the number of protons, neutrons and electrons in a <sup>52</sup><sub>24</sub>Cr<sup>3+</sup> ion. [3]</p>
+            <table>
+                <tr><th></th><th>protons</th><th>neutrons</th><th>electrons</th></tr>
+                <tr><td><sup>52</sup><sub>24</sub>Cr<sup>3+</sup></td><td>24</td><td>28</td><td>21</td></tr>
+            </table>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>Protons = <span class="keyword">24</span> (atomic number). Neutrons = 52 - 24 = <span class="keyword">28</span>. Electrons = 24 - 3 = <span class="keyword">21</span>.</p></div></div>
+            <p>(b) One chemical property of transition elements is that they form coloured compounds.</p>
+            <p>(i) Give the colours of the following hydrated salts. [2]</p>
+            <p>hydrated copper(II) sulfate ......................................</p>
+            <p>hydrated cobalt(II) chloride ......................................</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>hydrated copper(II) sulfate: <span class="keyword">blue</span></p><p>hydrated cobalt(II) chloride: <span class="keyword">pink</span></p></div></div>
+            <p>(ii) State two other chemical properties of transition elements. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>They can act as <span class="keyword">catalysts</span> and have <span class="keyword">variable oxidation states</span>.</p></div></div>
+            <p>(c) Transition elements and Group I elements are metals. They share many physical properties including the ability to: conduct electricity, be hammered into shape.</p>
+            <p>(i) Explain why transition elements and Group I elements conduct electricity. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>They have <span class="keyword">mobile electrons</span> or delocalised electrons that are free to move and carry charge.</p></div></div>
+            <p>(ii) State the property that describes a material which can be hammered into shape. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Malleable</span> or malleability.</p></div></div>
+            <p>(d) Transition elements and Group I elements differ in other physical properties. Transition elements are harder and stronger than Group I elements. Describe two other ways in which the physical properties of transition elements differ from Group I elements. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>Transition elements have <span class="keyword">higher densities</span> and <span class="keyword">higher melting points</span>.</p></div></div>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question-block">
+            <div class="question-header">Question 19 (0620/42_Summer_2022_Q4) - The Periodic Table, Reacting Masses And Chemical Equations, Atoms Combining</div>
+            <h2>Fluorine and chlorine are halogens.</h2>
+            <p>(a) Suggest the appearance of fluorine. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>Fluorine is a <span class="keyword">(pale) yellow gas</span>.</p></div></div>
+            <p>(b) Fluorine reacts with sulfur to form a compound which has 25.2% sulfur by mass and a relative molecular mass of 254. Determine the molecular formula of this compound. [3]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content">
+                <p><strong>Step 1: Moles Ratio</strong> S: <sup>25.2</sup>&frasl;<sub>32</sub> = 0.7875 &nbsp;&nbsp; F: <sup>74.8</sup>&frasl;<sub>19</sub> = 3.937</p>
+                <p><strong>Step 2: Simplest Ratio</strong> Divide by smallest: S: <sup>0.7875</sup>&frasl;<sub>0.7875</sub> = 1 &nbsp;&nbsp; F: <sup>3.937</sup>&frasl;<sub>0.7875</sub> = 5</p>
+                <p><strong>Empirical Formula:</strong> SF<sub>5</sub> (Empirical Mass = 32 + 5x19 = 127)</p>
+                <p><strong>Step 3: Molecular Formula</strong> n = <sup>Molecular Mass</sup>&frasl;<sub>Empirical Mass</sub> = <sup>254</sup>&frasl;<sub>127</sub> = 2</p>
+                <p>Molecular Formula = (SF<sub>5</sub>)<sub>2</sub> = <span class="keyword">S<sub>2</sub>F<sub>10</sub></span></p>
+            </div></div>
+            <p>(c) Nitrogen trichloride, NCl<sub>3</sub>, is a covalent compound. Complete the dot-and-cross diagram to show the electron arrangement in a molecule of NCl<sub>3</sub>. Show outer electrons only. [3]</p>
+            <img src="data:image/jpeg;base64,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" alt="Space for question 19c dot-and-cross diagram" style="max-width: 100%; height: auto; border-radius: 0.5rem; margin: 1rem 0;">
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>The central <span class="keyword">Nitrogen atom shares one bonding pair of electrons</span> with each of the three Chlorine atoms. Nitrogen has <span class="keyword">one non-bonding lone pair</span>. Each Chlorine atom has <span class="keyword">six non-bonding outer electrons</span> (3 lone pairs).</p></div></div>
+            <p>(d) Lithium chloride, LiCl, is an ionic compound. Complete the dot-and-cross diagram to show the electron arrangement and charges of the ions in lithium chloride. [3]</p>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAD5AiADASIAAhEBAxEB/8QAHQABAAIDAQEBAQAAAAAAAAAAAAYHAQIFBAgDCf/EAFAQAAECBAMDBAwKBgkEAwAAAAABAgMEBREGITEHEkEiUXOxCBMUFzIzNjdhcbO0IyQ0NWJ1gZGhshUWJ0JydCVDRFJVgsHR8EVTZGWS4fH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+qAAAAMKtvWBkNMX5wionEDIAAAAAAAAAABdQF1AAAAAAABi+a3AyDCr94Vdcv8A7AyAAAAAAAAAYzvoBkGFW1vXYyAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7DCrYDIMKtr5Z83OZAAAAAAAAAAAAAAAAAGLpfLNUzQyYtpZPuAi1ex3h7D9QdI1WoNgTKIjlbZV1S/8AqeFm1LCbnNalTRVctk5CnBh0+TqG3SpQ5+VlZuG2SRUbGhNeiLuw+dCfsw1QkRFSi0xFTNF7lh/7AdSG9sRjXszRTe2amGtRqWaiInMhkAAAAAAAAAF1AXUAAAAAAHGxHiGm4dlmRqvMJBhPdutXdXVDsnmnpCTn4aMn5SXmWIt0bGho9E+xUAhzdqmEV3lWq5ZrdWLkhJ6DV5Cv0uDUaRGbMSkS+5ERNbKqL+KKeKqYboTabNKlGpiKkJ1visPm9RHNgqNbszp7Wo1rUjTKIiJZE+MRQLDBot+F/VzmFvZcl9QH6A/NFW9uHA2ul81S2ioBleHrPxmYzJeHEjRno2GxLrc/Zt87pa2hysUIn6vz3Rr1gRtu1bB74aPh1aG9i8URVOvh7GNExDNPlqROJHisTeVLWtr/ALEE2AUSkTuzOnxpumU+NGVy3c+WY5VybxVC0JGkU2QiuiSNOk5aIuSugwWsVftRAPall9SmQAAAAAAAAAAAAAAAAAAAAAAAAAAAA4OI8VUjDaQv0tNJL9t8HJc9f9jhP2qYPROVVbImaqrVtlmS+fpkhUN3u+RlZrd8Ht8Jr7eq6EZx1h2iQ8E4giQ6PTmRGU+Yc1zZViK1e1usqZASSlT8tVZCDOSMVsWXjN32PtqinuIdsjVF2cYfzRV7jh5In0UJcumqotgNwarvLf7rBEXLnsBsDRMt1F5+cyxd5L3A2AAAAAAAAAAAwut87egyYcqZJn9gFZ03z8VTNvyBNL38GHqWY3SxWlO8/FTzavxBNP4YZZbQMgAAAAAAAAAAF1AXUAAAAAAAADyVb5sm9PFP6iEbB1XvbSF1avw01p/MRScVX5sm+if1EH2DebaQsqeOmveYoHdkqhXItfq0tNUpkKmwIaOk4+9nGddUVF5XNbgh+MlVMQxqHVY8zRmQp+XSJ3HA3ktGVN7cvyuNm8U1JQ5UvmlzF80Sya5ehAIjN1bE8PD9MmZehMiVKPG3ZuWVyWhMs/NOV6G8V1OnNT1WZiqVlIEk2JSHwN6LMqubX8vLX0N4cTtolly05uc2XjrZc1W+gGWW4aWQ5eKPJ6e6Jes6bNXLZEVePOhzMUeT090S9YEH7HdV71tNurVXeXNt7aNLN9ZWXY7eaym7qoqXXT1NLMTiBkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOFj3LA+Il/wDXTPsnHdODj3yFxF9XTPsnAczZI5e9zQN5W37jh6X/ALqHrlalXIlZq0CapTWU+C1FlY6OS8VbNyXlc6rwTQ8eyNU73WH7Z/E4X5UJgq8lL2XnyAiEKrYndg2LPPokNK41ybsnvJZ7crrfe9K8eB6p+p12GygvlqUyIs06Gk81XZy17b373C68+hJHLwtZeBi2aaXtdFtooHDlp6rOxVMSUxJMh0lsDtkKZRc1fdE3Vz9K8DvMvndLWXL1GqaZJf7cjZvFANgAAAAAAAAAANVyTXdNjC2tkBWVL8+9T5SO+IJo237sMs1vglZ0x29t3qaI69pFOGnJhlmN8EDIAAAAAAAAAABdQF1AAAAAAAAA8lW+bJvon9RB9g3m2kNE+GmveIpOKt82TfQv6iEbB1vs2kL28dNe8RQLCAAAAAEQ5WKPJ6e6Jes6qHKxR5PT3RL1gQfsdfNZTkVWpyl0S3BpZicSs+x2VHbLade3hLp6mlmgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4OPvIXEX1dMeycd44OPvIbEX1dMeycBy9kl+91h/RPicPh9FCZEO2SrfZ1h+6p8jhflQmIAAALIiWRMgAAAAAAAAAAAAA1Xhlf0mxjNfSBWdNdfbtU03lW0imSoqW5MMsxvglZ0xb7eKom+rrSKZWtbkwyzGgZAAAAAAAAAAALqAuoAAAAAAAAHlqvzZN9E/qIPsHv3tZDTx017xFJvVvmyb6F/UQjYP5tpDNPHTXvEUCwgAAAABDlYo8np7ol6zqocrFHk9PdEvWBCOx3v3rade2q6eppZicSsux181lOzTwl6mlmgAAAAAAAAAAABq7wmpfXhznNr9bkKBTolQq8zDlZOH4USK9Gpfmz9CKB1AVVQdu2C63U4VPl52LBmIq2asZrWtvzX3vQevGO2XCOEqn+j6nOxIs01FV8OVa2IrLcHcpLAWUCN4MxdSMZUxs/QZxkxAd4TUcm/DXSzmoq20Uki34AAEW4AAAAAAAAAHBx95DYi+rpn2TjvHBx95C4i+rpj2TgOZskX9nWH/5OF+VCYkO2SX73OH80t3HD4fRQmIAAAAAAAAAAAAAAAAAwtk1MmFW3oArOmOTv71NN/etIplbTkwyzG85WdNVV271Ozrp3CmqacmGWZlZL3AyAAAAAAAAAAAXUBdQAAAAAAAAPLVfmyb6F/UQfYN5tpDJPHTXvEUnFV+bJvoX9RB9g/m2kOnmveIgFhAAAAACHKxR5PT3RL1nVQ5WKPJ6e6JesCD9jrZdllOtbwl6mlmlZdjtfvWU69vCXT1NLN5wAAAAAAYVbGQgA1V6IqJz6GyqiFUYtxjVa5VVw1gDciR97dnKg9F3JZLXVG5tuumir4QEoxptBoOEmQ21OZV01EXdhy0Ju9Eet0SycOKcSitudVxVi/BSx2UGLIUKFHSIztqp2yLyXZqiOXLNfwLrwbs5pGHoiTsdrqhWX7qxZ6Zs57nJxRURLJdVUmb2tiXbEbdHZW1RQP5v0iXm5+py0nT0V01EeiMa1uaLz3sdHHNMqlDxNOytce7u1j3K6K5Lq5brnpbNT74p2FaHS5tZmm0uVlo/9+Gyyn7VfD9LrLoLqtIQJpYDrw3RW7ytXLP8ABAPlrsdZnFdDlanUqVRX1KnR1Y17WKiPVURc2oqonBT6CwltPoGIZjuNYkWRqaKqLJzTbRE+5VT8SYScpLycs2XlYLIMBt7MamVrkdxngmjYrlXMqEsnb0t2qOyyRGORborVVF/5cCV7123RPsF0tnlbUpulYkrezyrS9Exk9JykRnbkpVGtVNxNEa/Nc/Bzsmqlvy8VkeDDiQno9kRqPa5NHNXQD9gAAAAAAADg498hsRfV0z7Jx3jg4+8hcRfV0x7JwHL2R273WH88+44WX+VCZEN2SL+zrD/8nC/KhMgAAAAAAAAAAAAAAAABhfXYyYXTJQKypq3271S70X4imSp9GGWang85WVNc1du9UTfRy9wpw05MMs1uaZAZAAAAAAAABi/oUI5FAyF1NUff91xsuoAAAAAAAAHkqvzZN5/1T+ohGwfzbSGaeOmveIpN6sqfoybv/wBp/UQjYOqJs1kNPHTXvEUCwgAAAABDlYo8np7ol6zqocrFHk9PdEvWBB+x281tO5TV5S6eppZpWPY7K1NltNRFb4S6eppZwAAAAAAMLln+AvrkuR+M1MQ4ErFjxl3YUNqvc5eCIl7gV3tYxNUIKS2GcMOX9P1K6MiIviWaK5bZpZVbzakmwNhWTwlSGScoxHxXrvRY6t5b151XVdE1UhOyWC/EuIq3jWeVkTt0V0pJWvZkNjtx2XOroSKW0uTdcwMX3ck0voYa7LSyX0tY89SnYFOkJicnHpDlpeG6NFcv7rWpdV+xEKgZGxBtYmli0yffSsFo9WK5qIkWcsu6u6tlVEujtFRdAOJ2QW2Gcw5UJWkYWnpeHHczemY7d2LuXVybqJwXJF14kf2J7aKxO4nlqJiacbMSsx8HDjORGvauiX9a24nb2p9j+ypwpeZwfEhQY8JiNiQ5mLEd21d5eVdUct80+48Gzbsd40tU4k5jV8CYhtb8FBlo0Rq7youaqiNXJbKmfrA+k2O8DO7VyRdL8x+u6mWSZaegpOrU7EeyxzqpSZyJVsLN+UyUflPl26q9rrXW1lTN3EtfDVfp+I6NL1SlRkjSkZOS9AMYooMjiOkRqdUoMOJBioqXc1F3F4KnpK+2Z1Kew7iWfwPXph8d0BqxqbGiLnEg3RVbdc13d9qaroWs7NFvkiZlabbaXEZRpXE1OsypUWJ3Tv6b8JEVXNXnuqN+4CzkMHPoNTl6tSpadlYiPhRmbzVTjwX8UPc16PVd2+WS+sDYAAAAAODj7yFxF9XTHsnHeODj636i4iv/AIdMeycBzNkir3ucP5pbuOH+VCYkN2SKne6w/wApPkcPL/KhMgAAAAAAAAAAAAAAAABqtsltf0mxh2mYFZ01yu27VNN+6JIpkqKlsoZZiJzlZ05b7dqnyv7AmqacmGWYiJbJb+oDIAAAAAAAORimq/oPD0/Ulhds7lhOiW57Jc8uC67+suGZCrtgrDSYYj9zgnpPNtNv+oNcTNVSUiKtkungqc7Ytd2zOhZpbtDVVU9SZASCPPzkLE0tIQ5NHyT5dYrplYjbtdvW3d299PQdtdStqxMzDNt9Jl2TLmyz6U56wd7Jzu223rX+wsldQAAAAAAAAPLVfmyb6F/UQfYMt9m0hknjpr3mKTiq/Nk30L+og+wbzbSHTzXvEQCwgAAAABDlYo8np7ol6zqocrFHk9PdEvWBCOx2dvbLKd+9mvD0NLKama8m3+pWnY7X71lOzvmvC3BpZiJmuX4gZAAAAAaOdZMj4l237Qa7WMa1emrMPlafJTMWVZChqqI9GPVqK7NdbJzH205t2qmV1XI+NuyYl8Nw8WxYlFmUh1Tfe6chQ4SPar0dxVF5K33uGYE07EzFlSqXdlBnYsSNBgw3RoKr/Uoj0uietXXPpZbXzzVMyhOxZg4cbRJiLSo7o1XXKaV7EZu3W9mpdbpoX3w0stuIFWbW5iNWq/h7B8nFsyejLMTu74SQobmOtfSyorkXUluIa1S8D4YhTEzyZaE1JeDChtVXRH2VUalkXXdXgRWO1F29Qb7u+2n3a62ebXH5bW0VMU4K7riQ0pn6SZ25IqJ2tXWdbXLS4Hoj4zxbLyjKlM4LjJINddfjkF0SHDt4Sojrr6kS5M6RWpetYdgVakMdOQ4sLtkJni3Pul7LvWsq5anTjdrSDEWO1qQEau9vZorbcSOx6xR5PA1QqNEfKtkZWWivYsruo1HNYq2TdyvkmQH4YBxbMYrl5+ZfTI1Phy8w6XYyJEa/eVrnNcuXMrfxIlgyE/Be1Sfwy17kpFRl+7JKHbJjr2VqcNGOX7SW7KpN0lgqRdEej4ky6JNufu7t2xHueifYjkQ4GNnt78WB0ZEtFV0W6JqrO0xtfRcCzrImeiotrlIdlDjKfw7h2Vp9N+B/SKuSNGsq7rERUVMue6fcXbxairdbXzKp7IqBh6PgpXYgmklorYidzRGQ0ixFfuuyRt0W328wHy1s5x9XcL1uTWSnoyyyxERZVt0hRN5bLdNeN9eB99y70isR6eCqJqiop8K7EoWHo2NZL9ZptEa2IvaYawU3HZLZXOVbIt/QvA+7Iaot1S9vSgG4AAAAAcHHvkNiLK/9HTPsnHeODj3yFxFn/wBOmfZOA5myRf2dYey/scL8qExIfsk83GHs/wCxw+H0UJgAAAAAAAAAAAAAAAAANc1bktvUbGHWslwKzpquTbtU0c6/xFPCS37sPSxZjLWyK0p3n4qf8gmv8MMstPSBkAAAAAAAHJxTSn1vD0/TWxUhumYToe+vC6WK2oWAsfUOkwafTsZwYcvAS0Nnc0JUROCXWEq2LfAEJlMIT/620qvVGotmZiUkXSkTkI3fVYiu3smpwy4E2XUBdQAAAAAAAAPJVl/oybv/ANp/UQfYOqd7aQzTx817xFJxVltTJvO3wT+ohGwhf2bSHKv8PNcP/IigWEAAAAAIcrFHk9PdEvWdVDlYo8np7ol6wIN2Ormrstp1oiOzXqaWaiZrkVn2O70dsupvKVc14KnBpZicQMgAAAANHorm2RbcLofCm3LC8/Qcf1ePPvVsGfmY8xBipmjkV6rbNOG8n3n3ba6Ki8T8J6WhzspFl4yb0KI1WKnoVLAfNXYjYdqMGJOV+NvNp8eC6BCunJiLvpym+rcVMz6ctmqqVLscmn0ar1vBk9yJiRjPmICc8OI7fyXT+sQtsCqdqsNcPYtwziyEr2y8GKsrOq1L/BvVjUVb8ETeVePrJbi2gU7HWG0k48VUgxLR4EeGtlatlRHNX1OO1XKdL1emTFPnIaxIEwxzHtTJVRUtrpxKjkZ+sbJpuJJVSWjT2EHv+LzUFqviS6ryrOa26qiXdo3gmfOHciYNxtM01lNmsYb0i7kxXsgQu2Ob/d8Wn33ud6cwVLswI/DdHirKwu1pDR/hXW1lVb31tmVztL2/UqiQZduFXwp+bjt3lfMS8VGMS65KnJW+X4nP2adkLL1eoRZXF0OUkV3VdCiy8vFRqIiKq3RVcvMBdOE6XOUylQZafnUmXQ2tY1WsajWo1LIiWRCvsOR24y2wTlbguV9Lo8v3LLxbJZ0S91VOfKIqZnkrOL6xtGfGo2A4D4NOdyZmqzMJ8NGppyGu3VXVeC6Fm4Pw7I4WoErSaWxWy8FFVVdq5V1VckA7TfB51zt6CiOyrwzUatQJGoSSvdCk3KkWGxEuiKl977LfiXu3lNuq34labca1ElcNQqHIO3KlWYncrWtRVVGORUV2Xp3fvA+PtnWG6hiTFMjJ0tyrH7ajlcicljUzXO3o/E/oVLtRkNGb285qWVTm4Zo8vQ6HJ0+Va1kCDD3UYml73VfxOqxLcVX1qBsAAAAAHBx75DYizt/R0z7Jx3jhY9W2BcRX/wAOmPZOA5eyNyLs4w/yv7HD4fRQmJD9kiomzjD2a5ycPh9FCYAAAAAAAAAAAAAAAAADXjwt6TYxdMkyv6QKzp3n4qnJcvxFM3cOTD0LMbkmpWlNv396p4Vu4UvvJ9GHoWW3TIDIAAAAAAAAAABdQF1AAAAAAAAA8tV+bJvon9RB9g/m2kMl8fNe8xScVX5sm+hf1EH2D3720hr4+a94igWEAAAAAIcrFHk9PdEvWdVDlYo8np7ol6wIP2Oqquy2nXR3hLqvoaWaVn2O1+9bTrq7wl1T0NLM5wAAAAABxvxMLb1X4mTC3ysBV+1igVCVnZXGWGWufV6cm7HgMRbzMHVW5ardrOCkywliSRxXQZeq0qNvwYiWc2/KYvM5OC+hTuPZvIqLZUXgqFQ4mw9V8F1l2IME3iSK8qepKJdHcFe26LZbbuSKickC32aJndLa85iJChxYaw4rGvhrq1yXRfsIrgLHlExnKK6lRnNmmI1Y0pFREiwlVNHIiqnBePBSVq9Eai5ql7ZcAPmnshNkU/Oz8Cr4Op8LtaQ0ZGlJaDZXORXLvI1uq5ol7cCObD9ktcncSy1UxRTY0vS4V3Ol6jKqj3utorX2y04H1jAnZaYirDgRmPe1Lqicxiam5eWYjpmKyGirbNV8L/8AQN5SWgSkBkCVgQ4EFqWZDhsRqNT0Imhu7K6LdVv95hr0VN6/hJe/+pxMZYqpOEqW+dq812iGlt1qWV0RVWyIlwPfXKvJUWmR5+pTDJeVgt3nve5ET1Iq6qulitNn8pOY1xbM42qsB8KnMVYNKloqLdjUVEWKl7WurEVLJo7U58pSq1tWqkpVKtv0/CcCIqsp8TkxI65KjnbqaZN/e5y5JSThSctCl5aG2HBhMRjGtysicAPTZAAAAAAAADhY98hsRfV0x7Jx3ThY9zwLiK3+HTHsnAcrZHfvc4fvvfI4f5UJkQ/ZJddnOHluuUnC1T6KEwAAAAAAAAAAAAAAAAABeCpYGF1zVPtArKm7vf4qmbr9wpr/AAwyzU8HMrOm+fiqIrXL8RSyu4cmHoWYng84GQAAAAAAAAAAC6gLqAAAAAAAAB5Kt82TfQv6iEbB7d7aQzXx017xFJxVfmyb6F/UQfYP5tpDJfHTXvMUCwgAAAABDlYo8np7ol6zqocrFHk9PdEvWBBux13e9ZTrKvhLr6mlnFZdjsv7Ladk5OUuvqaWaAAAAAAAAANLIlt7gn2G4AgmMdm9IxDNtn4b5im1Vio5s5JuRsS6LdEVXNclr+gpzbRHx7g3Bj5WdrcOcpkzF7T3ZuKseyo5UY5UW2ia7tuSh9Ou/wCIcTF2G6fiqjxqZWIHbZR+eVrotlS6feoH8+aHV5qjViWn6fNxEjw4qPa7dWzl0VES17qmR1toOKZ7FGKZudqsaYhqr39rgq1d6Gl1VGplpwz5j6iw52PuHaTW4U/HmY86yE7eZBiJdt7aqiqp7sdbDcPYoq7qgyLFkJh6qsVYKWR2d8rKll1AqHsfaljKuUudoOHqjAlpKCqPWZjQ3LEg3VboioqJdVcq6LoXjhfZZSKfPfpKuR49arL8+6JpUXc/hs1LfbznewBgel4GpCyVIYiOiLvRozmpvRFzsrl468SVgat10y4GwtYAAAAAAAAADhY9ywLiL6umfZOO6cLHnkNiL6umfZOA5mySybOMPa5ycP8AKhMCH7I/Nxh+9/kcP8qEwAAAAAAAAAAAAAAAAAGFzTnMmFyArOm7y7d6pmtu4UvvJ9GHoWYmmRWdO3e/xVM1v3An5YZZiZNyAyAAAAAAAAAAAXUBdQAAAAAAAAPLVfmyb6J/UQfYPfvbSGvjpr3iKTerfNk30L+ohGwe3e2kM18dNe8RQLCAAAAAEOVijyenuiXrOqhysUeT090S9YEH7HZFTZbTrqvhLqnoaWaVj2Otu9ZTrKq8pdfU0s4AAAAAAAAAAAHE13Uv69czYAYVM8lsnMYRtk/4psANd3NVTibAAAAAAAAAAAAAOFj264GxFb/Dpn2TjunCx7lgXEa/+umfZOA5myS/e4w9rlJw/wAqEwIfsjt3uMPJdc5OH+VCYAAAAAAAAAAAAAAAAADGfrMmFvwArOnNTv8AFT1X4gmv8MMsxvglaU3PbxU/C+QJqn0YZZbfBAyAAAAAAAAAAAXUBdQAAAAAAAAPLVfmyb6F/UQfYP5tpDXx017xFJxVfmub6J/UpB9g112bSGqfDzXvEUCwgAAAABDlYo8np7ol6zqocrFHk9PdEvWBCOx281tO1TlLr6mllpxzQrPsdbrssp10Xwl1T0NLMTVQMgAAAAAAAAAAAAAAAAAAAAAAAAAAAABwse+QuI/q2Z9k47pwse+QuI/q2Z9k4Dm7JPNxh7+Th/lQl5D9ki/s5w9kvyOH+VCYAAAAAAAAAAAAAAAAADC+kyaOuiXArWmrfbxVNfkCa/wwyzG+CVbLR4MDbrUu2xkgqsglnRHpZeTD0TgWO2pSS23ZyXW628Y3/cD2AwioqIqLdBe6qBkAAAAAAAALqAuoAAAAAAAPxmJiDLNR0eKyHdct96Nv94H5Vb5sm+hf1EI2Dr+zWQvdPhpr3iKSqpVKTdJTbe7ZeyQ3fvonDnuRLYO6+zKRVFV1481q7/yYuigWKAAAAAIcrFHk9PdEvWdRVtb1nKxQqJh6eVeENftzAhHY7Ki7LabdV8JdfU0s3PMqrse5+Uh7MKcyLNQmvRVu2JERF0bzllwZyBHfuwI8GI7PJkVF6gPUDVFW1tVvmbAAAAAAAAAAAAAAAAAAAAAAAAAAAAODj7yGxF9XTHsnHXmJqBLI3uiPChX033Il/vI7juoyTsD4iak5Lb606YRESK291hutxA82yRUXZ1h+6L8jhZ/5UJkQ3ZLZNm+H1Tet3FCvxW+4mhMkAAAAAAAAAAAAAAAAAGm6ts+dbG4AheJtmuHcR1Z9TqUGb7ucxGLFgzkWDlZE0Y5E4Ic9mx/CjYjHthVXehqit/pWZ19Kb5YgaBpCYkOGjEzROc3AAAAAAAAAABdQF1AAAAAABw8U4Xp2J5VkvVkmHQ2rdO0zD4K/exUU7gArldjmEnQ+1uh1VWaKi1WZW6f/ADJdhjD0hhmjQKVR4ToMjAVyshue6Iublct1cqrqqnYAAAAAABhfwPwmpZs1LPgRkvDelnHoAFbQdi2DoENkOXl6jBhN0ZDqUwifg872GMB0TDU3FmaUycbFiW3u3TsWMmV7ZPcttV0JWAMWunNfWxkAAAAAAAAAAAAAAAAAAAAAAAAAAAAI3izBlIxUkNKu2bXc07RNxYP5HJzkci7G8IxWqj4FSeiorVa6qTKoqLrdN/MscAeCjUmVo9Ll6dIMdDlJdiQ4bVcq7qIlkS65nvAAAAAAAAAAAAAAAAAAAAAGgNAAAAAAAAAAAAF1AXUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//Z" alt="Space for question 19d dot-and-cross diagram" style="max-width: 100%; height: auto; border-radius: 0.5rem; margin: 1rem 0;">
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>The Lithium ion (Li) shows <span class="keyword">two crosses in the first shell</span> and a <span class="keyword">charge of +1</span>. The Chloride ion (Cl) shows <span class="keyword">seven dots and one cross in the third shell</span> and a <span class="keyword">charge of -1</span>.</p></div></div>
+            <p>(e) Explain, in terms of attractive forces between particles, why LiCl is a solid at room temperature but NCl<sub>3</sub> is a liquid with a relatively low boiling point. [3]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>LiCl has strong <span class="keyword">electrostatic forces of attraction</span> between oppositely charged ions in its giant ionic lattice. NCl<sub>3</sub> has weak <span class="keyword">intermolecular forces</span> of attraction between its molecules. The attraction in LiCl is much stronger and requires more energy to overcome, resulting in a high melting/boiling point, whereas the attraction in NCl<sub>3</sub> is weaker.</p></div></div>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question-block">
+            <div class="question-header">Question 20 (0620/43_Summer_2022_Q6) - The Periodic Table</div>
+            <h2>The Periodic Table can be used to classify elements.</h2>
+            <p>(a) The Group I metals react with cold water. Transition elements do not react with cold water.</p>
+            <p>(i) Describe two other differences in the chemical properties between Group I metals and transition elements. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>Group I metals do not show <span class="keyword">catalytic behaviour</span>, and they have <span class="keyword">fixed oxidation states</span> (+1).</p></div></div>
+            <p>(ii) Describe the observations when potassium is added to cold water. Write a balanced equation for the reaction. Include state symbols. [5]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><strong>Observations:</strong> The potassium <span class="keyword">moves/floats</span> on the surface, <span class="keyword">fizzes/effervesces</span>, and produces a <span class="keyword">lilac flame</span>. It also <span class="keyword">melts</span> into a spherical shape and <span class="keyword">dissolves/disappears</span>.</p><p><strong>Equation:</strong> <span class="equation">2K(s) + 2H<sub>2</sub>O(l) &rarr; 2KOH(aq) + H<sub>2</sub>(g)</span></p></div></div>
+            <p>(b) Transition elements are stronger than Group I metals. Describe two other differences in the physical properties of Group I metals and transition elements. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>Transition elements have <span class="keyword">higher melting points</span> and <span class="keyword">higher densities</span>.</p></div></div>
+            <p>(c) Some Group VII elements react with aqueous solutions containing halide ions. When aqueous bromine is added to aqueous potassium iodide a reaction occurs. The ionic half-equations for the reaction are shown.</p>
+            <p class="equation">Br<sub>2</sub>(aq) + 2e<sup>&minus;</sup> &rarr; 2Br<sup>&minus;</sup>(aq)</p>
+            <p class="equation">2I<sup>&minus;</sup>(aq) &rarr; I<sub>2</sub>(aq) + 2e<sup>&minus;</sup></p>
+            <p>(i) Describe the colour change of the solution. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><strong>Original colour:</strong> <span class="keyword">colourless</span>.</p><p><strong>Final colour:</strong> <span class="keyword">brown</span>.</p></div></div>
+            <p>(ii) State the name of the general term given to the type of reaction in which electrons are transferred from one species to another. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Redox</span>.</p></div></div>
+            <p>(iii) Identify the oxidising agent in this reaction. Give a reason for your answer. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><strong>Oxidising agent:</strong> <span class="keyword">Bromine (Br<sub>2</sub>)</span>.</p><p><strong>Reason:</strong> It <span class="keyword">is reduced</span> (it gains electrons).</p></div></div>
+            <p>(d) Use the key to complete the table to show the results of adding aqueous halogens to aqueous solutions of halides. One has been completed for you. [2]</p>
+            <p>key: ✓ = reaction, ✗ = no reaction</p>
+             <table>
+                <tr>
+                    <th colspan="2" rowspan="2"></th>
+                    <th colspan="3">halides</th>
+                </tr>
+                <tr>
+                    <th>KCl(aq)</th>
+                    <th>KBr(aq)</th>
+                    <th>KI(aq)</th>
+                </tr>
+                <tr>
+                    <th rowspan="3">halogens</th>
+                    <td>Cl<sub>2</sub>(aq)</td>
+                    <td>✗</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>Br<sub>2</sub>(aq)</td>
+                    <td>✗</td>
+                    <td>✗</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>I<sub>2</sub>(aq)</td>
+                    <td>✗</td>
+                    <td>✗</td>
+                    <td>✗</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Question 21 -->
+        <div class="question-block">
+            <div class="question-header">Question 21 (0620/41_Summer_2023_Q2) - The Periodic Table, Atoms And Elements</div>
+            <h2>(a) The symbols of the elements in Period 2 of the Periodic Table are shown.</h2>
+            <p>Li Be B C N O F Ne</p>
+            <p>Use the symbols of the elements in Period 2 to answer the questions that follow. Each symbol may be used once, more than once or not at all.</p>
+            <p>Give the symbol of the element that:</p>
+            <p>(i) makes up approximately 78% of clean, dry air [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">N</span></p></div></div>
+            <p>(ii) contains atoms with only three electrons in the outer shell [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">B</span></p></div></div>
+            <p>(iii) contains atoms with only nine protons [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">F</span></p></div></div>
+            <p>(iv) exists as graphite [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">C</span></p></div></div>
+            <p>(v) is an alkali metal [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Li</span></p></div></div>
+            <p>(vi) only has an oxidation number of zero. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Ne</span></p></div></div>
+            <p>(b) Boron, B, has two isotopes.</p>
+            <p>(i) State the meaning of the term isotopes. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>Isotopes are <span class="keyword">atoms of the same element</span> with the same number of protons but <span class="keyword">different numbers of neutrons</span>.</p></div></div>
+            <p>(ii) Table 2.1 shows the relative masses and the percentage abundances of the two isotopes of boron.</p>
+            <table><caption>Table 2.1</caption><tr><th>relative mass of isotope</th><th>percentage abundance of isotope</th></tr><tr><td>10</td><td>20</td></tr><tr><td>11</td><td>80</td></tr></table>
+            <p>Calculate the relative atomic mass of boron to one decimal place. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>A<sub>r</sub> = <sup>(10 x 20) + (11 x 80)</sup>&frasl;<sub>100</sub> = <sup>200 + 880</sup>&frasl;<sub>100</sub> = <sup>1080</sup>&frasl;<sub>100</sub> = <span class="keyword">10.8</span></p></div></div>
+        </div>
+
+        <!-- Question 22 -->
+        <div class="question-block">
+            <div class="question-header">Question 22 (0620/42_Summer_2023_Q2) - The Periodic Table, Atoms And Elements, Acids And Bases</div>
+            <h2>Fluorine, chlorine and bromine are in Group VII of the Periodic Table.</h2>
+            <p>(a) State the name given to Group VII elements. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>The <span class="keyword">halogens</span>.</p></div></div>
+            <p>(b) Explain why Group VII elements have similar chemical properties. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>They have the <span class="keyword">same number of outer shell electrons</span> (7).</p></div></div>
+            <p>(c) Complete Table 2.1 to show the colour and state at r.t.p. of some Group VII elements. [3]</p>
+            <table><caption>Table 2.1</caption><tr><th>element</th><th>colour</th><th>state at r.t.p.</th></tr><tr><td>fluorine</td><td>pale yellow</td><td>gas</td></tr><tr><td>chlorine</td><td>pale yellow-green</td><td>gas</td></tr><tr><td>bromine</td><td>red-brown</td><td>liquid</td></tr></table>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>Fluorine is a <span class="keyword">gas</span>. Chlorine is <span class="keyword">pale yellow-green</span> and a <span class="keyword">gas</span>. Bromine is <span class="keyword">red-brown</span>.</p></div></div>
+            <p>(d) Bromine has two naturally occurring isotopes, <sup>79</sup>Br and <sup>81</sup>Br.</p>
+            <p>(i) State the term given to the numbers 79 and 81 in these isotopes of bromine. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Nucleon number</span> / <span class="keyword">mass number</span>.</p></div></div>
+            <p>(ii) Complete Table 2.2 to show the number of protons, neutrons and electrons in the atom and ion of bromine shown. [3]</p>
+            <table><caption>Table 2.2</caption><tr><th></th><th>protons</th><th>neutrons</th><th>electrons</th></tr><tr><td><sup>79</sup>Br</td><td>35</td><td>44</td><td>35</td></tr><tr><td><sup>81</sup>Br<sup>&minus;</sup></td><td>35</td><td>46</td><td>36</td></tr></table>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>For <sup>79</sup>Br atom: p=<span class="keyword">35</span>, n=<span class="keyword">44</span>, e=<span class="keyword">35</span>. For <sup>81</sup>Br<sup>&minus;</sup> ion: p=<span class="keyword">35</span>, n=<span class="keyword">46</span>, e=<span class="keyword">36</span>.</p></div></div>
+            <p>(iii) Table 2.3 shows the relative abundances of the two naturally occurring isotopes of bromine.</p>
+            <table><caption>Table 2.3</caption><tr><th>isotope</th><td><sup>79</sup>Br</td><td><sup>81</sup>Br</td></tr><tr><th>relative abundance</th><td>55%</td><td>45%</td></tr></table>
+            <p>Calculate the relative atomic mass of bromine to one decimal place. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>A<sub>r</sub> = <sup>(79 x 55) + (81 x 45)</sup>&frasl;<sub>100</sub> = <sup>4345 + 3645</sup>&frasl;<sub>100</sub> = <sup>7990</sup>&frasl;<sub>100</sub> = <span class="keyword">79.9</span></p></div></div>
+            <p>(e) Chlorine displaces bromine from aqueous potassium bromide but does not displace fluorine from aqueous sodium fluoride.</p>
+            <p>(i) Write the symbol equation for the reaction between chlorine and aqueous potassium bromide. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p class="equation">Cl<sub>2</sub> + 2KBr &rarr; 2KCl + Br<sub>2</sub></p></div></div>
+            <p>(ii) State why chlorine does not displace fluorine from aqueous sodium fluoride. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>Chlorine is <span class="keyword">less reactive than fluorine</span>.</p></div></div>
+            <p>(f) Aqueous silver nitrate is a colourless solution containing Ag<sup>+</sup>(aq) ions.</p>
+            <p>(i) Describe what is seen when aqueous silver nitrate is added to aqueous sodium chloride. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>A <span class="keyword">white precipitate</span> is formed.</p></div></div>
+            <p>(ii) Write the ionic equation for the reaction between aqueous silver nitrate and aqueous sodium chloride. Include state symbols. [3]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p class="equation">Ag<sup>+</sup>(aq) + Cl<sup>&minus;</sup>(aq) &rarr; AgCl(s)</p></div></div>
+        </div>
+
+        <!-- Question 23 -->
+        <div class="question-block">
+            <div class="question-header">Question 23 (0620/43_Summer_2023_Q1) - Organic Chemistry, Air And Water, Acids And Bases, The Periodic Table</div>
+            <h2>Some symbol equations and word equations, A to J, are shown.</h2>
+            <p>A  <i>H<sup>+</sup> + OH<sup>&minus;</sup> &rarr; H<sub>2</sub>O</i></p>
+            <p>B  <i>Cr<sup>3+</sup> + 3OH<sup>&minus;</sup> &rarr; Cr(OH)<sub>3</sub></i></p>
+            <p>C  methane + chlorine → chloromethane + hydrogen chloride</p>
+            <p>D  propene + bromine → 1,2-dibromopropane</p>
+            <p>E  <i>C<sub>10</sub>H<sub>22</sub> &rarr; C<sub>8</sub>H<sub>18</sub> + C<sub>2</sub>H<sub>4</sub></i></p>
+            <p>F  chlorine + aqueous potassium bromide → bromine + aqueous potassium chloride</p>
+            <p>G  methane + oxygen → carbon monoxide + water</p>
+            <p>H  <i>C<sub>2</sub>H<sub>5</sub>COOH + CH<sub>3</sub>OH &rarr; C<sub>2</sub>H<sub>5</sub>COOCH<sub>3</sub> + H<sub>2</sub>O</i></p>
+            <p>I  hydrogen + oxygen &rarr; water</p>
+            <p>J  <i>6CO<sub>2</sub> + 6H<sub>2</sub>O &rarr; C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub></i></p>
+            <p>Use the equations to answer the questions that follow. Each equation may be used once, more than once, or not at all. Give the letter, A to J, for the equation which represents:</p>
+            <p>(a) photosynthesis [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">J</span></p></div></div>
+            <p>(b) an addition reaction [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">D</span></p></div></div>
+            <p>(c) a precipitation reaction [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">B</span></p></div></div>
+            <p>(d) incomplete combustion [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">G</span></p></div></div>
+            <p>(e) a displacement reaction [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">F</span></p></div></div>
+            <p>(f) a substitution reaction. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">C</span></p></div></div>
+        </div>
+
+        <!-- Question 24 -->
+        <div class="question-block">
+            <div class="question-header">Question 24 (0620/43_Summer_2023_Q2) - The Periodic Table, Atoms And Elements</div>
+            <h2>(a) The symbols of the elements in Period 3 of the Periodic Table are shown.</h2>
+            <p>Na Mg Al Si P S Cl Ar</p>
+            <p>Use the symbols of the elements in Period 3 to answer the questions that follow. Each symbol may be used once, more than once, or not at all.</p>
+            <p>Give the symbol of the element that:</p>
+            <p>(i) is present in purified bauxite [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Al</span></p></div></div>
+            <p>(ii) contains atoms with a full outer shell of electrons [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Ar</span></p></div></div>
+            <p>(iii) is used to kill microbes in water treatment [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Cl</span></p></div></div>
+            <p>(iv) forms an amphoteric oxide [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Al</span></p></div></div>
+            <p>(v) forms an oxide which causes acid rain [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">S</span></p></div></div>
+            <p>(vi) has an oxidation number of &minus;1 when it forms a compound with hydrogen. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Cl</span></p></div></div>
+            <p>(b) The relative atomic masses of elements can be calculated from the relative masses of isotopes and their percentage abundances.</p>
+            <p>(i) Identify the isotope to which all relative masses are compared. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Carbon-12</span> / <sup>12</sup>C</p></div></div>
+            <p>(ii) Table 2.1 shows the relative masses and the percentage abundances of the two isotopes in a sample of magnesium.</p>
+            <table><caption>Table 2.1</caption><tr><th>relative mass of isotope</th><th>percentage abundance of isotope</th></tr><tr><td>24</td><td>85</td></tr><tr><td>26</td><td>15</td></tr></table>
+            <p>Calculate the relative atomic mass of magnesium to one decimal place. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>A<sub>r</sub> = <sup>(24 x 85) + (26 x 15)</sup>&frasl;<sub>100</sub> = <sup>2040 + 390</sup>&frasl;<sub>100</sub> = <sup>2430</sup>&frasl;<sub>100</sub> = <span class="keyword">24.3</span></p></div></div>
+            <p>(c) An ion contains 10 electrons, 13 protons and 14 neutrons.</p>
+            <p>(i) State the nucleon number of the ion. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>Nucleon number = protons + neutrons = 13 + 14 = <span class="keyword">27</span></p></div></div>
+            <p>(ii) Identify the element that forms this ion. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>The element with 13 protons is <span class="keyword">Aluminium</span> / Al.</p></div></div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleAnswer(element) {
+            var content = element.querySelector('.answer-content');
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGCSE Chemistry - The Periodic Table (25-28)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0056b3;
+            text-align: center;
+        }
+        .question-block {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        .question-header {
+            font-size: 0.9em;
+            color: #555;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #0056b3;
+            font-size: 1.2em;
+        }
+        .answer {
+            cursor: pointer;
+            background-color: #e9f5ff;
+            border: 1px solid #b3d7ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .answer-content {
+            display: none;
+            padding-top: 10px;
+        }
+        .keyword {
+            color: #d9534f;
+            font-weight: bold;
+        }
+        .equation {
+            font-style: italic;
+        }
+        .placeholder {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            margin: 15px 0;
+            color: #888;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    
+        .home-button {
+            position: fixed;
+            bottom: clamp(16px, 4vw, 32px);
+            right: clamp(16px, 4vw, 32px);
+            padding: 0.75rem 1.1rem;
+            border-radius: 999px;
+            background: #0056b3;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 10px 25px rgba(0, 86, 179, 0.35);
+            opacity: 0.88;
+            transition: opacity 0.15s ease, transform 0.15s ease;
+            z-index: 1000;
+        }
+        .home-button:hover {
+            opacity: 1;
+            transform: translateY(-2px);
+        }
+
+    </style>
+</head>
+<body>
+
+    <a class="home-button" href="index.html" aria-label="Back to index">Home</a>
+
+    <div class="container">
+        <h1>IGCSE Chemistry: The Periodic Table (25-28)</h1>
+
+        <!-- Question 25 -->
+        <div class="question-block">
+            <div class="question-header">Question 25 (0620/41_Winter_2023_Q1) - Air And Water, Acids And Bases, The Periodic Table, Polymers, In The Lab (chemical Test& Salt Analysis)</div>
+            <h2>A list of gases is shown.</h2>
+            <p>ammonia, carbon dioxide, carbon monoxide, ethene, fluorine, oxygen, sulfur dioxide, xenon</p>
+            <p>Answer the following questions using only the gases from the list. Each gas may be used once, more than once or not at all.</p>
+            <p>Give the name of the gas that:</p>
+            <p>(a) causes acid rain [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">sulfur dioxide</span></p></div></div>
+            <p>(b) forms an alkaline solution when dissolved in water [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">ammonia</span></p></div></div>
+            <p>(c) is inert [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">xenon</span></p></div></div>
+            <p>(d) is a product of photosynthesis [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">oxygen</span></p></div></div>
+            <p>(e) can form a polymer [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">ethene</span></p></div></div>
+            <p>(f) is produced in the test for nitrate ions. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">ammonia</span></p></div></div>
+        </div>
+
+        <!-- Question 26 -->
+        <div class="question-block">
+            <div class="question-header">Question 26 (0620/41_Winter_2023_Q3) - The Behavior Of Metals, The Periodic Table</div>
+            <h2>Order of reactivity can be determined by displacement reactions.</h2>
+            <p>(a) A student investigates the reactivities of four metals by carrying out a series of experiments. Each of the metals lead, manganese, silver and zinc are added separately to aqueous metal nitrates of the other metals.</p>
+            <p>(i) Table 3.1 shows some of the results. Complete Table 3.1 and place the four metals in their order of reactivity with the most reactive first. [3]</p>
+             <table>
+                <caption>Table 3.1</caption>
+                <tr>
+                    <th>aqueous solution</th>
+                    <th>lead Pb</th>
+                    <th>manganese Mn</th>
+                    <th>silver Ag</th>
+                    <th>zinc Zn</th>
+                </tr>
+                <tr>
+                    <td>lead(II) nitrate</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✗</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>manganese(II) nitrate</td>
+                    <td>✗</td>
+                    <td></td>
+                    <td>✗</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>silver nitrate</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td></td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>zinc nitrate</td>
+                    <td>✗</td>
+                    <td>✗</td>
+                    <td>✗</td>
+                    <td></td>
+                </tr>
+            </table>
+            <p>key: ✓ = displacement reaction occurs, ✗ = displacement reaction does not occur</p>
+            <div class="answer" onclick="toggleAnswer(this)">
+                Tap to reveal answer
+                <div class="answer-content">
+                    <p><strong>Order of reactivity:</strong></p>
+                    <ol>
+                        <li><span class="keyword">Manganese</span> (Mn)</li>
+                        <li><span class="keyword">Zinc</span> (Zn)</li>
+                        <li><span class="keyword">Lead</span> (Pb)</li>
+                        <li><span class="keyword">Silver</span> (Ag)</li>
+                    </ol>
+                </div>
+            </div>
+            <p>(ii) Suggest why the metal nitrates and not the metal sulfates of these four metals are used as the aqueous solutions. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>Because <span class="keyword">all nitrates are soluble</span>, whereas lead(II) sulfate is insoluble which would prevent a reaction.</p></div></div>
+            <p>(iii) Write the symbol equation for the reaction between zinc and silver nitrate. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p class="equation">Zn + 2AgNO<sub>3</sub> &rarr; Zn(NO<sub>3</sub>)<sub>2</sub> + 2Ag</p></div></div>
+            <p>(b) The reactivity of Group VII elements can be investigated experimentally. A student bubbles chlorine gas into a test-tube containing aqueous potassium bromide.</p>
+            <p>(i) Describe the colour change seen in the test-tube. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>from <span class="keyword">colourless</span> to <span class="keyword">orange</span>.</p></div></div>
+            <p>(ii) Complete the ionic equation for this reaction. Include state symbols. [3]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p class="equation">Cl<sub>2</sub>(g) + 2Br<sup>&minus;</sup>(aq) &rarr; Br<sub>2</sub>(aq) + 2Cl<sup>&minus;</sup>(aq)</p></div></div>
+            <p>(iii) The reactivity trend seen in Cl, Br and I applies to all the elements in Group VII. Use the Periodic Table to identify the Group VII element which cannot displace any other Group VII elements. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">Tennessine / Ts</span> (as it is the least reactive at the bottom of the group).</p></div></div>
+        </div>
+
+        <!-- Question 27 -->
+        <div class="question-block">
+            <div class="question-header">Question 27 (0620/42_Winter_2023_Q1) - The Periodic Table</div>
+            <h2>Table 1.1 gives the electronic configurations of some atoms and ions, A to G.</h2>
+            <table>
+                <caption>Table 1.1</caption>
+                <tr><th></th><th>electronic configuration</th></tr>
+                <tr><td>A</td><td>2,5</td></tr>
+                <tr><td>B</td><td>2,8</td></tr>
+                <tr><td>C</td><td>2,8,2</td></tr>
+                <tr><td>D</td><td>2,8,4</td></tr>
+                <tr><td>E</td><td>2,8,5</td></tr>
+                <tr><td>F</td><td>2,8,6</td></tr>
+                <tr><td>G</td><td>2,8,18,7</td></tr>
+            </table>
+            <p>Answer the following questions about A to G. Each letter may be used once, more than once or not at all. State which of the atoms or ions, A to G, could be:</p>
+            <p>(a) a noble gas atom [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">B</span></p></div></div>
+            <p>(b) an atom of an element in Group VI [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">F</span></p></div></div>
+            <p>(c) an atom with an atomic number of 14 [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">D</span></p></div></div>
+            <p>(d) atoms from the same group [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">A</span> AND <span class="keyword">E</span></p></div></div>
+            <p>(e) a halogen atom [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">G</span></p></div></div>
+            <p>(f) an atom of an element which is a good conductor of electricity [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">C</span></p></div></div>
+            <p>(g) a stable ion of a Group V element [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">B</span></p></div></div>
+            <p>(h) an atom that forms an ion with a 2&minus; charge. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><span class="keyword">F</span></p></div></div>
+        </div>
+
+        <!-- Question 28 -->
+        <div class="question-block">
+            <div class="question-header">Question 28 (0620/42_Winter_2023_Q2) - Atoms And Elements, The Periodic Table, Energy Changes And Reversible Reactions</div>
+            <h2>Cobalt and copper are transition elements.</h2>
+            <p>(a) Copper has two naturally occurring isotopes, <sup>63</sup>Cu and <sup>65</sup>Cu. Cobalt has only one naturally occurring isotope, <sup>59</sup>Co.</p>
+            <p>(i) Complete Table 2.1 to show the number of protons, neutrons and electrons in the <sup>59</sup>Co atom and the <sup>65</sup>Cu<sup>2+</sup> ion. [3]</p>
+            <table>
+                <caption>Table 2.1</caption>
+                <tr><th></th><th>protons</th><th>neutrons</th><th>electrons</th></tr>
+                <tr><td><sup>59</sup>Co</td><td>27</td><td>32</td><td>27</td></tr>
+                <tr><td><sup>65</sup>Cu<sup>2+</sup></td><td>29</td><td>36</td><td>27</td></tr>
+            </table>
+             <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>For <sup>59</sup>Co: p=<span class="keyword">27</span>, n=59-27=<span class="keyword">32</span>, e=<span class="keyword">27</span>. <br>For <sup>65</sup>Cu<sup>2+</sup>: p=<span class="keyword">29</span>, n=65-29=<span class="keyword">36</span>, e=29-2=<span class="keyword">27</span>.</p></div></div>
+            <p>(ii) Table 2.2 shows the relative abundance of the two naturally occurring isotopes of copper. Calculate the relative atomic mass of copper to one decimal place. [2]</p>
+            <table>
+                <caption>Table 2.2</caption>
+                <tr><th>isotope</th><td><sup>63</sup>Cu</td><td><sup>65</sup>Cu</td></tr>
+                <tr><th>relative abundance</th><td>70%</td><td>30%</td></tr>
+            </table>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>A<sub>r</sub> = <sup>(63 x 70) + (65 x 30)</sup>&frasl;<sub>100</sub> = <sup>4410 + 1950</sup>&frasl;<sub>100</sub> = <sup>6360</sup>&frasl;<sub>100</sub> = <span class="keyword">63.6</span></p></div></div>
+            <p>(b) One physical property of transition elements such as copper and cobalt is that they are hard. Other metals such as lithium are softer. State two other physical properties of copper and cobalt which are significantly different from lithium. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>They have <span class="keyword">high densities</span> and <span class="keyword">high melting points</span>.</p></div></div>
+            <p>(c) Both copper and cobalt can form coloured compounds. Some of these compounds contain water of crystallisation.</p>
+            <p>(i) Define the term water of crystallisation. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>Water of crystallisation refers to <span class="keyword">water molecules</span> that are present within <span class="keyword">hydrated crystals</span>.</p></div></div>
+            <p>(ii) State the colour and formula of hydrated cobalt(II) chloride crystals. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p><strong>Colour:</strong> <span class="keyword">pink</span></p><p><strong>Formula:</strong> <span class="keyword">CoCl<sub>2</sub>&middot;6H<sub>2</sub>O</span></p></div></div>
+            <p>(iii) State the colour change seen when a few drops of water are added to anhydrous copper(II) sulfate. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>from <span class="keyword">white</span> to <span class="keyword">blue</span></p></div></div>
+            <p>(iv) State how this colour change can be reversed. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><p>Tap to reveal answer</p><div class="answer-content"><p>By <span class="keyword">heating</span> the hydrated copper(II) sulfate.</p></div></div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleAnswer(element) {
+            var content = element.querySelector('.answer-content');
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
+
