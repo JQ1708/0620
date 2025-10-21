@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGCSE Chemistry Past Paper - Air & Water</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #0056b3;
+            text-align: center;
+        }
+        h2 {
+            color: #0056b3;
+        }
+        .question-block {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .question-header {
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .answer {
+            cursor: pointer;
+            padding: 15px;
+            background-color: #e9f5ff;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .answer-content {
+            display: none;
+            padding-top: 10px;
+        }
+        .keyword {
+            font-weight: bold;
+            color: #d9534f;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .placeholder {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+            background-color: #fafafa;
+            border-radius: 5px;
+        }
+        /* Italicize equations */
+        i { 
+            font-style: italic; 
+        }
+    
+        .home-button {
+            position: fixed;
+            bottom: clamp(16px, 4vw, 32px);
+            right: clamp(16px, 4vw, 32px);
+            padding: 0.75rem 1.1rem;
+            border-radius: 999px;
+            background: #0056b3;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 10px 25px rgba(0, 86, 179, 0.35);
+            opacity: 0.88;
+            transition: opacity 0.15s ease, transform 0.15s ease;
+            z-index: 1000;
+        }
+        .home-button:hover {
+            opacity: 1;
+            transform: translateY(-2px);
+        }
+
+    </style>
+</head>
+<body>
+
+    <a class="home-button" href="index.html" aria-label="Back to index">Home</a>
+
+    <div class="container">
+        <h1>IGCSE Chemistry - Air & Water (Continued)</h1>
+
+        <!-- Question 9 -->
+        <div class="question-block">
+            <h2>Question 9</h2>
+            <div class="question-header">(0620/43_Winter_2021_Q1) - Atoms Combining, The Behavior Of Metals, Air And Water</div>
+            <p>A list of substances is shown.</p>
+            <table>
+                <tr><td>ammonia</td><td>bauxite</td><td>carbon dioxide</td></tr>
+                <tr><td>carbon monoxide</td><td>ethanol</td><td>hematite</td></tr>
+                <tr><td>oxygen</td><td>sodium chloride</td><td>sulfur dioxide</td></tr>
+            </table>
+            <p>Answer the questions using the list of substances.<br>Each substance may be used once, more than once or not at all.</p>
+            <p>State which substance is:</p>
+            <p>(a) an element [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">oxygen</span></div></div>
+            <p>(b) an ore of aluminium [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">bauxite</span></div></div>
+            <p>(c) a gas that causes acid rain [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">sulfur dioxide</span></div></div>
+            <p>(d) used as a fuel [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">ethanol</span></div></div>
+            <p>(e) an ionic compound [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">sodium chloride</span></div></div>
+            <p>(f) produced in the Haber process [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">ammonia</span></div></div>
+            <p>(g) a product of respiration [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">carbon dioxide</span></div></div>
+            <p>(h) a toxic product of the incomplete combustion of hydrocarbons [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">carbon monoxide</span></div></div>
+            <p>(i) a gas produced in the test for nitrate ions. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">ammonia</span></div></div>
+        </div>
+        
+        <!-- Question 10 -->
+        <div class="question-block">
+            <h2>Question 10</h2>
+            <div class="question-header">(0620/42_Summer_2022_Q1) - Atoms And Elements, The Periodic Table, Air And Water</div>
+            <p>The symbols of the elements of Period 3 of the Periodic Table are shown.</p>
+            <p>Na &nbsp;&nbsp;&nbsp; Mg &nbsp;&nbsp;&nbsp; Al &nbsp;&nbsp;&nbsp; Si &nbsp;&nbsp;&nbsp; P &nbsp;&nbsp;&nbsp; S &nbsp;&nbsp;&nbsp; Cl &nbsp;&nbsp;&nbsp; Ar</p>
+            <p>Answer the following questions about these elements.<br> Each symbol may be used once, more than once or not at all.</p>
+            <p>Write the symbol of the element which:</p>
+            <p>(a) forms a stable ion with a 2+ charge [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">Mg</span></div></div>
+            <p>(b) is the least reactive in the period [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">Ar</span></div></div>
+            <p>(c) is used in water treatment [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">Cl</span></div></div>
+            <p>(d) forms an oxide which is the main impurity in iron ore [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">Si</span></div></div>
+            <p>(e) is an important component of fertilisers [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">P</span></div></div>
+            <p>(f) is stored under oil [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">Na</span></div></div>
+            <p>(g) is used in food containers [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">Al</span></div></div>
+            <p>(h) is found in the ore zinc blende. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">S</span></div></div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question-block">
+            <h2>Question 11</h2>
+            <div class="question-header">(0620/41_Winter_2022_Q1) - Acids And Bases, Air And Water, States Of Matter</div>
+            <p>The names of the elements of Period 2 of the Periodic Table are shown.</p>
+            <p>lithium &nbsp; beryllium &nbsp; boron &nbsp; carbon &nbsp; nitrogen &nbsp; oxygen &nbsp; fluorine &nbsp; neon</p>
+            <p>Answer the following questions about these elements.<br> Each element may be used once, more than once or not at all.</p>
+            <p>Identify the element which:</p>
+            <p>(a) is a product of photosynthesis [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">oxygen</span></div></div>
+            <p>(b) has an oxide found in clean, dry air [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">carbon</span> (as carbon dioxide)</div></div>
+            <p>(c) forms a basic oxide with the formula XO [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">beryllium</span> (BeO)</div></div>
+            <p>(d) is a main component of fertilisers used to improve crop growth [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">nitrogen</span></div></div>
+            <p>(e) has the highest rate of diffusion at room temperature [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">neon</span> (as it has the lowest relative mass)</div></div>
+            <p>(f) produces a red flame in a flame test [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">lithium</span></div></div>
+            <p>(g) has only 5 electrons in each of its atoms [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">boron</span></div></div>
+            <p>(h) has an oxide responsible for acid rain. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">nitrogen</span></div></div>
+        </div>
+        
+        <!-- Question 12 -->
+        <div class="question-block">
+            <h2>Question 12</h2>
+            <div class="question-header">(0620/42_Summer_2023_Q1) - Air And Water, Atoms Combining, Making Use Of Metals, The Behavior Of Metals</div>
+            <p>A list of oxides, A to H, is shown.</p>
+            <p>A calcium oxide<br>B aluminium oxide<br>C silicon(IV) oxide<br>D sulfur dioxide<br>E carbon dioxide<br>F iron(III) oxide<br>G silver oxide<br>H carbon monoxide</p>
+            <p>Answer the following questions about the oxides, A to H.<br>Each letter may be used once, more than once or not at all.</p>
+            <p>State which of the oxides, A to H:</p>
+            <p>(a) is responsible for acid rain [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">D</span> (sulfur dioxide)</div></div>
+            <p>(b) has a giant covalent structure [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">C</span> (silicon(IV) oxide)</div></div>
+            <p>(c) is a reducing agent in the blast furnace [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">H</span> (carbon monoxide)</div></div>
+            <p>(d) is the main constituent of bauxite [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">B</span> (aluminium oxide)</div></div>
+            <p>(e) is the main impurity in iron ore [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">C</span> (silicon(IV) oxide)</div></div>
+            <p>(f) can be reduced by heating with copper. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">G</span> (silver oxide)</div></div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question-block">
+            <h2>Question 13</h2>
+            <div class="question-header">(0620/43_Summer_2023_Q1) - Organic Chemistry, Air And Water, Acids And Bases, The Periodic Table</div>
+            <p>Some symbol equations and word equations, A to J, are shown.</p>
+            <p>A &nbsp;&nbsp; <i>H⁺ + OH⁻ → H₂O</i></p>
+            <p>B &nbsp;&nbsp; <i>Cr³⁺ + 3OH⁻ → Cr(OH)₃</i></p>
+            <p>C &nbsp;&nbsp; methane + chlorine → chloromethane + hydrogen chloride</p>
+            <p>D &nbsp;&nbsp; propene + bromine → 1,2-dibromopropane</p>
+            <p>E &nbsp;&nbsp; <i>C₁₀H₂₂ → C₈H₁₈ + C₂H₄</i></p>
+            <p>F &nbsp;&nbsp; chlorine + aqueous potassium bromide → bromine + aqueous potassium chloride</p>
+            <p>G &nbsp;&nbsp; methane + oxygen → carbon monoxide + water</p>
+            <p>H &nbsp;&nbsp; <i>C₂H₅COOH + CH₃OH → C₂H₅COOCH₃ + H₂O</i></p>
+            <p>I &nbsp;&nbsp;&nbsp; hydrogen + oxygen → water</p>
+            <p>J &nbsp;&nbsp;&nbsp; <i>6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂</i></p>
+            <p>Use the equations to answer the questions that follow.<br>Each equation may be used once, more than once, or not at all.</p>
+            <p>Give the letter, A to J, for the equation which represents:</p>
+            <p>(a) photosynthesis [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">J</span></div></div>
+            <p>(b) an addition reaction [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">D</span></div></div>
+            <p>(c) a precipitation reaction [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">B</span></div></div>
+            <p>(d) incomplete combustion [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">G</span></div></div>
+            <p>(e) a displacement reaction [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">F</span></div></div>
+            <p>(f) a substitution reaction. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">C</span></div></div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question-block">
+            <h2>Question 14</h2>
+            <div class="question-header">(0620/41_Winter_2023_Q1) - Air And Water, Acids And Bases, The Periodic Table, Polymers, In The Lab (chemical Test& Salt Analysis)</div>
+            <p>A list of gases is shown.</p>
+            <p>ammonia &nbsp; carbon dioxide &nbsp; carbon monoxide &nbsp; ethene &nbsp; fluorine &nbsp; oxygen &nbsp; sulfur dioxide &nbsp; xenon</p>
+            <p>Answer the following questions using only the gases from the list.<br> Each gas may be used once, more than once or not at all.</p>
+            <p>Give the name of the gas that:</p>
+            <p>(a) causes acid rain [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">sulfur dioxide</span></div></div>
+            <p>(b) forms an alkaline solution when dissolved in water [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">ammonia</span></div></div>
+            <p>(c) is inert [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">xenon</span></div></div>
+            <p>(d) is a product of photosynthesis [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">oxygen</span></div></div>
+            <p>(e) can form a polymer [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">ethene</span></div></div>
+            <p>(f) is produced in the test for nitrate ions. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">ammonia</span></div></div>
+        </div>
+        
+        <!-- Question 15 -->
+        <div class="question-block">
+            <h2>Question 15</h2>
+            <div class="question-header">(0620/41_Winter_2023_Q5) - Energy Changes And Reversible Reactions, Air And Water</div>
+            <p>Methane reacts with steam to produce hydrogen gas.</p>
+            <p><i>CH₄(g) + H₂O(g) ⇌ CO(g) + 3H₂(g)</i> &nbsp;&nbsp;&nbsp; ΔH = +200 kJ/mol</p>
+            <p>The reaction takes place at 1000 °C and 100 kPa pressure.</p>
+            <p>(a) The reaction is reversible and reaches an equilibrium in a closed system.<br>State two features of an equilibrium. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content">1. The <span class="keyword">rate of the forward reaction equals the rate of the reverse reaction</span>.<br>2. The <span class="keyword">concentrations of reactants and products are constant</span>.</div></div>
+            <p>(b) State and explain, in terms of equilibrium, what happens to the concentration of hydrogen when:</p>
+            <p>(i) the pressure is increased [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content">The concentration of hydrogen <span class="keyword">decreases</span>. The equilibrium shifts to the <span class="keyword">left</span> because there are <span class="keyword">fewer moles of gas on the left-hand side</span> (2 moles) compared to the right-hand side (4 moles).</div></div>
+            <p>(ii) the temperature is increased [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content">The concentration of hydrogen <span class="keyword">increases</span>. The equilibrium shifts to the <span class="keyword">right</span> because the <span class="keyword">forward reaction is endothermic</span> and absorbs the added heat.</div></div>
+            <p>(iii) a catalyst is used. [2]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content">There is <span class="keyword">no change</span> to the concentration of hydrogen. A catalyst increases the rate of both the forward and reverse reactions equally but <span class="keyword">does not affect the position of equilibrium</span>.</div></div>
+            <p>(c) Methane is a greenhouse gas which contributes to global warming.</p>
+            <p>(i) Name a greenhouse gas found in clean, dry air. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">carbon dioxide</span></div></div>
+            <p>(ii) Explain, in terms of thermal energy, how greenhouse gases cause global warming. [3]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content">Greenhouse gases <span class="keyword">absorb thermal energy</span> (infrared radiation) that is reflected or emitted from the Earth's surface. They <span class="keyword">prevent this energy from escaping</span> into space, which leads to an <span class="keyword">increase in the Earth's atmospheric temperature</span>.</div></div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question-block">
+            <h2>Question 16</h2>
+            <div class="question-header">(0620/43_Winter_2023_Q1) - In The Lab (chemical Test& Salt Analysis), Acids And Bases, Organic Chemistry, Air And Water</div>
+            <p>A list of substances is shown.</p>
+            <table>
+                <tr><td>barium nitrate</td><td>carbon monoxide</td><td>hydrated cobalt(II) chloride</td></tr>
+                <tr><td>copper(II) oxide</td><td>anhydrous copper(II) sulfate</td><td>ethane</td></tr>
+                <tr><td>potassium iodide</td><td>propene</td><td>sodium bromide</td></tr>
+                <tr><td>sulfur dioxide</td><td>zinc oxide</td><td></td></tr>
+            </table>
+            <p>Answer the following questions using only the substances from the list.<br> Each substance may be used once, more than once or not at all.</p>
+            <p>Give the name of the substance that:</p>
+            <p>(a) gives a lilac colour in a flame test [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">potassium iodide</span></div></div>
+            <p>(b) forms a cream precipitate when its aqueous solution reacts with acidified aqueous silver nitrate [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">sodium bromide</span></div></div>
+            <p>(c) is an acidic oxide [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">sulfur dioxide</span></div></div>
+            <p>(d) is an unsaturated hydrocarbon [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">propene</span></div></div>
+            <p>(e) is a product of incomplete combustion of fossil fuels [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">carbon monoxide</span></div></div>
+            <p>(f) is used to test for the presence of water. [1]</p>
+            <div class="answer" onclick="toggleAnswer(this)"><strong>Tap to reveal answer</strong><div class="answer-content"><span class="keyword">anhydrous copper(II) sulfate</span></div></div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleAnswer(element) {
+            var content = element.querySelector('.answer-content');
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
