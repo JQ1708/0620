@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Properties & Trends</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Source+Code+Pro:wght@400;600&family=Readex+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Readex Pro', sans-serif;
+            background-color: #0f172a; /* Slate 900 */
+            color: #cbd5e1; /* Slate 300 */
+        }
+        .header-main {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a, #312e81);
+        }
+        .nav-tabs button {
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+        .nav-tabs button.active {
+            color: #60a5fa; /* Blue 400 */
+            border-bottom-color: #60a5fa;
+        }
+        .dossier {
+            background-color: #1e293b; /* Slate 800 */
+            border: 1px solid #334155; /* Slate 700 */
+            border-radius: 1rem;
+            display: none; /* Hidden by default */
+        }
+        .dossier.active {
+            display: block;
+        }
+        .property-table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .property-table th, .property-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #334155;
+        }
+        .property-table th {
+            background-color: #334155; /* Slate 700 */
+        }
+        .property-table code {
+            font-family: 'Source Code Pro', monospace;
+            background-color: #334155;
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.25rem;
+            font-size: 0.9em;
+        }
+        .diagram-placeholder {
+            border: 2px dashed #475569;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            text-align: center;
+            color: #94a3b8;
+            background-color: #0f172a;
+        }
+        .quiz-option {
+            transition: all 0.2s ease-in-out;
+            background-color: #334155;
+            border-color: #475569;
+        }
+        .quiz-option:hover {
+            background-color: #475569;
+        }
+        .correct { background-color: #166534 !important; border-color: #22c55e !important; color: white; }
+        .incorrect { background-color: #991b1b !important; border-color: #ef4444 !important; color: white; }
+    </style>
+</head>
+<body class="p-4 md:p-0">
+    <header class="header-main text-center p-12 mb-10 rounded-b-2xl">
+        <h1 class="text-4xl md:text-5xl font-bold text-white">Periodic Groups Explorer</h1>
+        <p class="text-xl mt-4 text-gray-300">An interactive dossier on key element families.</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4">
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs flex flex-wrap justify-center bg-slate-800 rounded-lg mb-8 shadow-lg">
+            <button class="flex-1 p-4 font-semibold" data-target="group1">Group I: Alkali Metals</button>
+            <button class="flex-1 p-4 font-semibold" data-target="group7">Group VII: Halogens</button>
+            <button class="flex-1 p-4 font-semibold" data-target="transition">Transition Metals</button>
+            <button class="flex-1 p-4 font-semibold" data-target="group0">Group 0: Noble Gases</button>
+        </nav>
+
+        <!-- Group 1 Dossier -->
+        <section id="group1" class="dossier p-6 md:p-8">
+            <h2 class="text-3xl font-bold mb-4 text-blue-400">Group I: The Alkali Metals</h2>
+            <p class="mb-4">These metals are highly reactive because they all have <strong class="font-semibold">one electron</strong> in their outer shell which is easily lost to form a +1 ion.</p>
+            <h3 class="text-2xl font-semibold mb-3">Physical Properties</h3>
+            <ul class="list-disc list-inside space-y-1 mb-4">
+                <li>They are <strong class="font-semibold">soft</strong> and easy to cut.</li>
+                <li>They have <strong class="font-semibold">low densities</strong> (Li, Na and K float on water).</li>
+                <li>They have low melting and boiling points that <strong class="text-green-400">decrease</strong> down the group.</li>
+            </ul>
+             <h3 class="text-2xl font-semibold mb-3">Chemical Properties & Trends</h3>
+            <p class="mb-4">Alkali metals react vigorously with water to produce a metal hydroxide (an alkaline solution) and hydrogen gas. Reactivity <strong class="text-red-400">increases dramatically</strong> down the group.</p>
+            <div class="overflow-x-auto">
+                <table class="property-table">
+                    <thead><tr><th>Metal</th><th>Observation with Water</th></tr></thead>
+                    <tbody>
+                        <tr><td>Lithium (Li)</td><td>Fizzes steadily on the surface.</td></tr>
+                        <tr><td>Sodium (Na)</td><td>Melts into a ball, fizzes rapidly, and darts across the surface.</td></tr>
+                        <tr><td>Potassium (K)</td><td>Instantly ignites, burns with a <strong class="text-purple-400">lilac flame</strong>, and fizzes violently.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bg-slate-900 p-4 rounded-lg mt-4">
+                <h4 class="font-bold text-lg">Why does reactivity increase down the group?</h4>
+                <p>As you go down the group, the outer electron is further from the nucleus, has more shielding from inner shells, and is less strongly attracted. This means it is <strong class="font-semibold">lost more easily</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Group 7 Dossier -->
+        <section id="group7" class="dossier p-6 md:p-8">
+            <h2 class="text-3xl font-bold mb-4 text-blue-400">Group VII: The Halogens</h2>
+            <p class="mb-4">These non-metals are reactive because they all have <strong class="font-semibold">seven electrons</strong> in their outer shell and need to gain one electron to get a full outer shell. They exist as diatomic molecules (e.g., Cl₂).</p>
+            <h3 class="text-2xl font-semibold mb-3">Physical Trends</h3>
+            <p class="mb-4">As you go down the group, the melting/boiling points and density <strong class="text-red-400">increase</strong>, and the colours get darker.</p>
+             <div class="overflow-x-auto">
+                <table class="property-table">
+                    <thead><tr><th>Halogen</th><th>Colour & State at Room Temp</th></tr></thead>
+                    <tbody>
+                        <tr><td>Fluorine (F₂)</td><td>Pale yellow gas</td></tr>
+                        <tr><td>Chlorine (Cl₂)</td><td>Pale green gas</td></tr>
+                        <tr><td>Bromine (Br₂)</td><td>Red-brown liquid</td></tr>
+                        <tr><td>Iodine (I₂)</td><td>Grey-black solid</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3 class="text-2xl font-semibold mt-6 mb-3">Chemical Properties & Trends</h3>
+            <p class="mb-4">A more reactive halogen will displace a less reactive halide from an aqueous solution of its salt. Reactivity <strong class="text-green-400">decreases</strong> down the group.</p>
+             <div class="overflow-x-auto">
+                <table class="property-table">
+                    <thead><tr><th>Reaction</th><th>Observation</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Cl₂(aq) + 2KBr(aq) → 2KCl(aq) + Br₂(aq)</code></td><td>Solution turns <strong class="text-orange-400">orange-brown</strong> as bromine is displaced.</td></tr>
+                        <tr><td><code>Br₂(aq) + 2KI(aq) → 2KBr(aq) + I₂(aq)</code></td><td>Solution turns <strong class="text-yellow-700">brown</strong> as iodine is displaced.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+             <div class="bg-slate-900 p-4 rounded-lg mt-4">
+                <h4 class="font-bold text-lg">Why does reactivity decrease down the group?</h4>
+                <p>As you go down the group, the outer shell is further from the nucleus and has more shielding from inner shells. This makes it <strong class="font-semibold">harder to attract and gain an electron</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Transition Metals Dossier -->
+        <section id="transition" class="dossier p-6 md:p-8">
+            <h2 class="text-3xl font-bold mb-4 text-blue-400">The Transition Metals</h2>
+            <p class="mb-4">These elements are found between Group II and Group III. They have properties that are very different from the alkali metals.</p>
+             <div class="overflow-x-auto mb-6">
+                <table class="property-table">
+                    <thead><tr><th>Property</th><th>Transition Metals</th><th>Group I Metals</th></tr></thead>
+                    <tbody>
+                        <tr><td>Hardness</td><td>Hard and strong</td><td>Soft</td></tr>
+                        <tr><td>Melting Point</td><td>High</td><td>Low</td></tr>
+                        <tr><td>Density</td><td>High</td><td>Low</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3 class="text-2xl font-semibold mb-3">Special Catalytic & Chemical Properties</h3>
+            <p class="mb-4">Transition metals have three special properties that other metals do not:</p>
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <div class="bg-slate-900 p-4 rounded-lg"><i class="fas fa-palette text-2xl text-cyan-400 mb-2"></i><h4 class="font-semibold">Form Coloured Compounds</h4><p class="text-sm">e.g., Copper(II) sulfate is blue, Potassium Manganate(VII) is purple.</p></div>
+                <div class="bg-slate-900 p-4 rounded-lg"><i class="fas fa-fast-forward text-2xl text-green-400 mb-2"></i><h4 class="font-semibold">Act as Catalysts</h4><p class="text-sm">e.g., Iron in the Haber process, Nickel in hydrogenation.</p></div>
+                <div class="bg-slate-900 p-4 rounded-lg"><i class="fas fa-hashtag text-2xl text-yellow-400 mb-2"></i><h4 class="font-semibold">Variable Oxidation States</h4><p class="text-sm">e.g., Iron can form Fe²⁺ (green) and Fe³⁺ (red-brown) ions.</p></div>
+            </div>
+        </section>
+        
+        <!-- Group 0 Dossier -->
+        <section id="group0" class="dossier p-6 md:p-8">
+            <h2 class="text-3xl font-bold mb-4 text-blue-400">Group 0: The Noble Gases</h2>
+            <p class="mb-4">These elements are extremely unreactive (inert) because they have <strong class="font-semibold">full outer electron shells</strong>, which is a very stable configuration.</p>
+            <h3 class="text-2xl font-semibold mb-3">Properties & Trends</h3>
+             <ul class="list-disc list-inside space-y-2 mb-4">
+                <li>They are all colourless, monatomic gases at room temperature.</li>
+                <li>They are unreactive and do not form bonds easily.</li>
+                <li>The boiling points and densities <strong class="text-red-400">increase</strong> as you go down the group.</li>
+                <li><strong>Electronic Configurations:</strong> He (2), Ne (2,8), Ar (2,8,8).</li>
+            </ul>
+            <h3 class="text-2xl font-semibold mb-3">Uses</h3>
+             <ul class="list-disc list-inside space-y-2">
+                <li>Their inertness makes them useful for providing a non-reactive atmosphere.</li>
+                <li><strong>Helium:</strong> Used in balloons and airships due to its low density and non-flammability.</li>
+                <li><strong>Argon:</strong> Used inside filament light bulbs to stop the filament from burning away.</li>
+            </ul>
+        </section>
+        
+        <!-- Quiz Section -->
+        <div class="dossier mt-10 mb-10 p-6" style="display: block;">
+            <h2 class="text-3xl font-bold mb-6 text-center">Final Assessment</h2>
+            <div id="quiz-container"></div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.nav-tabs button');
+            const dossiers = document.querySelectorAll('.dossier');
+
+            function switchTab(targetId) {
+                tabs.forEach(tab => tab.classList.toggle('active', tab.dataset.target === targetId));
+                dossiers.forEach(dossier => {
+                    if (dossier.id === targetId) {
+                        dossier.classList.add('active');
+                    } else if (dossier.id) { // Exclude quiz dossier from being hidden
+                        dossier.classList.remove('active');
+                    }
+                });
+            }
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => switchTab(tab.dataset.target));
+            });
+
+            // Set initial active tab
+            switchTab('group1');
+            
+            const quizData = [
+                { q: "Which property decreases as you go down Group I?", a: "Melting Point", o: ["Reactivity", "Density", "Melting Point", "Atomic Radius"] },
+                { q: "A halogen displaces a less reactive halide from solution. Which reaction is possible?", a: "Cl₂ + 2KI → 2KCl + I₂", o: ["I₂ + 2KBr → 2KI + Br₂", "Br₂ + 2KCl → 2KBr + Cl₂", "Cl₂ + 2KI → 2KCl + I₂", "I₂ + 2NaCl → 2NaI + Cl₂"] },
+                { q: "Which of the following is NOT a property of transition metals?", a: "They are soft with low density", o: ["They form coloured compounds", "They act as catalysts", "They are soft with low density", "They have variable oxidation states"] },
+                { q: "Why are the Noble Gases so unreactive?", a: "They have a full outer shell of electrons", o: ["They are gases", "They have low boiling points", "They have a full outer shell of electrons", "They are monatomic"] },
+                { q: "What is the colour of the flame when potassium reacts with water?", a: "Lilac", o: ["Red", "Yellow", "Orange", "Lilac"] },
+                { q: "Which halogen is a red-brown liquid at room temperature?", a: "Bromine", o: ["Chlorine", "Bromine", "Iodine", "Fluorine"] },
+                { q: "Iron acting as a catalyst in the Haber process is a property of...", a: "Transition Metals", o: ["Alkali Metals", "Halogens", "Transition Metals", "Noble Gases"] },
+                { q: "What happens to the reactivity of the halogens as you go down Group VII?", a: "It decreases", o: ["It increases", "It decreases", "It stays the same", "It increases then decreases"] },
+                { q: "Which gas is used in airships because it is inert and has a low density?", a: "Helium", o: ["Argon", "Hydrogen", "Nitrogen", "Helium"] },
+                { q: "The reaction of sodium with water is more vigorous than...", a: "Lithium", o: ["Potassium", "Caesium", "Lithium", "Rubidium"] }
+            ];
+
+            const container = document.getElementById('quiz-container');
+            let quizHTML = "";
+            quizData.forEach((item, index) => {
+                quizHTML += `<div class="pt-4 mt-4 border-t border-slate-700 quiz-item">
+                    <p class="font-semibold mb-2">${index + 1}. ${item.q}</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">`;
+                item.o.forEach(option => {
+                    quizHTML += `<button class="quiz-option p-3 text-left border rounded-lg" data-correct="${option === item.a}">${option}</button>`;
+                });
+                quizHTML += `</div><p class="feedback mt-2 text-sm font-bold hidden"></p></div>`;
+            });
+            container.innerHTML = quizHTML;
+            container.querySelector('.quiz-item:first-child').classList.remove('pt-4', 'mt-4', 'border-t');
+
+            container.querySelectorAll('.quiz-option').forEach(button => {
+                button.addEventListener('click', () => {
+                    const itemEl = button.closest('.quiz-item');
+                    const feedbackEl = itemEl.querySelector('.feedback');
+                    const isCorrect = button.dataset.correct === 'true';
+                    itemEl.querySelectorAll('.quiz-option').forEach(btn => btn.disabled = true);
+                    if (isCorrect) {
+                        button.classList.add('correct');
+                        feedbackEl.textContent = 'Correct!';
+                        feedbackEl.classList.add('text-green-400');
+                    } else {
+                        button.classList.add('incorrect');
+                        const correctAnswer = itemEl.querySelector('[data-correct="true"]').textContent;
+                        feedbackEl.textContent = `Not quite. The correct answer is: ${correctAnswer}`;
+                        feedbackEl.classList.add('text-red-400');
+                        itemEl.querySelector('[data-correct="true"]').classList.add('correct');
+                    }
+                    feedbackEl.classList.remove('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
