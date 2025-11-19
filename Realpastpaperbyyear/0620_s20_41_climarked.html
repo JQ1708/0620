@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGCSE Chemistry - 0620/41/M/J/20</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        h1, h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .question-block {
+            margin-bottom: 25px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden; /* To contain the rounded corners */
+        }
+
+        .question-header {
+            background-color: #f9f9f9;
+            padding: 15px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .question-header h2 {
+            margin: 0;
+            border: none;
+        }
+
+        .question-header p {
+            margin: 5px 0 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .question-content {
+            padding: 20px;
+        }
+
+        .question-content p, .question-content li {
+            line-height: 1.6;
+        }
+
+        .question-content .sub-question {
+            margin-bottom: 15px;
+        }
+
+        .marks {
+            font-weight: bold;
+            color: #0056b3;
+            float: right;
+        }
+
+        .answer-toggle {
+            display: block;
+            width: 100%;
+            background-color: #e9f5ff;
+            height: 30px;
+            border: none;
+            border-top: 1px solid #cce7ff;
+            border-bottom: 1px solid #cce7ff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .answer-toggle:hover {
+            background-color: #d4eaff;
+        }
+
+        .answer-content {
+            display: none;
+            padding: 20px;
+            background-color: #fafcff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .keyword {
+            color: #d9534f;
+            font-weight: bold;
+        }
+
+        .recap-toggle {
+            display: block;
+            width: 100%;
+            background-color: #fffbeb;
+            border: none;
+            border-top: 1px solid #fff1c2;
+            cursor: pointer;
+            padding: 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        .recap-toggle:hover {
+            background-color: #fef8e0;
+        }
+
+        .recap-toggle h4 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.1em;
+            animation: float-animation 3s ease-in-out infinite, color-change 5s linear infinite;
+        }
+
+        .recap-content {
+            display: none;
+            padding: 15px 20px;
+            background-color: #fffef5;
+            font-style: italic;
+        }
+
+        .placeholder {
+            width: 100%;
+            background-color: #eee;
+            border: 2px dashed #aaa;
+            padding: 30px;
+            text-align: center;
+            color: #777;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Animations */
+        @keyframes float-animation {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-3px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes color-change {
+            0% { color: #b58900; }
+            25% { color: #cb4b16; }
+            50% { color: #dc322f; }
+            75% { color: #6c71c4; }
+            100% { color: #b58900; }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+            .question-content {
+                padding: 15px;
+            }
+            .marks {
+                float: none;
+                display: block;
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>IGCSE Chemistry Study Guide</h1>
+        <p style="text-align: center; font-size: 1.2em; color: #333;">Paper: 0620/41/M/J/20</p>
+        <p style="text-align: center; color: #555;">Click the blue bars to reveal the answers, and the animated yellow "Recap" bars for extra revision notes.</p>
+
+        <!-- Question 1 Block -->
+        <div class="question-block">
+            <div class="question-header">
+                <h2>Question 1</h2>
+                <p>Topics: Atomic Structure, Isotopes, Moles, Periodic Table</p>
+            </div>
+            <div class="question-content">
+                <p>This question is about elements X, Y and Z.</p>
+                <p>An atom of element X is represented as ${}_{16}^{34}X$.</p>
+
+                <div class="sub-question">
+                    <strong>(a) (i)</strong> Name the different types of particles found in the nucleus of this atom of X.
+                    <span class="marks">[2]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>The particles found in the nucleus are <span class="keyword">protons</span> and <span class="keyword">neutrons</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>The <span class="keyword">nucleus</span> of an atom contains <span class="keyword">protons</span> and <span class="keyword">neutrons</span>. <span class="keyword">Electrons</span> are found outside the nucleus in electron shells (energy levels).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(a) (ii)</strong> What is the term for the total number of particles in the nucleus of an atom?
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>This is the <span class="keyword">nucleon number</span> (or mass number).</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>The <span class="keyword">mass number</span> is the number of <span class="keyword">protons + neutrons</span> in the nucleus. In atom symbols like ${}_{6}^{12}C$, the number at the top is the mass number.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(a) (iii)</strong> What is the total number of particles in the nucleus of an atom of ${}_{16}^{34}X$?
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>The total number of particles in the nucleus (the nucleon number) is <span class="keyword">34</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>In the symbol ${}_{16}^{34}X$, the top number (34) is the <span class="keyword">mass number</span>, which represents the total count of protons and neutrons. The bottom number (16) is the <span class="keyword">proton number</span>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(a) (iv)</strong> What is the electronic structure of the ion X²⁻?
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>Element X has 16 protons, so it has 16 electrons with an electronic structure of 2.8.6. To form the X²⁻ ion, it <span class="keyword">gains two electrons</span>. The new electronic structure is <span class="keyword">2.8.8</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p><span class="keyword">Electronic configuration</span> is the arrangement of electrons in shells. <span class="keyword">Negative ions</span> are formed when atoms <span class="keyword">gain</span> one or more electrons, usually to achieve a stable, full outer shell, like a noble gas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(a) (v)</strong> Suggest the formula of the compound formed between aluminium and X.
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>Aluminium (Group III) forms an $Al^{3+}$ ion. Element X (Group VI) forms an $X^{2-}$ ion. To balance the charges, two $Al^{3+}$ ions (total charge 6+) are needed for every three $X^{2-}$ ions (total charge 6-). The formula is <span class="keyword"><i>Al₂X₃</i></span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>The <span class="keyword">formula</span> of an <span class="keyword">ionic compound</span> can be found by <span class="keyword">balancing</span> the positive and negative <span class="keyword">charges</span> of the ions present. The overall charge of the compound must be zero.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(b) (i)</strong> What term is used to describe atoms of the same element with different numbers of particles in the nucleus?
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>The term is <span class="keyword">isotopes</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p><span class="keyword">Isotopes</span> are atoms with the <span class="keyword">same number of protons</span> but <span class="keyword">different numbers of neutrons</span>. They have the same chemical properties because they have the same electronic configuration.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(b) (ii)</strong> Identify the atom against which the relative masses of all other atoms are compared.
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>This atom is <span class="keyword">carbon-12</span> (<i>${}^{12}C$</i>).</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p><span class="keyword">Relative atomic mass</span>, <i>$A_r$</i>, is the average mass of the isotopes of an element compared to <span class="keyword">$\frac{1}{12}$th</span> the mass of an atom of <span class="keyword">carbon-12</span>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(b) (iii)</strong> What is the name of the amount of any substance that contains 6.02 x 10²³ particles?
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>This amount is <span class="keyword">a mole</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p><span class="keyword">A mole</span> is the amount of substance that contains <span class="keyword">6.02 x 10²³</span> defined particles (e.g., atoms, molecules, or ions).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(b) (iv)</strong> The constant 6.02 x 10²³ has a name. What is the name of this constant?
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>This is the <span class="keyword">Avogadro constant</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>The <span class="keyword">Avogadro constant</span> is the number (6.02 x 10²³) of defined particles present in a <span class="keyword">mole</span> of those particles. The number of particles = number of moles x Avogadro constant.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(c)</strong> Part of the definition of relative atomic mass is 'the average mass of naturally occurring atoms of an element'.<br>
+                    Some relative atomic masses are not whole numbers.<br>
+                    Element Y has only two different types of atom, ⁶⁹Y and ⁷¹Y.<br>
+                    The ratio of atoms present in element Y is shown.<br>
+                    ⁶⁹Y : ⁷¹Y = 3 : 2
+                    <ul>
+                        <li>Calculate the relative atomic mass of element Y to one decimal place.</li>
+                        <li>Identify element Y.</li>
+                    </ul>
+                    <span class="marks">[3]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p><strong>Calculation:</strong><br>
+                        The ratio 3:2 means that in 5 atoms, 3 are ⁶⁹Y and 2 are ⁷¹Y.<br>
+                        Total mass of 5 atoms = <span class="keyword">(3 x 69) + (2 x 71)</span> = 207 + 142 = 349.<br>
+                        Average mass = Total mass / Number of atoms = <span class="keyword">349 / 5</span> = <span class="keyword">69.8</span>.<br>
+                        <br>
+                        Relative atomic mass = <strong>69.8</strong><br>
+                        <strong>Identification:</strong><br>
+                        Looking at the Periodic Table, the element with a relative atomic mass of 69.8 is <span class="keyword">Gallium (Ga)</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>Accurate <span class="keyword">relative atomic masses</span> are found by using the mass and percentage <span class="keyword">abundance</span> of each <span class="keyword">isotope</span>. This is a weighted average calculation. For example, if an element had two isotopes, A (40%) and B (60%), the $A_r$ would be (Mass A x 0.40) + (Mass B x 0.60).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(d) (i)</strong> Element Z is in Period 3 and Group V. Identify element Z.
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>Element Z is <span class="keyword">Phosphorus (P)</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>The <span class="keyword">Period number</span> is the same as the number of occupied <span class="keyword">electron shells</span>. The <span class="keyword">Group number</span> (for Groups I to VII) is the same as the number of <span class="keyword">outer shell electrons</span>. Therefore, an element in Period 3 and Group V has 3 electron shells and 5 outer electrons, giving an electronic configuration of 2.8.5. This element has 15 protons, which is Phosphorus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(d) (ii)</strong> Explain in terms of electron transfer why Z behaves chemically as a non-metal.
+                    <span class="marks">[2]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>Element Z (Phosphorus) has 5 outer electrons. To achieve a stable, full outer shell, it is easier for it to <span class="keyword">gain three electrons</span> rather than lose five. Non-metals typically <span class="keyword">gain electrons</span> to form negative ions.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p><span class="keyword">Negative ions</span> are formed when atoms <span class="keyword">gain</span> one or more <span class="keyword">electrons</span>. This behaviour is characteristic of <span class="keyword">non-metals</span>, which are found on the right side of the Periodic Table.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Question 1 -->
+
+        <!-- Question 2 Block -->
+        <div class="question-block">
+            <div class="question-header">
+                <h2>Question 2</h2>
+                <p>Topics: Metallic Bonding, Ionic Bonding, Chemical Equations, Thermal Decomposition</p>
+            </div>
+            <div class="question-content">
+                <p>Magnesium is a metal.</p>
+
+                <div class="sub-question">
+                    <strong>(a)</strong> Name and describe the bonding in magnesium.
+                    <span class="marks">[4]</span>
+                    <p>name</p>
+                    <p>description of bonding</p>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p><strong>Name:</strong> <span class="keyword">Metallic bonding</span></p>
+                        <p><strong>Description:</strong> The bonding consists of a giant lattice of <span class="keyword">positive ions</span> (<i>$Mg^{2+}$</i>) which are held together by a <span class="keyword">'sea' of delocalised electrons</span>. There is a strong electrostatic <span class="keyword">attraction between</span> these positive ions and the negative electrons.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p><span class="keyword">Metallic bonding</span> is the strong <span class="keyword">electrostatic attraction</span> between <span class="keyword">positive metal ions</span> and the <span class="keyword">sea of delocalised electrons</span>. <span class="keyword">Delocalised electrons</span> are electrons which are not associated with any particular atom.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(b) (i)</strong> Magnesium oxide, <i>MgO</i>, is formed when magnesium burns in oxygen. Complete the dot-and-cross diagram to show the electron arrangement of the ions in magnesium oxide. The inner shells have been drawn. Give the charges on the ions.
+                    <span class="marks">[3]</span>
+                    <div class="placeholder"><img src="data:image/png;base64,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" alt="Space for Q2(b)(i) dot-and-cross diagram: Ions in Magnesium Oxide"></div>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>Magnesium, a <span class="keyword">metal</span>, loses its two outer shell electrons to form a <span class="keyword">positive ion</span> with a stable <span class="keyword">octet</span>. Oxygen, a <span class="keyword">non-metal</span>, gains these two electrons to form a <span class="keyword">negative ion</span> also with a stable <span class="keyword">octet</span>.
+                        <ul>
+                            <li>The magnesium ion should be drawn with its (now outer) shell containing <span class="keyword">eight dots</span> and enclosed in brackets with the charge <span class="keyword">2+</span>.</li>
+                            <li>The oxide ion should be drawn with its outer shell containing <span class="keyword">six crosses</span> (its original electrons) and <span class="keyword">two dots</span> (from magnesium), enclosed in brackets with the charge <span class="keyword">2-</span>.</li>
+                        </ul>
+                        </p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>An <span class="keyword">ionic bond</span> is the <span class="keyword">electrostatic force of attraction</span> between <span class="keyword">positive</span> and <span class="keyword">negative ions</span>. <span class="keyword">Positive ions</span> are formed by the <span class="keyword">loss of electrons</span> (usually by metals) and <span class="keyword">negative ions</span> are formed by the <span class="keyword">gain of electrons</span> (usually by non-metals). Each ion typically achieves a stable noble gas configuration.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(b) (ii)</strong> Write the chemical equation for the reaction that occurs when magnesium burns in oxygen.
+                    <span class="marks">[2]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p><i><span class="keyword">2Mg</span> + <span class="keyword">O₂</span> → <span class="keyword">2MgO</span></i></p>
+                        <p>(1 mark for correct species, 1 mark for correct <span class="keyword">balancing</span>).</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>In a <span class="keyword">symbol equation</span>, there must be the <span class="keyword">same number</span> of each type of <span class="keyword">atom</span> on each side of the equation. We use large numbers (coefficients) in front of formulas to <span class="keyword">balance</span> the equation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(c) (i)</strong> Magnesium oxide also forms when magnesium nitrate, <i>$Mg(NO₃)₂$</i>, is heated strongly. This is an endothermic reaction. Write the chemical equation for this reaction.
+                    <span class="marks">[2]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p><i><span class="keyword">2Mg(NO₃)₂</span> → <span class="keyword">2MgO</span> + <span class="keyword">4NO₂</span> + <span class="keyword">O₂</span></i></p>
+                        <p>(1 mark for correct product <span class="keyword">species</span>, 1 mark for correct <span class="keyword">balancing</span>).</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p><span class="keyword">Thermal decomposition</span> is the <span class="keyword">breakdown</span> of a substance into two or more different substances by <span class="keyword">heating</span>. Group II nitrates (like magnesium nitrate) typically decompose to form the metal oxide, nitrogen dioxide, and oxygen.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(c) (ii)</strong> What type of reaction is this?
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>This reaction is <span class="keyword">(thermal) decomposition</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p><span class="keyword">Thermal decomposition</span> is the <span class="keyword">breakdown</span> of a substance into two or more different substances by <span class="keyword">heating</span> strongly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(c) (iii)</strong> Name two other compounds of magnesium that form magnesium oxide when heated.
+                    <span class="marks">[2]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>1. <span class="keyword">Magnesium carbonate</span> (<i>$MgCO₃$</i>)<br>
+                        2. <span class="keyword">Magnesium hydroxide</span> (<i>$Mg(OH)₂$</i>)</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>Metal <span class="keyword">carbonates</span> and metal <span class="keyword">hydroxides</span> (except for Group I) are <span class="keyword">bases</span> that typically undergo <span class="keyword">thermal decomposition</span> when heated. Carbonates decompose to form the metal oxide and carbon dioxide. Hydroxides decompose to form the metal oxide and water.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Question 2 -->
+
+        <!-- Question 3 Block -->
+        <div class="question-block">
+            <div class="question-header">
+                <h2>Question 3</h2>
+                <p>Topics: Sulfuric Acid (Contact Process), Equilibrium, Rates, Organic Chemistry</p>
+            </div>
+            <div class="question-content">
+                <p>Sulfur dioxide, <i>$SO₂$</i>, is used in the manufacture of sulfuric acid.</p>
+                <div class="sub-question">
+                    <strong>(a)</strong> In the first stage of the process, sulfur dioxide is obtained from sulfur-containing ores. Name one of these ores.
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>A common sulfur-containing ore is <span class="keyword">zinc blende</span> (which is zinc sulfide, <i>$ZnS$</i>).</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>The <span class="keyword">Contact process</span> is used to make sulfuric acid. It uses <span class="keyword">sulfur dioxide</span>, <i>$SO₂$</i>, which can be obtained from <span class="keyword">burning sulfur</span> or by <span class="keyword">roasting sulfide ores</span> (like zinc blende or pyrites).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p><strong>(b)</strong> The next stage of the process is a reaction which can reach equilibrium. The equation for this stage is shown.</p>
+                <p style="text-align: center;"><i>$2SO₂(g) + O₂(g) \rightleftharpoons 2SO₃(g)$</i></p>
+
+                <div class="sub-question">
+                    <strong>(i)</strong> Describe two features of an equilibrium.
+                    <span class="marks">[2]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>1. The <span class="keyword">reaction is reversible</span>.<br>
+                        2. The <span class="keyword">rate of the forward reaction</span> is <span class="keyword">equal</span> to the <span class="keyword">rate of the reverse reaction</span>. (This also means the concentrations of reactants and products remain constant in a closed system).</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>An <span class="keyword">equilibrium reaction</span> is one where the <span class="keyword">reactants</span> are converted to the <span class="keyword">products</span> at the <span class="keyword">same rate</span> as the products are converted back to reactants. This can only take place in a <span class="keyword">closed system</span>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(ii)</strong> Name the catalyst used in this stage.
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>The catalyst is <span class="keyword">vanadium(V) oxide</span> (<i>$V₂O₅$</i>).</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>The conditions for the <span class="keyword">Contact process</span> (the reaction <i>$2SO₂(g) + O₂(g) \rightleftharpoons 2SO₃(g)$</i>) are 200 kPa pressure, 450 °C, and a <span class="keyword">vanadium(V) oxide</span> catalyst, <i>$V₂O₅$</i>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(iii)</strong> Why is a catalyst used?
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>A catalyst is used to <span class="keyword">increase the rate of reaction</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>A <span class="keyword">catalyst</span> is a substance which <span class="keyword">increases the rate</span> of a chemical reaction but is <span class="keyword">not used up</span> in the reaction. It does this by <span class="keyword">lowering the activation energy</span>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(iv)</strong> Explain, in terms of particles, why a high temperature increases the rate of this reaction.
+                    <span class="marks">[3]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>At a higher temperature, the <span class="keyword">particles have more kinetic energy</span> and move faster. This leads to two effects:
+                        <ol>
+                            <li>The <span class="keyword">frequency of collisions increases</span> (particles collide more often).</li>
+                            <li>A <span class="keyword">higher proportion of</span> these <span class="keyword">collisions</span> will have <span class="keyword">energy greater than</span> the <span class="keyword">activation energy (E > Eₐ)</span>, leading to more successful collisions.</li>
+                        </ol>
+                        </p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>Increasing the <span class="keyword">temperature</span> increases the <span class="keyword">rate of reaction</span> because particles have more <span class="keyword">kinetic energy</span>. This results in an increased <span class="keyword">frequency of collisions</span>, and more importantly, more of the colliding particles have <span class="keyword">energy above the activation energy</span>, leading to more <span class="keyword">effective collisions</span>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(v)</strong> In this stage, only a moderate temperature of 450 °C is used. What does this suggest about the forward reaction?
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>This suggests the forward reaction is <span class="keyword">exothermic</span>. A high temperature would increase the rate but decrease the equilibrium yield, so a moderate (compromise) temperature is used.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>For an <span class="keyword">exothermic reaction</span> (where $\Delta H$ is negative), an <span class="keyword">increase in temperature</span> moves the position of equilibrium in the direction of the <span class="keyword">reactants</span> (to the left), decreasing the yield. A <span class="keyword">compromise temperature</span> is often used to get a fast enough rate and an acceptable yield.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(vi)</strong> Calculate the percentage by mass of sulfur in sulfur trioxide, <i>$SO₃$</i>.
+                    <span class="marks">[2]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>1. Find the relative formula mass (<i>$M_r$</i>) of <i>$SO₃$</i>:<br>
+                        <i>$M_r$</i>(<i>$SO₃$</i>) = <i>$A_r$</i>(S) + 3 x <i>$A_r$</i>(O) = 32 + (3 x 16) = <span class="keyword">80</span>.<br>
+                        2. Calculate the percentage by mass of sulfur:<br>
+                        % S = (Mass of S / <i>$M_r$</i> of <i>$SO₃$</i>) x 100 = (<span class="keyword">32 / 80</span>) x 100 = <span class="keyword">40%</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p><span class="keyword">Percentage composition by mass</span> = $\frac{\text{mass of a particular element in a mole of a compound}}{\text{mass of one mole of the compound}} \times 100$. You must sum the relative atomic masses (<i>$A_r$</i>) to find the relative formula mass (<i>$M_r$</i>) first.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(c)</strong> Concentrated sulfuric acid is a dehydrating agent which can chemically remove water from substances. Both hydrated copper(II) sulfate crystals and sucrose (a sugar), <i>$C₁₂H₂₂O₁₁$</i>, can be completely dehydrated by concentrated sulfuric acid. Name the solid product formed in each case.
+                    <span class="marks">[2]</span>
+                    <p>hydrated copper(II) sulfate crystals</p>
+                    <p>sucrose</p>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>hydrated copper(II) sulfate crystals: <span class="keyword">anhydrous copper(II) sulfate</span><br>
+                        sucrose: <span class="keyword">carbon</span></p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>A <span class="keyword">hydrated</span> solid contains <span class="keyword">water of crystallisation</span>, which can be removed to form the <span class="keyword">anhydrous</span> solid (e.g., blue <i>$CuSO₄ \cdot 5H₂O$</i> becomes white <i>$CuSO₄$</i>). When dehydrating carbohydrates like sucrose (<i>$C₁₂H₂₂O₁₁$</i>), the elements of water (H and O) are removed, leaving behind black <span class="keyword">carbon</span>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(d)</strong> When propan-1-ol is heated with concentrated sulfuric acid as a catalyst an unsaturated hydrocarbon of relative molecular mass 42 is formed and one other product.
+                    <p><strong>(i)</strong> What is meant by the term unsaturated? <span class="marks">[1]</span></p>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>Unsaturated means the hydrocarbon contains <span class="keyword">at least one C=C double bond</span> (or C≡C triple bond); it does <span class="keyword">not all</span> contain <span class="keyword">single C-C bonds</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p><span class="keyword">Unsaturated compounds</span> contain <span class="keyword">C=C double bonds</span> or <span class="keyword">C≡C triple bonds</span>. <span class="keyword">Alkenes</span> are unsaturated hydrocarbons because they have one or more C=C double bonds.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <p><strong>(ii)</strong> Write the chemical equation for this reaction. <span class="marks">[2]</span></p>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>Propan-1-ol (<i>$C₃H₇OH$</i>) dehydrates to form an alkene (<i>$C₃H₆$</i>) and water. The <i>$M_r$</i> of <i>$C₃H₆$</i> = (3 x 12) + (6 x 1) = 36 + 6 = 42, which matches the question.<br>
+                        <i><span class="keyword">C₃H₇OH</span> → <span class="keyword">C₃H₆</span> + <span class="keyword">H₂O</span></i></p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>The <span class="keyword">dehydration</span> of an alcohol (e.g., propanol) is the reverse of the <span class="keyword">hydration</span> of an alkene (e.g., propene). This reaction is an <span class="keyword">elimination reaction</span>, where a small molecule (water) is removed from a larger molecule.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <p><strong>(iii)</strong> Name the unsaturated hydrocarbon formed. <span class="marks">[1]</span></p>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>The hydrocarbon <i>$C₃H₆$</i> is <span class="keyword">propene</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>Organic compounds are named based on the number of carbon atoms: <span class="keyword">meth- (1C)</span>, <span class="keyword">eth- (2C)</span>, <span class="keyword">prop- (3C)</span>, <span class="keyword">but- (4C)</span>. An <span class="keyword">alkene</span> (unsaturated hydrocarbon with a C=C bond) has the ending <span class="keyword">-ene</span>. Therefore, a 3-carbon alkene is <span class="keyword">propene</span>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Question 3 -->
+
+        <!-- Question 4 Block -->
+        <div class="question-block">
+            <div class="question-header">
+                <h2>Question 4</h2>
+                <p>Topics: Acids and Bases, Titrations, Salts</p>
+            </div>
+            <div class="question-content">
+                <p>This question is about reactions of bases and acids.</p>
+                <div class="sub-question">
+                    <strong>(a)</strong> Ammonia is a gas at room temperature. What is the test for ammonia gas? Describe the positive result of this test.
+                    <span class="marks">[2]</span>
+                    <p>test</p>
+                    <p>result</p>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p><strong>Test:</strong> Place <span class="keyword">damp red litmus paper</span> in the gas.<br>
+                        <strong>Result:</strong> The litmus paper <span class="keyword">turns blue</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p><span class="keyword">Ammonia</span> (<i>$NH₃$</i>) is an alkaline gas. It <span class="keyword">turns damp red litmus paper blue</span>. The litmus paper must be damp so the ammonia gas can dissolve and form hydroxide ions (<i>$OH⁻$</i>).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(b)</strong> Ammonia reacts with water to form ions.
+                    <p style="text-align: center;"><i>$NH₃ + H₂O \rightleftharpoons NH₄⁺ + OH⁻$</i></p>
+                    <p><strong>(i)</strong> How does this equation show that ammonia, <i>$NH₃$</i>, behaves as a base? <span class="marks">[1]</span></p>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>It acts as a base because it <span class="keyword">accepts a proton</span> (H⁺) from the water molecule to form the ammonium ion (<i>$NH₄⁺$</i>).</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>An <span class="keyword">acid</span> is a <span class="keyword">proton (H⁺) donor</span>. A <span class="keyword">base</span> is a <span class="keyword">proton (H⁺) acceptor</span>. In this equilibrium, the <i>$H₂O$</i> donates a proton, so it acts as an acid, and the <i>$NH₃$</i> accepts it, so it acts as a base.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(b) (ii)</strong> Aqueous ammonia is described as a weak base. Suggest the pH of aqueous ammonia.
+                    <span class="marks">[1]</span>
+                    <p>pH =</p>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>pH = <span class="keyword">9</span> (Any pH from <span class="keyword">8-11</span> is acceptable). A strong base would be pH 13-14.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p><span class="keyword">Weak acids</span> and <span class="keyword">weak bases</span> are only <span class="keyword">partially dissociated</span> (ionised) in aqueous solution, resulting in a lower concentration of H⁺ (for weak acids) or OH⁻ (for weak bases) compared to a strong acid/base of the same concentration. This means a weak base has a pH <span class="keyword">above 7</span> but lower than a strong base (e.g., pH 9-11 instead of 13-14).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(b) (iii)</strong> Describe what is seen when aqueous ammonia is added to aqueous copper(II) sulfate, until no further change is seen.
+                    <span class="marks">[3]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>First, a <span class="keyword">light blue precipitate</span> (of copper(II) hydroxide) is formed.<br>
+                        Then, as <span class="keyword">excess</span> ammonia is added, this <span class="keyword">precipitate dissolves</span>.<br>
+                        This forms a <span class="keyword">deep blue solution</span> (or dark blue solution).</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>Ions of <span class="keyword">copper(II)</span>, <i>$Cu^{2+}$</i>, give <span class="keyword">coloured precipitates</span> with aqueous ammonia (or sodium hydroxide). A key test is that the light blue precipitate of copper(II) hydroxide <span class="keyword">dissolves in excess aqueous ammonia</span> to form a <span class="keyword">deep blue solution</span>, but it does not dissolve in excess sodium hydroxide.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(c) (i)</strong> Aqueous sodium hydroxide, <i>$NaOH(aq)$</i>, is a strong alkali that reacts with dilute sulfuric acid exothermically. What type of reaction is this?
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>This is a <span class="keyword">neutralisation</span> reaction.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>A <span class="keyword">neutralisation reaction</span> occurs between an <span class="keyword">acid</span> and a <span class="keyword">base</span>. <span class="keyword">Bases</span> are substances which react with acids to produce a <span class="keyword">salt</span> and <span class="keyword">water</span>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(c) (ii)</strong> Complete the equation for the reaction between aqueous sodium hydroxide and dilute sulfuric acid.
+                    <span class="marks">[2]</span>
+                    <p><i>$2NaOH + H₂SO₄ →$</i></p>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p><i>$2NaOH + H₂SO₄ → <span class="keyword">Na₂SO₄</span> + <span class="keyword">2H₂O</span>$</i></p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>Acids react with <span class="keyword">metal hydroxides</span> (which are bases) to produce a <span class="keyword">salt</span> and <span class="keyword">water</span>. The salt formed here is sodium sulfate. Remember to balance the equation: 2 $Na$ atoms and (2+4)=6 $O$ atoms and (2+2)=4 $H$ atoms on both sides.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(d) (i)</strong> A student wanted to find the concentration of some dilute sulfuric acid by titration. The student found that 25.0 cm³ of 0.0400 mol/dm³ <i>$NaOH(aq)$</i> reacted exactly with 20.0 cm³ of <i>$H₂SO₄(aq)$</i>. Name a suitable indicator to use in this titration.
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>A suitable indicator would be <span class="keyword">methyl orange</span> (or thymolphthalein).</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>An <span class="keyword">acid-base indicator</span> is a substance that changes colour at the <span class="keyword">end point</span> of a titration. For a strong acid (<i>$H₂SO₄$</i>) and strong base (<i>$NaOH$</i>) titration, both <span class="keyword">methyl orange</span> (red in acid, yellow in alkali) and <span class="keyword">thymolphthalein</span> (colourless in acid, blue in alkali) are suitable.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(d) (ii)</strong> Calculate the concentration of the <i>$H₂SO₄(aq)$</i> in mol/dm³ using the following steps.
+                    <span class="marks">[3]</span>
+                    <ul>
+                        <li>Calculate the number of moles of NaOH in 25.0 cm³.</li>
+                        <li>Deduce the number of moles of <i>$H₂SO₄$</i> that reacted with the 25.0 cm³ of <i>$NaOH(aq)$</i>.</li>
+                        <li>Calculate the concentration of <i>$H₂SO₄(aq)$</i> in mol/dm³.</li>
+                    </ul>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p><strong>Step 1: Moles of <i>NaOH</i></strong><br>
+                        Volume = 25.0 cm³ = 0.0250 dm³<br>
+                        Moles = Concentration x Volume<br>
+                        Moles = 0.0400 mol/dm³ x 0.0250 dm³ = <span class="keyword">0.00100 mol</span></p>
+                        
+                        <p><strong>Step 2: Moles of <i>$H₂SO₄$</i></strong><br>
+                        From the equation <i>$2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O$</i>, the mole ratio is <span class="keyword">2 : 1</span>.<br>
+                        Moles <i>$H₂SO₄$</i> = Moles <i>NaOH</i> / 2<br>
+                        Moles <i>$H₂SO₄$</i> = 0.00100 / 2 = <span class="keyword">0.000500 mol</span></p>
+                        
+                        <p><strong>Step 3: Concentration of <i>$H₂SO₄$</i></strong><br>
+                        Volume = 20.0 cm³ = 0.0200 dm³<br>
+                        Concentration = Moles / Volume<br>
+                        Concentration = 0.000500 mol / 0.0200 dm³ = <span class="keyword">0.0250 mol/dm³</span></p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>To find the concentration of an unknown solution by <span class="keyword">titration</span>:
+                            <ol>
+                                <li>Calculate the <span class="keyword">moles</span> of the known solution (moles = conc. x vol in dm³).</li>
+                                <li>Use the <span class="keyword">mole ratio</span> from the balanced chemical equation to find the moles of the unknown solution.</li>
+                                <li>Calculate the <span class="keyword">concentration</span> of the unknown solution (conc. = moles / vol in dm³).</li>
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(d) (iii)</strong> Calculate the concentration of the 0.0400 mol/dm³ <i>$NaOH(aq)$</i> in g/dm³.
+                    <span class="marks">[2]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>1. Find the relative formula mass (<i>$M_r$</i>) of <i>NaOH</i>:<br>
+                        <i>$M_r$</i>(<i>NaOH</i>) = <i>$A_r$</i>(Na) + <i>$A_r$</i>(O) + <i>$A_r$</i>(H) = 23 + 16 + 1 = <span class="keyword">40 g/mol</span>.<br>
+                        2. Convert concentration (mol/dm³) to (g/dm³):<br>
+                        Conc (g/dm³) = Conc (mol/dm³) x <i>$M_r$</i><br>
+                        Conc (g/dm³) = <span class="keyword">0.0400 x 40</span> = <span class="keyword">1.6 g/dm³</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>Concentration can be measured in <span class="keyword">g/dm³</span> or <span class="keyword">mol/dm³</span>. To convert between them, use the formula: $\text{mass} = \text{moles} \times M_r$. Therefore, $\text{g/dm³} = \text{mol/dm³} \times M_r$ (relative formula mass).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Question 4 -->
+
+        <!-- Question 5 Block -->
+        <div class="question-block">
+            <div class="question-header">
+                <h2>Question 5</h2>
+                <p>Topics: Organic Chemistry, Alcohols, Aldehydes, Isomers</p>
+            </div>
+            <div class="question-content">
+                <p>Ethanol is manufactured by two different processes.</p>
+                <div class="sub-question">
+                    <strong>(a)</strong> For each process, name the organic reactant and state the type of reaction.
+                    <span class="marks">[4]</span>
+                    <p><strong>Process 1:</strong><br>
+                    organic reactant<br>
+                    type of reaction</p>
+                    <p><strong>Process 2:</strong><br>
+                    organic reactant<br>
+                    type of reaction</p>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p><strong>Process 1:</strong><br>
+                        Organic reactant: <span class="keyword">Sugar(s)</span> (or glucose)<br>
+                        Type of reaction: <span class="keyword">Fermentation</span></p>
+                        <p><strong>Process 2:</strong><br>
+                        Organic reactant: <span class="keyword">Ethene</span><br>
+                        Type of reaction: <span class="keyword">Hydration</span> (or addition)</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>Ethanol can be manufactured by:
+                            <ol>
+                                <li><span class="keyword">Fermentation</span> of <span class="keyword">glucose</span> (sugar) using yeast at 25-35°C in the absence of air.</li>
+                                <li>Catalytic <span class="keyword">addition</span> of <span class="keyword">steam</span> (hydration) to <span class="keyword">ethene</span> at 300°C and 6000 kPa pressure with an acid catalyst.</li>
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(b)</strong> Alcohols can be oxidised to form carboxylic acids. Name a suitable oxidising agent for this reaction.
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>A suitable oxidising agent is <span class="keyword">(acidified) potassium manganate(VII)</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>The <span class="keyword">oxidation</span> of <span class="keyword">ethanol</span> produces <span class="keyword">ethanoic acid</span>. This can be achieved by heating with <span class="keyword">acidified aqueous potassium manganate(VII)</span> (which turns from purple to colourless) or by <span class="keyword">bacterial oxidation</span> (used to make vinegar).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(c)</strong> Alcohols can be partially oxidised to form aldehydes. Aldehydes are a homologous series of organic compounds. Partial oxidation is achieved by reacting an alcohol with the oxidising agent in distillation apparatus as shown.
+                    <div class="placeholder"><img src="data:image/png;base64,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" alt="Space for Q5(c) diagram: Distillation apparatus"></div>
+                    <p><strong>(i)</strong> Name apparatus A. <span class="marks">[1]</span></p>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>Apparatus A is a (Liebig) <span class="keyword">condenser</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p><span class="keyword">Distillation</span> is a process used to separate liquids with different boiling points, or a solvent from a solute. It involves <span class="keyword">boiling</span> the liquid in a flask and then <span class="keyword">condensing</span> the vapour back into a liquid using a <span class="keyword">condenser</span>, which is collected as the distillate.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <p><strong>(c) (ii)</strong> On the diagram, use one arrow to show where water enters apparatus A. <span class="marks">[1]</span></p>
+                    <div class="placeholder"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA6kAAAG9CAYAAAD3BzAXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAFmNSURBVHhe7d1/dFzlfe/7D713dd1Topm2OaEJ+oFduOdUQrKBNEgggaFBSi3HlIVELNlKbYtiywWEiH+oMca5GMensk0RJo5lU2S7MbaIJU6KazmRILFBwiN6EoJHnklaio00SnJJIMyoTs4669zO/UPamz1bM/oxHo32zLxfa2lFep5nz+zZoxh95vs8z74iHA6HBQAAAACAA/yOvQEAAAAAgLlCSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjXBEOh8P2RgBIhFAopN6eHo0EApKkLJdL5RUVysnJsQ8FAAAAJEIqgNni9/m0fFmNRkdH7V1q2b1LVdXV9mYAAACA6b4AEm+ygCpJzRs2qquz094MAAAAEFIBJN4zT7eaAbX2L1fqh2+/rXcuXtCWbdvNMduf2GY5AgAAABhDSAWQcK/09kqSFt1Vrie3/T/6qwfW6HOf/VP92Z2L1LTpbyRJo6OjGvB4bEcCAAAg0xFSASSUNXjeeNNnJUlvvTmgeddep5/97Of608/eZPYHxjdUAgAAAAyEVABJ4XK57E3mrr8AAACAgZAKAAAAAHAMQioAAAAAwDEIqQAAAAAAxyCkAgAAAAAcg5AKAAAAAHAMQioAAAAAwDEIqQAAAAAAxyCkAgAAAAAcg5AKAAAAAHAMQioAAAAAwDEIqQAAAAAAxyCkAgAAAAAcg5AKAAAAAHAMQioAAAAAwDEIqQAAAAAAxyCkAgAAAAAcg5AKAAAAAHAMQioAAAAAwDEIqQAAAAAAxyCkAgAAAAAcg5AKAAAAAHAMQioAAAAAwDEIqQAAAAAAxyCkAgAAAAAcg5AKAAAAAHAMQioAAAAAwDEIqQAAAAAAxyCkAgAAAAAcg5AKAAAAAHAMQioAAAAAwDEIqQAAAAAAxyCkAgAAAAAcg5AKAAAAAHAMQioAAAAAwDEIqQAAAAAAxyCkAgAAAAAcg5AKAHNo0OvVoNcb0dbf16/r5s3XdfPmR7TDmaK9hwAAIH6EVACYI7taWnTP0rsVDIbsXUgRvIcAACQeIRUA5sj+fW32JqQY3kMAABKPkAoAAAAAcAxCKgCkgEGvV/19/erv61cwGLR3R2U9ZiZrJoeHhqY8ZqrzMfr6+/rtXVHFe65y2LnEEu9jTue9AAAg7YQBIIE8Z8+Gr71mXvjaa+aFn93bFg6Hw+Frr5kXrr//gfBZz5vhs543zf5nnn7afnhGaPvmPvMaWL/avrkvHA6Hw32v95lt3nPnwn/xxaUTxu78278Nf/TRR/aHDofD4XD3P50M33Hb7ROOueO228N9r/fZh5vP95crVoSPvXB0wvNY+73nzk147JsWLAwfe+FoOBwOh4+9cDR804KFE57Xe+6c/WnD4SnOtfufTtqHz9m52K/bVO+hYSaPGZ7GewEAQCagkgoASeZ2u1VaVmr+XFhUpNKyUrnd7ohxkrSy7ssa9Hq1eEmlNjY3q7CoSBpfC7mrpcU+XB1Hj+nhBx/U8NCQCouKtLG52TxueGhIK+vqdOpkt/0wSdLQ0LC2bN4c0VZYOPZ8Rv/Kui8rFAxq8ZJKrV3XoNy8PAWDQe1qadH+fW3asnmzXG631q5rUM3yWmm8Gvjwgw9ZHnXM/n1tUc81Ny9v/JgH1XH0mP0waRbOZabXbTrv4Uwf02qq9wIAgLRmT60AcDmopE6fcR3sFTVrJfUvvrg0PPTeexH91iqetZo69N57Zru9ohe2HHfTgoURx8V6PuO87P3WYz/66KOIauVjX/2q2Wc/1vo6re1G5dPqsa9+1ey3vv7ZOJd4r1t4kvcw3se0vz77ewEAQCagkgoADmZUFq2MqqAkDXoHze/3t43tNFtaVqq16xrMdsPadQ0qLCpSMBiMWaFc2zBWkdT449itbWiIqBa63W7dOj7O7XZr+44dltFjj2E83vDQkNneceyo2W99PYbtO3Z8XDUef112iTqXRFw3u0Q85lTvBQAA6YqQCgAOFi2cRJsWLEtgvbW0zN5lWlxZKUl6o7/P3iVJWrxkrD+WaP3GNNTCokJ7lyQpLy9XkiI2NXpjfBOjmtrlZpudca6xNjxK1Lkk4rrZJeIxo70+AAAyASEVANKEsQPsqe5urayri/rVcWysametwCZbMBg0Q6IrRuDW+DpP2aqes2E2rttsPCYAAJmCkAoACTbg8Wj7tm3y+3z2rqSw3u7E/mUEvmi3aolWtZ0N1lCWrOecjniv22TifUwnXRcAAJKNkAoAlykUCqmrs1Ob1m/QjUULtKKmVgNnPQoEAvahSXH4yBG9c/HClF9zxRrA+mNM5Z0Ls3HdZuMxAQBId4RUAIhDIBDQwfZ2LV9Wo5sWLFTzho0KhUJqfLRJp/te14lT3SqvqLAfNquMTXaMqabRDA8Nzfr02ekw1tWGolQRDcbrsG8clWizcd1m4zEBAMgUhFQAmCZjGu+i0jLdUXab9jzdqpycHO07sF8/Ove22p47oNX19crJybEfmhRGhdJY6xjNls2bdefti7Syrs7elVTGLrzGLr/RGK9jtqe+zsZ1m43HBAAgUxBSASCGWNN4y79QoRPdJ/WW95x2PrVb5RUVcrlc9sOnbbJq20wYt2QZHhrSls2b7d3av6/NnF67pmGdvTupjF19+/v6taulxd6tLZs3m1XGtQ0Tb+GSSIm4bvb3MBGPCQBApiKkAoDFdKbxbtm6VfkFBfZDZ8yotu1qadF18+Zr/77o9wOdrty8PG1sbpYkdRw9pjtvX6RdLS3av69N9yy92wyDNctrZ706OZXSslLzPqb797XpztsXaf++Nu1qadGdty8y7x26fceOpEz3jfe6xXoPL+cxAQDIdIRUABnP7/Np+7ZtWrq4MqnTeDc2N0cEsFj3y5yJmuW1OnzkiErLSjU8NGQGv0Gv1wxORjicazXLa/Xs3r3KzcvT8NCQGeKGh4ZUWlaqw0eOqGZ5rf2wWRHvdZvsPYz3MQEAyHRXhMPhsL0RAOI14PFoRc1YsGja9Dd66K/X6rp587XornI98MADkqS6ZV+SJDU2PaLGpqaI45MhFAppwONR7/d61NvTo9HRUeXn56v4lhJVVVcnpEo6E8NDQwoGg+Z9QRMlGAyat3txu10Jf/xEGh4a0tDQsCSpsKjQ3FhpLsRz3aZ6D+N5TAAAMhUhFUBCOTWkBgIB9fb0aOCsR6/09kqS7iovV/EtJSqvqEh4lRQAAADxYbovgLQVbRqvy+VSy+5dszqNFwAAAPEjpAJIG6FQSL09PeZuvEsrl6j3ez0qvqVEL3QcM3fjraquvqzdeAEAADB7CKkAUpqxG2/DA2t004KFWrdmrQKBgLkb75n+Pm3ZulXFJSX2QwEAAOBAhFQAKWeqabxHX+xgGi8AAECKIqQCSAlM4wUAAMgMhFQAjhQIBNTV2amGB9bounnzmcYLAACQIQipABzD7/NpT2urOY13+xPbmMYLAACQYQipAOaUMY13UWmZllYuUdfxTqbxAgAAZDBCKoA5s6f1Ga1bs1Z+n0+r7q/Xie6TTOMFAADIcIRUAHPmrvJy/ejc2zpxqlur6+uVX1BgHwIAAIAMQ0gFMGcKri9gGi8AAAAiEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAEnxrz/9qb0JAAAAmICQCiApfjY8pF/+6gN7MwAAABCBkAogaT71nz9pbwIAAAAiEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOAYhFQAAAADgGIRUAAAAAIBjEFIBAAAAAI5BSAUAAAAAOMYV4XA4bG8EgMn09vTI7/PZmyVJgeGAXurqkiQ1bfobPfTXa3XdvPmSpCMvfluSVLfsS5Kkm4uLVXJLieXoj2Xn5KiqutreDAAAgDRHSAUwY3taW7Wn9Rl78wRThdTJ3FxcrKMvdtibAQAAkOaY7gtgxrJcLnsTAAAAkBBUUgFMW1dnp3JyciRJK2pqJUkPr9+oP54/VimVpHcvXNCzT+2SplFJ/YvqL+mOO+4wj5WkRx/6a0lSY9MjynK5VF5RYT4nAAAA0h+VVADT1nW8UytqavXmwJtm29B770WMSZQzp8/o69ue1IDHY+8CAABAGiOkApg2Y7OkZ55+2t6VED//xS/M79/+8Y8lSQNnCakAAACZhJAKYNq2fG2r+f0VV1whSfq3d/7VMuLy/Pa3v7U3qeo+dvgFAADIJIRUANNWVV2tlt1j602N5ez/33/8h21U4qyqX63ikui3qAEAAEB6IqQCmJGq6mqtql9t/uw/93ZE/+X44Fe/Mr//T7/3e2psaoroBwC74aGhiC8AQOojpAKYscamJmVlZdmbL9s7//ov5vfLapbJxa1uAEyiv69fd96+KOKLoAoAqY+QCmDGXC6XbrjxRvNnT4J24P3Nb35jfk8VFcBUOo4dtTep49gxexMAIMUQUgHE5VOf+pS96bL97//9v83vqaICmEwwGNQbff32ZnWf7FYwGLQ3AwBSCCEVQFxc7o9D5M9//rOIvnj9+oMP7E0AEFXH0WNRw+jw0FDU8AoASB2EVABxodIJYC6d6u42v8/Ny5Pb7TZ/jjYNGACQOgipAC6b98dv6fTp0zp9+rTe/vFb9u6Y/u2dfzWPO336tP7930ftQwBggkGvV4Ner/lzTW2tbi0rNX/u7+tnAyUASGGEVACX7dcffKB/7Py2/rHz23rt1Vfs3TEN/vgt87h/7Py2Lo0SUgFMzb45UuWSStXULo9os48BAKQOQioAAEgZwWBQp05+PNW3tKxUuXl55v8aOo4SUgEgVRFSAVy2FzqO6Z2LF/TOxQt6oWP6fxg2Nj1iHvfOxQtqbHrEPgQAIpyy7d67uHKJ+X3lkkrze3uYBQCkDkIqAABIGae6T5rfu91uLbYE05raWvN7sYESAKQsQioAAEgJw0ND6rfcXqawqFDDQ0PmRkrBYFCFRUVmPxsoAUBqIqQCAICUYN8Mqb+vX/csvTviy7rrr6IcAwBwPkIqAABICfFshhTPMQCAuUVIBQAAjmffMMntdis3Ly/ql9vtNsexgRIApB5CKgAAcDz7JkiHj3xLP3jtTNSvPXv3Roy1HwsAcDZCKgAAcLSJGyYVRWyQZFdaVsoGSgCQwgipAADA0bpt03UXV35825lY7GPYQAkAUgchFQAAOJo9YFZa7o0ai30MGygBQOogpAIAAEf7B9v609y8PPuQCXLz8iKO+c6Jl+1DAAAORUgFAACOZt+9d7riPQ4AMLcIqQASyuVy2Ztiyi8osDcBAAAgwxFSAcSluKTE3iTZgudbP/phRJ8knT7zmvn9TALtXAiFQgqFQubPe1pbtae1VQfb2yPGAQAAIHEIqQAS7t6qKknSmVd6dffd95jtT27bpr//5jckSdnZ2ROCbpYltPb29ET0zYVD7e26acFCLV1cqU3rN6jreKf2tD6jr297UntaW+3DAQAAkACEVAAJ1/hok7KysiRJvnNvm+0/PT9ofr/zqd3m94byigrz+03rN6irszOikplsvvM+SZLf79dLXV0aGRkx+/a0PqM9ra3y+8bGAAAAIDGuCIfDYXsjAExlwOPRippaSdILHccmVEX9Pp+WVi6JaDM8un69Hnz4IXuzJGn7tm061H4woi0/P1/5BQUqvqVExSUlysnJieifLTcWLdDo6Ki9eYJPfOITKrnlFhXfUqKCgoIJ1wLA5QuFQo5fIgAASAxCKoC4TBVSrf120cZbRQuqVsZU4fzrC1RSUjIrGzBZQ/aiu8p1fWGRfvHzn+uDD36lwPCw/u2nP7EfEuHm4mKVjIfqyV4rgKkFAgHdUXbblP92AADSAyEVQFxmM6RqvGrS29Mjv8+ngbMe+f1++xBTVlbWWBhMYCXzYHu7vr7tSUlS7V+u1B99+jP2Ifp/f/Fz/exnP5tWaP2T/PyI0EpFCJi+Tes3aMDj0Zn+PnsXACANEVIBxGW2Q6pdKBTSgMejAY9HvvM+vTkwYB8S4XIrmZvWb9BLXV2SpKZNf2PvjurDDz/UL34+Flrf/dd/0f/87W/tQ0xzNYUZSDVGFbVl9y5VVVfbuwEAaYiQCiAuyQ6p0Rih1XPWM2Vozc/PNwPhdCqZi0rLNDIyoqtz8/Sl2uX27mn58MMP9eEHv9LIyIgu/ts7+vUHH9iHmJIxhRlIRVRRASDzEFIBxMUJIdXO7/PJ4/Fo4OxYeJ1s06PJKplG5UaSSm67XSW33Go5Mj5v/eiHOvNKrzR+ix6/z5f0KcxAqqGKCgCZiZAKIC5ODKl2fp9PvvE1rQMeT8QtZOyslUxJ5nrUe5fVKu+aa2yjZ+7EP35H//bTnygrK0tvec9JczCFGUg1VFEBIDMRUgHEJRVCql0gENCAxzOtzZgMi+4q19VXXx1146SZaN35t5Kku8rL1fbcAXu3aTanMAOpxPg3ZK7+vQAAzB1CKoC4pGJItZtpJfPa//onysnNnXFo/fDDD/UPfz8WTB/b+rhW19fbh8SUqCnMQKpZvqxGknT0xQ57FwAgzRFSAcQlHUJqNDOpZF6dm6e8efN09dXZ+vRnPqPf/d3ftQ+RJPnOD6rn5D9JCXjt8U5hZjMmpBKqqACQ2QipAOKSriHVbiaVzKtz8/RHn/mMsrOz9enPXK1PfOITkqSe756S79zbkqR3Ll6wHXV5ZjKFOdM3Y/L7fOrt6TGnR8O5qKICQGYjpAKIS6aEVLuZVDL/4JOf1Lxrr5Pfe07/87e/1c3FxbP+R/dMpzAbmzGVV1SkfaV1+7ZtOtR+UJJ0uu91pkM7FFVUAAAhFUBcpgqpfp9PSyuXRLQZoo1PVTOpZDY2PaLGpiZ786yb7hTm/Px8rbq/Pm1v9bF0caX8fr+ys7Nj7ha7fdu2sSnSBQWE2DlCFRUAQEgFEJepQqok3Vi0IOr02BPdJyet2g14PNr+xDYz8KXSNNXJKpmxrlOyTTWFOTs7W42PNqVdWL1u3nxp/D61O5/abe+O+J2e6QZXSAyqqAAAEVIBxGs6IbWrs1PNGzZGtMUKCIZox0STSvcMNULrXFRRp8Pv8+ng8+3q7emJCKw3Fxdr51O706KiaP19bdm9K2oAP9jebt4fd6oPUjA7qKICAERIBRCv6YRUSert6VHX8U6FQiFV3VcdNRwYQqGQFpWWmUHp3qoq5eTmTDlNVdwzNCFCoZAOtbfr4PPt5nuQlZWltucOxHx/U8We1lbtaX1GmiSANjywRq/09kqzsMEVpmZ8QBXr/QEAZA5CKoC4TDekzoS1ihptuuVU01StuGdo/AKBgDat3xDxwUCs6mOqWL6sRm8ODCgrK0tvec/ZuyXL9PRkbHCFiRaVlqm4pGTSmRYAgMzwO/YGAJgrI4GA+X20QJRfUKDV9fVqe+6A3vKe04nuk2rZvUv3VlUpOzs7Yqzf79dLXV1q3rBRd5TdpkWlZdq0foMOtrfL7/NFjEWknJwcHX2xQ41Nj5htzRs2qquzM2JcKjHe81gfpgQCAfNDj5Jboo/B7Onq7NTIyIgaH3XmlHgAQHIRUgE40nSm6+YXFKiqulo7n9qtM/19Ot33ulp279Kq+tXKz8+PGDsyMqKXurr09W1PamnlEt1YtEAND6zRwfZ2DXg8EWMxprGpSS27d5k/p2pQ9ft8ZgAtuD76NFLr70CsIIvZs+fp1rHp/cx4AAAQUgGkk5ycHFVVV2vL1q06capbPzr3tvYd2K9V9at1c3FxxNjR0VG90turr297UitqanXdvPlavqxGe1pbCa0WVdXVE4Jqb09PxBin80wjgA6c/XgM6yGTiyoqAMCOkAogbblcLpVXVGjL1q06+mKH3rl4QS90HFNj0yMTQqskvTkwoD2tz5ihdeniSm3ftk29PT0KhUL24RnDHlQ3rd+QUlOm/ec/PteYIXU8yObn50+rio/EoYoKALAjpALIKMUlJWpsajJD64nuk3ps6+P2YdL4utZD7Qe1bs1a3bRgoRlauzo7FbCsn80EVdXV5nUaHR3V8mU1KRNUjQAa7YMJje9qPDIyIkkqZj1qUlFFBQBEw+6+AOIyG7v7Wm8TksxbgAQCAd1Rdpsk6cabi5Wdna2RkRFd/Ld39OsPPrAPN2VnZ4/d8uaWEhUUFGTENNFN6zfopa4uafz2NDuf2q3yigr7sLiEQiH5fT75fD6NhkLyWKbgWhVcXyCXy6XsnBzl5ORM+rtnfW9X1a/Wlq1b7UPU29OjdWvWSmmwi3EqCYVCWrq4kh19AQATEFIBxCWdQqr11jf3LqtV3jXXmH3//u//rl/8/Gf61a9+paGLF/Wz4SHLkZGysrLM0FpSUpK2odUaVCWpsekRNTbFVwkLBALq7enRS8c75ff77d3TFuuWQ9b3dt+B/VED9fZt23So/aAk6XTf60w7TZI9ra06+Hy7zvT3McUaABCBkAogLukUUq2h66+bvqLf/d3ftQ8x/a//9b/0i5//XD/72Yh++f77+ref/sQ+JMLlBDgnO9jerq9ve9L8OT8/X1u+tnXavwddnZ3qOt4ZcS9Wu6ysrAlBfyQQMKfmTsaocgcCAfM5fnTu7ahhyLiHanZ2ts7099m7MQtCoZAWlZZp9f31afn/DwDA5SGkAohLOoXURaVlGhkZ0dW5efpS7XJ795T+31/8XD/72c8UGB6eEFof2/q4VtfXR7Sli96eHm1av8G8vYvG131W3Vcdc8psV2en9jzdOiFoZmVlqbyiYtpTp61Tg/3nffL7fJNWYicLoNfNmy9JureqimmnSUIVFQAwGUIqgLikS0gNhUK6acFCSVLJbber5JZb7UNmzHP2DXlef02SdKL75JSBK5WFQiFtf2JbxPRfWaY+l3+hQgXjr//JJ7ZNqJzeW1Wl8i9URJ2GO1OhUEgDHo8GPB75zvsinitWALX+HqfzBwpOQhUVADAVdvcFkNGs90S9+ursiL54hYJBKcZ01XTjcrm086ndOt33uu6tqjLbjfvQNm/YqKWVS7S0csmE0Hi67/WEbrw02S2Hyr8Q/Tms7/9Lxzu55VASHGpvlySt4gMBAEAMhFQAGc0aUj79mc9E9MXr3X/9F0lK+4BqlZOTY4bVx7Y+HvN2L4aXurq0af0G7WltjXgPEs245VCsIOyz3EM12i2HNq3fkJG3HJotoVBIB59v1+r765nmCwCIiem+AOKSLtN9ly6uNNcyFixYqJzcXH36M1frD//wD+1Dp+XDDz/UP/z9ASmNN02aCWP6reesZ8JUX7ubi4tVcH3B2A7JJSVJCTHGutaBs2PnaV8ra5WJtxxKNNaiAgCmg5AKIC7pEFKt61Ht/q//9J+UnXeNcnJzdfXVV+uPPj29Kqvv/KB6Tv6TlMDrkk4GPJ6IUGjddMkuPz9fxbeM3crHeluZ2RQIBDTg8cg/fo6TbcaUKbccSpRAIKCliytZiwoAmBIhFUBc0iWk+n2+aVf6rv2vf6Kc3Fx98pP/WZ/+zGei3qqm57un5Dv3tpSk15Dq/D6fPB6P/OfH3genVTIn24wpmpuLi1Uyfq/WRPx/Ip1sWr9BAx5PzF2WAQAwEFIBxCUdQqrdjUULzMpeVlaWNL4BUCxX5+Ypb948XX11tv7wk5/UJz7xCbU9+4z+529/q5uLi3X0xQ77IZiCUckcODtWzXRiJdPpU5idKBAI6I6y29Sye1fM2xMBAGAgpAKISzqG1EAgoD1PtyoUCmnL17YqJyfHrPQZoWmySt8ffPKT+vUHH0isR00YayVzqum3mqNKpvV3xIlTmJ2AKioAYCYIqQDiko4hdTqslb6ppqfOVaUv3Tm9kun0KczJRhUVADBThFQAccnUkGo3k0qfEVqtoQmXbyBFNmNy8hTm2UQVFQAwU4RUAHEhpEY3082YrNNT8wsKklLpS3dOr2TO5IMNzdEU5kShigoAiAchFUBcCKnTZwQS33homk6lL5nTU9NdKlQyjd+R6X6wkewpzPGiigoAiAchFUBcCKnxm8lmTNZKX7Kmp07GGrhDoVBEn8vlSnq4i0cqVDIHHD6FeTr8Pp+WVi7RvgP7VV5RYe8GACAmQiqAuBBSE2cmmzFlZ2ePhZEkhsHenh51He/UK7299q5JzUW4i5fTK5lOn8IczfJlNZLErZgAADNGSAUQF0Lq7JlJpW+2NmMKhUI61N6uruOdUQNRVlZWRPgZCQSijrOai3AXL6dXMp0+hdn49yFR/zYAADILIRVAXAipyWOEVr/PN+1KX7ybMQUCATOc2oPZXeXlKv9CxaRBzAh3Lx3vnDQ4aY7CXbycXsmcyQcbSkKVmyoqAOByEFIBxIWQOreMQOIZr6TZA6XVVJsxGVW5ruOdEwJwVlaWVt9fr3urq2cUIo1dXQ33VlU5MtzFy+mVTM3hFGaqqACAy0VIBRAXQqqzWDdjGphieqrGQ8loKBQzXGVnZ2vV/fWqqq6OO7BsWr9BL3V1SZIamx5RY1NTSoS7eDitkhnNQJKmMFNFBQBcLkIqgLgQUp1tJpsxWd1VXq6q+6oTshtrKBTSotIyMwyd6D45IWimQriL11xVMqdrNqYwU0UFACQCIXUWXDdvviTp8JEjKi0rtXdH1d/Xr5V1dSotK9XhI0fs3bNm0OuVJBUWFdm7Ju1Ld/G8h5mGkJpajNA6EghE3D6m4PqxNauzFfp6e3q0bs1aaTzonDjVPWUAm2m4K7FU/KZ67LmUrEpmvBJR5aaKCgBIBELqLIgn4MxFSN3V0qL9+9qinudkfZkgnvcw0xBSMV3Wab/5+fl64cWOGYXJeMJd8XhwSka4i9dsVDITaaZV7v/7v/wX/eu//Ise2/q4VtfX27sBAJg2QuosiCfgzEVInew8J+vLBJn++qeDkIrpCoVCWrGsxgw58QRVq3jDXbIqkvFKRCVzts20yp3sKcwAgPRASJ0F8QQcQqqzZPrrnw5CKmYiWlDd+dTuhISrVAh38ZhpJXMu1uvGU+VO5hRmAEBqmpOQOjw0pKGhYbndrpjrHQe9XgWDY2umJhuXSNbnLCwqlNvttg+JEAwGNegdlGznGE/AiRZS+/v6zf7pPs5Mrttk5zlZn9VMns9uqus909cfz7kk8j3MNIRUzJQ9qGZlZanx0aaETw2dSbjLyspSfkFB0sNdvGZayUz2et14q9zJmsIMAEgNSQmp1gC2uHKJtmzebPatXdegjc3N5s+nTnZrZ0uLhoeGzDZJys3L06bmZi1eUhnRvn9fm3a1tExagYwWOKzntLG5WQ8/+NCE56xZXquNzc0TwpMsz2tVWFSk7Tu+rnuW3i3NMOBYz6emdvmEa+B2u7WmoUFr1zVEHGeYyXWLdu6SzPchVp/1uWfyfJrG9Xa73drY3Kya5bXqOHpMu1paFAwGzf7cvDw9u/cbUYPnZOeyfceOmO9BtOtwOe9hpiGkIh6hUEjbn9hmrlHVeIVty9e2JuR3KBanh7t4xVPJLE7iet10rXIDAGZXUkNqbl7ehCDx7N69ZqCxhobCoiItrhxr7zh2zDxu+44dqlk+9oex9Zh4Q2puXp5C42Fo8ZJK5ebm6VR3t7mzbc3yWm3fscPyaNKWzZvVcfSYeUxhYZGGh4fUcfSY3G63Ga5mEnCinU/N8lq5XG690d9nVhXtYVFxXLeOo8d0qvuk+ZiFRUVyu11aXLlEkmL2GcfP9PkU4/XdWlaqvLw8dZ/s1vDQkBnEd7W0KDcvT5VLKhUMBs1rnZuXpx+8dsZ8TI2/FuNDD+u5WN9D6++YYTbew0xDSMXl6Ors1PYntkWEqpuLi7X6/vqE3P5mKkZo9Y1X/JwW7uIVbyUzWdNvZ1Ll1hxNYQYAOEA4Cfpe7wtfe8288LXXzAv/xReXhofee89sjzbm2AtHLUePeeyrXzX7jePD4XC47Zv7wtdeMy/8lytWRIy3Mo6L9Xx/8cWl4Y8++ijimJ1/+7dmv7VvsvP0njsXvmnBwqjPNxXr495x2+0Tzsd4nfbXP9n5hCe5buEY12Wqvnifb7Lr/dFHH0Vct8e++lWzz36s9XyG3nvPbG/75r6IY8KWa3bTgoVJeQ8zjefsWfM6ec6etXfH5ZmnnzYfE+lveHg4vPEr68333Pi6/dbS8DNPPx0eHh62HzJrfOfPh9uffz689q8eCN9+a+mEc7Kf38avrA93Hj+e1HOMx/DwcLjz+PHwxq+sD3/xzxdPeC3WrxsKi8Jr/+qBcPvzz4d958/bH2rWeM6eDT/z9NPh2i8tm3BO9q/aLy0LP/nEE+Ge730vHAwG7Q8FAEgTv2MPrbNtbUODcvPyJNs6w45jR802awXOsH3HDnOq5/62Nnv3ZYk2pXdNw8fVSmPNoiznWbO8dsJ5FhYVRRwXr+07dkw4n7XrGszX33FsrAI49n1yr1sinm9tQ0PE63O73bp1/HfB7XZPqFyXlpWavzPWSrzx+KVlpROqy7JcM2s1Vkl6DwFMLScnRzuf2q0T3Sd1V3m52T4yMqI9rc/ojrLbtHRxpQ62t8vv80Ucm2j5BQVaXV+vtucO6Ex/n073va6W3bt0b1WVsrOzI8aOjIzopa4uNW/YqDvKbtONRQvU8MCapJznTOXk5KiqunrsOp/q1o/Ova19B/ZrVf1q5efnR4wdHR3VK729+vq2J7W0coluLFqg5ctqtKe1VQMeT8TYRCouKVFjU5OOvtihdy5e0Asdx/TY1sd1V3m5srKyIsa+OTCgQ+0HtW7NWt20YKGWLq7U9m3b1NXZqUAgEDEWAJC6kh5S7dMuDW+MTy+tqV1u7zIZUzmtG+okQrTpnPaQaDh1sluSVFpaZu+SxoPP5cjNy4t6Porx+pN93RLxfNF+BwoLx4JtYVGhvUuSlJeXK41vdGQwPjy4NcZ7Icu5vNHfZ7bN9nsIYGbyCwrU9twBne57XavqV0cEE7/fHxGakhUGreHuTH+fI8NdPFwul8orKrRl61YztL7QcUyNTY/o5uLiiLGjo6N6c2BAe1qf0YqaWl03b775unp7ehQKjW1Ul2jFJSXmBwZvec/pRPdJPbb18agfGPj9fh1qP2h+YLCotEyb1m8gtAJAikt6SI0mGAya4cMVIxxqvMolWzUtmazPG+s8o4XbQa9XK+vqon7ZN+4xwlg0xus31lom+7ol+/mmYlyHU93dE66r8WVUnY1AG+97CGD25eTkaMvWrXrLe077DuzXvVVVEYE1WhhseGBNUsJgKoS7eLhcrqiVzMamR2JWMve0PjOhktnb0zNrodCochsfGFir3PYPDFKpyg0AiC2pITVWhdA6nTbWGCcYGho2v5/sPO19wWBI/X39Ub+MoBWPZF+3ZD/fdA16vROuq/FlhFIjXMf7HgJIrvKKCu18arfe8p6bNAy+0tsbNQwOeDyzGgZTIdzFy3hd9krmXeXlMSuZ69asTVolMxWmMAMALk9SQ2os1kAQa4qoE1irnJOdpzXMafy4jc3NUb+MHXWnw9gV16j0Jfu6Jfv5puvwkSN65+KFKb90Ge+hYdP6DVq+rIY/boAkihUGby4ujhkGV9TUTgiDsxlalQLhLl5OX69rr3Lbf0esUqnKDQCZzBEhVZbgZQSxaIyqo7GJjlUwGP0/LImccpqblzet87Sum9T4cWvXjd3j1P5lX/9orfTZDQ6OvX7rus3pnM9k122mkv18kzEef7Jq9PDQUMTvQLzvoaHqvmpJ0oqaWsIqMEesodUeBu2h1RoGb1qwMKlh0OnhLl6psF432gcbsX5HUqnKDQCZwjEh1djd1dh5NRpjfaG1omdfp2nXPb5JTqIYm/7EOk/rLrLxGB4ailrhCwaD5muxbhQU73WLV7KfbzLG41t3O7bbsnmz7rx9kVbW1Zltl/MeFpeU6OiLHXqhY2zMippaNTywhj9kgDlkDYNvec/NKAwuKi1LWhhMhXAXD3sl04nrdePZjCkVqtwAkK4cE1KN3WL7+/onbCak8bBhVMTWWm4RYp2+aT+uv69fB2LcBiVeNbVjlc/+vv4JYWbQ651wDvHY1dIyoZK3q6VFw0NDcrvdEdXXeK+bVayAryh9iXi+RDFuZTM8NKQtmzfbu7V/X5sZ+Nc0rDPbE/EeWsOq3+fTHWW3adP6DfwBAziAPQye7ns9ZhgcGRmZEAaN0DrbYTAVwl08UmG97mSbMdlDq/2DDSdXuQEgXVwRDofD9sZE6+/r18q6OpWWlerwkSP2blPH0WNm2MjNy1NNba1CobEKohF8tu/YMWGK7Mq6OjOM5OblKS8vV8FgSINeb0Sl9fCRI2b1zTgnSeZ6Rbvr5s2Xxtc8WquC1vMsLCrS4spKDQ8PqePoMeXm5Znnaj9uMsb55OblmdNQFy+plNvtNl+/2+3W4SPfMl+TIRHXTeP3izXuNzpZXzzPN9X13r+vTbtaWmL+jhjnYz0PRTmXyiWVcrncOtXdbQbsmuW1E+69muj3sKuzU3uebtXIyIjurapS46NNysnJsQ9LKwMej1bUjL3HL3QcU3FJiX3IjO1pbdWe1mekGL8nQCKEQiENeDzy+3zynPXozYEB+5AINxcXq+SWEhWXjH0l04DHowGPR77zPg14PBodHbUPMeXn56t4/DzzCwoc/W+Q3+eTx+PRwNmx92FkZMQ+xJSdnT127cdfWzJel/E7MmCco99vH2LKyspSfkHBnP2OAEA6clRI1fg9LHeOVw2tSstKtaZhXdTAEAwGtaulZUJVrGZ5rTY2N6vxwQfV39efsJCqGOdZWlaqjc3Numfp3VKM42KxXqM1DesiKpKyPLY9oBqinY+muG6DXq8efvAh8xjr+zNZn+J4vqmud7whVWbFfF9EqJYlQNvHG6K9hst5D5VhYZWQinRiBBLPeGiabhgsLimRy+WyD5k1Tg938QoEAmYgHPB4Jn1dWVlZ5usqGQ/ksy0UCsnvG/ugYCYfbOQXFCT9dwQA0kFSQmo8hoeGzE2ECosKp3XvymAwaO7KOt1jLteg16tgMCS32xUzQMbLeOy8vNxpb0IUz3UbHhpSMBiMev6T9SnO55st1vd/Ju/HbLyH1rDa2PSIVtXXp9UfKQMej7qOd+qlri5plkLqY1sfV3lFhaP/sEb6sobB6VQw8wsK5iQMOj3cxSsVKpnG+aVblRsAnMCxIRVIBwfb27Xn6VZJ0ur761M6rPp9Ph18vl29PT0T/hibjZBqyM/P1733Vauqujplrx1S30zCoFHBzL++IOlhMBXCXTxSoZKZrlVuAJgLhFRgloVCIR1qb9fB59ulFAyrXZ2dOvR8e9Q/do0/tBI1rXnA49HB58c2rLEHYUlpP4UaqSMQCJihaTph0AgkBeOhKVlSIdzFy+mVzJl8sJFKVW4ASAZCKpAkqRZWrVOWrbKzs7Xq/vpZn4rb29Oj3u/1RK3cElbhNNYKpu+8b9phcC4qmE4Pd/FyeiVzplVuQiuATEZIBZLMGlZdLpcaH21SVXW1fdicGfB4tP2JbRP+gLq3qkqr76+fkz+WYlVz762q0pavbXVs0EdmMwLJdCqYbMaUeE6vZM6kym2cX/kXKhx/3QEgEQipwBwJhULa09qqQ+0HlZ2dPedhNRQKafsT28zNkAyr6ldrVX29I/4oGvB49MzTrRF/zGVlZanx0Satrq+PGAs4DZsxza2ZVjLnYr2ucX5TVbmNtfqzPaMFAOYKIRWYY4FAQHuebtVLXV1zFlZ7e3q0af2GiD+InDyldsDj0ab1GyL+eL65uFhtzx1IagUKuBx+n08+n29aYZDNmBJvJpVMzdF6XeODjd7v9cQ8v5uLi1U1vrkcAKQLQirgEHMVVrdv26ZD7QfNn/Pz87Xla1sd/celYU9rqw4+326G66ysLLU9dyAlzh2wMyqY/vHgOlUYNCqYbMaUONOtZGoO1usaHxbEWqufnZ2tqvuqHb3XAQBMFyEVcBhrWL25uFiPPNo0K3+AhkIhNTywJuIPzMamR9TY1BQxzukCgYDWPbAm4g/6x7Y+zvRfpDw2Y5p7Tl6v29vTo67jnXqltzeinSUQANIBIRVwKL/Ppyef2KY3BwYSHlbtwS4dKpD2e6zeW1WlnU/tjhgDpDojDE6ngslmTInnxPW6gUBAL3V2Rswq0fh13fnU7pT+dx1A5iKkAg43YNksKBFh1e/zafmyGvOPmfz8fL3wYkdS/4CdLfa1tQRVpLt03IwpOzvbPM/ZDHeJ4KT1utad462/B6k4QwYAkh5SB71eBYMhSZLb7VJhUZF9CIAoEhFW7QH1rvJy7Xxqd1oEVIP9NRJUkUnSdTOm4pISFVw/tqZ1pv/uJZMT1uuGQiFtWr8hYhpwOv5bDyC9JS2kBoNBNT74oPr7+s220rJS3Vpapl0tLSotK9XhI0cijkmG/r5+rayrkyS9c/GCvRtwHGtYnckOvKFQSItKyzIivBFUgTHpvhlT8Xi4dnL4MsJ4stfr2meWpNOsGQDpL2khdf++Nu1qaZEkFRYVye126dbSMkkipAJx6O3p0fYntmlkZGTKsBoKhbRiWY35B2omhLZAIKCliysJqoBFJmzGlKiK5GxJ5npd+/4Dd5WXq+25A/ZhAOA4SQupK+vq1N/Xr7XrGrSxudlsN8IrIRWIT1dnp/Y83TppWG14YI059evm4mIdfbEjoj9d2SuqLbt3JeW2PkAqMcLgdCqYcxkGkxnukmm21+vaP6RkjSqAVJD0kLqxuVlr1zWY7YRUIDHsYXXL17bK5XJF7HqbidO97EH1RPfJaf1hB2QqNmOaW7OxXte+3ON03+tJfa8AYKZSJqRaN1ySpLy8XOXm5UWMsZvOJk3TDanBYFBut9veDDiOEVZDoZDKKyr0UleXNP7HzIlT3Rn5h0lXZ6eaN2yUxv9YPXGqO6OCOnA5UmUzpkAgYK5rTVS4c4JErdcd8Hi0oqZWYtovgBQw6yHVCKfRvHPxwqQhNRgM6kBbmzqOHlMwGIzo0/jGS3v27p0QHk+d7NbOlhYNDw1FtLvdbq1paIgIyZOF1I6jx7Rl82ZJ0vYdO1SzfOwfdyAV7Gpp0XP7D+g//uM/JEn7DuxXeUWFfVjG2L5tmw61H5T4Aw24LKm0GZNxnpcT7pzIqLTOdL3unqdbzfeLaioAJ5v1kLqrpUWDXq8GvYMKBoPKzctTXl6uJOnwkSOThlQj4Lrdbi1eUqnc3LHK6Rv9fWbwtR9nDZ2Ll1SqsHCsemo9xlrNjRVSCahIddZQtqp+tbZs3WofklHs67IyPbQDiZKKmzF5xte1TjfcFSd5/e1MzWS9riHWHgYA4ASzHlINM53ua4REt9utw0e+NWGqrnW34B+8dsac+vvwgw/q1MnuCc9jPcbtduuHb/9YihFSCahIdX6fT0srl0hMb43AdQGSwxoGpwqtcxkGZ7L+ls2YACB5HBtS9+9r06nubhUWFWr7jh1mu9V18+ZL4xXZ0rJSyfI80cJlMBhUx9FjkqSa5bVyu90TQioBFelg+bIa8w9DKoaRrBVmdrkEkmMmYZDNmBIvXdfrAkhfjg2pUxkeGtKdty+SbCF1y+bN6jh6zFx/WlpWOqEKa2UNqdt37CCgIuUNWDbHyKTbzUyXdZfLrKwsnenvS2rlBgCbMc21dF6vCyA9OD6kBoNBDXoHNej1KhQKatDr1dDQcMSmSNaQOuj1amXdlyM2WsrNy1NpWalKS8u0eEml2S5bSLWynyeQKqxVVDbGiM662y/VVGDusRnT3LNO0U6n9boAUpOjQ+r+fW060NY2YWdfI3QaU3etIVXjwXZXS4tOneyecKzb7db2HTvMsGoNqcYGTcbjfufEy5NWYQGnsVZR762q0s6ndtuHYNyi0jKNjIxQTQUciM2Y5t5Mpmin0npdAKnBsSHVujFSaVmpbi0tU2FRkQqLCs1bzkRbk2o36PWqv68/YndfWY6xhlQjlN6z9G4Ner0qLCrSd068bHk0wNkaHlijV3p7JaqoU6KaCqQWaxicTmi1TrtNZhhM13CXrut1ATiTY0PqZxfeoGAwqJrltVE3TgoGg/rswhukKCHVCJh2w0ND+su6L2t4aMg8D/vGSRo//p6ld0tM+0UKCQQCuqPsNom1qNN2Y9ECjY6OKjs7W2f6++zdABxsJmHQqGDmj08PTmYYTNdwl67rdQE4g2ND6lRVUmul1Rhj3UzJelsaK+M8jPAbLaTK9vhM+0UqONjerq9ve1JiR99ps+70yzUDUls8mzEZ61qTGQbTNdyl83pdAMnn2JBqVFIXL6nUs3v3mu0aX0fa+OCD5nrTaLegKSwq0uEj3zKnBsu2qZKxe2+skCqJab9IKdY1lm95z9m7EYW1+swaXiC9xLsZU7IrmOkc7qxTtNNpvS6A2efYkBptTaokDQ56depkt1kltU7dlS2IGhss5ebmaXDQqzf6+hUMBiOea7KQyrRfpArCVvyWLq6U3+8n3ANpzroZ01ShVWzGNCtmMkU7ldbrAkg8x4ZUo8++u69x/9Oa5bU60Nam/fvaJhw76PVqV0tLxEZJ9mONCutkIVWSdrW0aP++Nolpv3AwpvrGz3rtXug4lvQ/RgHMHWsYnE4Fk82YEitd1+sCuHxJC6mXwwibbrdrRiHRuMeqIdraViAdGPdGpRo4c36fT0srl0js8gtkvAGPJ2Jd62RhkM2YEi9d1+sCmLmUCKkAJmdsNHZXebnanjtg78YUjPW87IoMwMqoYPrPjwWnqcKgUcFkM6bESOf1ugAmR0gFUpy1EvjY1se1ur7ePgRTsN5fNtq0fwCQrYLp9/mmDINtzx2YkxAYCoXU1dlpLmWYSiqFO+sU7XRarwsgEiEVSHGsqbx8e1pbtaf1GUnSie6TSa2AAEhdU23GdLrv9ajTgP0+36z8OxMIBNTb06OXjndOOJe7ystVcH1B2oW7dF2vC2Q6QiqQ4qz3+qQKGJ8Bj0cramolNp4CcJmms2P4jUULNDo6qvz8fOUXFCj/+gIVjFcwpxteBzwe8399533y+3xRpyPfXFysRx5tmvABZrqGu+mu111Vv1pbtm61NwNwCEIqkOKMTZOys7N1pr/P3o1pCIVCumnBQonNkwBcpqn2CLAu0ZhKdna2sscD4WgoNKE6GktWVpbKKypUdV/1hHAay3TDndJkMyY+kAScjZAKpDjjU3s2/bk8xh+W3GcWQLysszJi7RFgXaKRnZ09aRicCestchIRvmKFu2hScTOm/IICR1eEgUxHSAVSHOEqMQj7AC7XdNa3R9uoze/zmeHJ4Ds/1mblcrlUcP3YY2a5XDOeInw5LmenXSeHVgDOREgFUpwRUpmmenmMadOEVADxms49q9PpllcD7LQLYJb8jr0BAAAAM+f3+SQpZuUwEAiY03tLbok+JpUUl5SosalJR1/s0FveczrRfVKPbX1cd5WXKysrK2Ks3+/XofaDWrdmrW5asFBLF1dq0/oN6ursVCAQiBgLAIRUAACAy2StJBpTcu2s03mTMUU32fILCrS6vl5tzx3QW95zOt33ulp279K9VVXKzs6OGOv3+/VSV5eaN2zUHWW3aVFpmTat36CD7e1m2AeQuQipQAqz/sGDxOCPIwDx8Fj+PY5VSR04O/WYdJKTk6Oq6mrtfGq3zvT36XTf69p3YL9W1a9Wfn5+xNiRkRG91NWlr297Uksrl+jGogVqeGCNDra38986IAOxJhVIcaxJTQzWpAK4HNE2RLIz1qPm5+frxKlue3fGYTMmALEQUoEUZ4RU47545V+oSMjtBzLFgMej3p4edR3v1OjoKCEVQFxuLFow6b8h1vsxr6pfrS1bt9qHwLYZ01Shlc2YgPRFSAVSnBFSkRix/sAEgFj8Pp+WVi6RJpnV0tvTo3Vr1kqS9h3Yz4eJ0+T3+eQZv1frgMcz5Q7C+QUFZnDlPqhA6iKkAimOkJpYhFQAM9XV2anmDRslSS90HIs6FXX7tm061H5QkvSjc29T9YuT3+eTz+czQ6uxW3I02dnZKi4pUf71BSopKUnLzaqAdEVIBVKcsZayuOw2VS75ot67eNE+BFP43M2f07r766VJqiAAEMum9Rv0UleXNMl61KWLK+X3+5Wdna0z/X32bsQpEAiY61oHznrk9/vtQ0z2DyEHPB65XC7CK+BAhFQgxRkh1f37f6BvvzT2RxJm5t0LFwmpAOI21YZI1vWo91ZVaedTu+1DkCDGZkwDHo98530R61qNf99DoZDqlq+Qb3BQklT1pfvUsnOn5VEAzDVuQQOkOOOG8MGPfq1Lly7ZuzEN77//S/P7aNP0AGAy+QUFysrKUvH4v8d21luoxBqDxHC5XCqvqNCWrVt19MUOvXPxgl7oOKbGpkd0b3W1JGlF7XJd8X/8n/pWx4vavecbeqWnV9uf3G5/KABziJAKpLhsy8YQ7154L6IP02OdIm29ngAwHW3PHdBb3nMxd+y13n+ZD8KSr7ikRI1NTcrJydGe1lb5z5/XQ42NuuqqT6mosEBfaf6qDj3/PPdjBRyEkAqkuALLWhrf+fMRfZie8+fHpnxlZWWxGySAhMtyuZSfn6/s7Gz+jZljXS/9d9V8eaX+eP48s62k+HMqLrtNhw8dihgLYO4QUoEUZ0wzkyVsYWYG+l6XqHAAmCWr6+t14lQ3GybNsd6eHo0MDWnJkkp7lxbdcad6vvs9hUIhexeAOUBIBdKAEa4G+l5nXeoMeQb+2fyetWIAkL4GBt7U9Qtv0FVXfcrepc//2R3SeJAFMPcIqUAaKP/CxzeFt4YuTO2H/+Pj61Ve8fF1BACklzcHBlRccou92VRcdpt++tN/sTcDmAOEVCANWMOVNXRhamdefVWSlJ+fz1oxAEhjvsFBFVx/vb3ZdP31hfKd/3iTKwBzh5AKpAGXy6W7ysslSa9+9xRTfqfJM/DPCn70a0nSvfeN3ZoAAAAAc4uQCqQJ65Tf7//gTEQfonvtzGnze6b6AkB6c7ndumi55Zjdr371S2W5xjYiBDC3CKlAmiivqDB3+f3H/95l74bN++//Uq9+95Qk6ebiYqb6AkCaK68o18v/vSvqbKN3L1zUy12duuuuz9u7AMwBQiqQJlwul6rGp6wOX7igV7//cZUQEx0/ftz8fvX99RF9AID089jjj+ujDz7Q41sel3fw47Wnr37/tP5m/VdUcuutqqpm6QfgBFeEw+GwvRFAagoEArqj7DZJUu78+fr755+3D8F4FfXLNcskSdnZ2dy7EAAyRCAQUPPGZg2cfSOifdX996vxkUa5XK6IdgBzg5AKpJlN6zfopa6x6b6btmw17/2Gj+3d+0293NUpSWrZvYtPzgEgwwQCAY0EApKk/IICwingMIRUIM1Yq6nu3/8DHfzWP+jKK6+0D8tY3kGfNjQ+JFFFBQAAcCTWpAJpJicnR41Nj0iSgh/9Wt/+9ljFEGMOPv/35vc7n9od0QcAAIC5R0gF0tCq+nplZ2dLkjq+dThig4hM9uKLx3X+7R9Lku4qL1dxSYl9CAAAAOYYIRVIQy6XS1u+ttX8+Zmnn4q65X4meffCRbXv3ydJysrKirg+AAAAcA5CKpCmyisqdFd5uTR+S5pDhw7bh2SMS5cu6Rt79pg/Nz7axH1RAQAAHIqQCqSxnU/tNqf9vtzVqRP/1G0fkhH27v1mxDTf1fXcFxUAAMCpCKlAGnO5XGp77oD58zf+brc8A/8cMSbdHTx4WK9+95Q0vpsvmyUBAAA4GyEVSHP5BQVq2b3L/PnvWv5W7164GDEmXb36/dPq+NbYNOesrCy1PXeAe+EBAAA4HCEVyABV1dURt6X5m/Xr0z6ovvr909q5fZv5c9tzB5RfUBAxBgAAAM5DSAUyRGNTk+6tqpIyIKjaA2rL7l3cbgYAACBFXBEOh8P2RgDpa9P6DXqpq0uS5P79P9Dahx7W5//sDvuwlHXw4GFziq/GA2pVdXXEGAAAADgXIRXIQNagKkn1a9dp2bL7IsakmkuXLmnv3m+amySJgAoAAJCSCKlAhjrY3q6vb3vS/Lm47DY1N2/SlVdeGTEuFbx74aJ2bH9SwxcuSJZNkpjiCwAAkHoIqUAG6+3p0ab1GzQ6OiqNT//9SvPfqKT4c/ahjvXii8fVvn+f+XN+fr52PrWbTZIAAABSFCEVyHB+n0+b1m+Q3+832z7/54u1atUqXXXVpyLGOol30KeDz/+9zr/9Y7PtrvJy7XxqN7eZAQAASGGEVACSpO3btulQ+0HzZ/fv/4GqltXoi1+sdNQU4Pff/6WOHz+ul7s6zbasrCxt+dpW1p8CgAPsaW1V7/d6lOVyqfwLFSqvqFBOTo59GCbR1dmpQ8+3mx8gs8cCMg0hFYBpwOPR9ie2RVRVnRJWo4VTUT0FAMfZ09qqPa3PRLQ1Nj2ixqamiDZMFG12kyS90HGMfRaQUQipACbo6uzU9ie2mWtVDXdXVev2RXeoqDB56z1f/f5pnTn9Aw30vR7Rnp+fry1f28p/tAHAYbo6O9V1vFN+ny/ivyP3VlVp51O7I8biY6FQSEsXV2pkZEQanyVUXlGhnNwc3VtdTTUaGYWQCiCqUCikQ+3tOvh8+4Swmjt/vkrLbteffu5zCQ+sly5dknfQpx/+j3/WmVdfVfCjX0f0Z2dnq/HRJqY9AUAKsH/oybTV2Ky3h7u3qkpbvraVWULIWIRUAFOyr42xKy67TddfX6hr5s3TVVd9Sn88f559SEzeQZ/ef/99Db33nrzn3o7YCMnqrvJyrb6/nsopAKQYv8+n5ctqNDo6quzsbJ3p77MPyXihUEg3LVgojX8YyzVCpiOkApg2v8+nrs5O9X6vx5yONJnistvsTZKkfx8djRlGrfLz83XvfdVsugEAKc56b+59B/arvKLCPiSjdXV2qnnDRolqMyARUgHEy+/zyePxaOCsRwMez4QpwfHIzs5WcUmJim8pUXFJCcEUANJEIBDQHeMfXM71JkqhUEhf375dXd8+LpfbrdX19Xr4kUb7sKSybjb1o3NvM80XGY+QCiAhAoGARgIBDXg8kiTfeZ9CoZB9mCknJ0c5uTnKcrlUUFCg/IIC/qMMAGnsunnzJQeE1L9uaNCAZ0Bfaf6qfvnLX+obf7d7zs+p4YE1eqW3V5L0zsUL9m4g4xBSAQAAMOucEFKNabW793zD3PjvxRePq33/Pp3ue33OZvAsX1ajNwcGJEIqIEn6HXsDAAAAkI6efWaP7q6qjtiZftmy+5Q3f76efSby3q4A5g4hFQAAAGnP7/MpMDysxZWV9i7VrPiyent6J12mAiB5CKkAAABIe11dL+n6hTdEvU1aSfHnFAoGzX0VAMwtQioAAADS3k/8P1HR+L1I7a688koVl92mgYE37V0A5gAhFQAAAGnP80a/8gs+Xotqd/31hfqJ/yf2ZgBzgJAKIClY5wMAmGtXXnmlvQmAAxFSASTF9ie22ZsAAEiq999/395k+s1vfmNvAjBHCKkAZt2Ax6Penh57MwAASVPx51/QyRMv25slSe+//0t1n/hHff6uP7N3AZgDhFQAs27A49Ho6Kj8Pp+9CwCApHi4sVHDFy9o585dev/9X5rt7164qL/9b/9NOTk5qqqujjgGwNwgpAKYdZ6zY1v6U00FAMyV/IICvXDsqH5yflBfrlmmrVu/pq88+hWtu79eWVf+no4cfUEul8t+GIA5QEgFMKtCoZDeHBiQLGEVAIC5kF9QoDOvv6Z9B/ar+E9v0ufvXKQT3ScJqIDDEFIBzCrrjdGNsAoAwFwqr6hQY1OTGpuaJr0tDYC5QUgFMKusIVVM+QUAAMAUCKkAZlXv9yJDqT20AgAAAFaEVACzJhAIaGRkJKJtgHWpAABElZWVZW8CMhIhFcCsiVY19fv9CoVC9mYAADIe62OBMYRUALMmVtWUdakAAACIhZAKYNbECqOxwisAAABASAUwK/w+n0ZHR+3NUoxpwAAAAIAIqQBmi2eSIDoyMqJAIGBvBgAAAAipAGbHVFN6Y00FBgAAQGYjpAKYFa/09tqbIkwVYgEAAJCZCKkAEm46a06nMwYAAACZh5AKIOGmM5V3dHRUfp/P3gwAAIAMR0gFkHDTnco7nTALAACAzEJIBZBwfr/f3hSVZ5phFgAAAJmDkAog4d65eCHiK1bf0Rc7IvoAAAAAQioAAAAyysH2dtUtr1Pd8hWO2shvhHuIAxIhFQAAAJlk+5Pb9fVtT2retdfpSpdbK2pqHbNHwsjIiL0JyEiEVAAAAGSEAY9Hh55/Xg99ZYNWr16pTZs26u6qajVv2KhQKGQfDmCOEFIBAACQEfY886yKy27T0i9Wmm2rVq3UFb/zOzrU3h4xFsDcIaQCAAAg7QUCAQ2cfUOVS74Y0X7llVeqalmtDrUfjGgHMHcIqQAAAEh7vT09yps/XyXFn7N36c4771AoFHLUJkpAJiOkAgAAIO29+sr3dcNNn7U3S5KuuupTun7hDYTUOXLdvPm6bt589ff1m239ff1me6IMer0a9Hoj2qI9z/59bbpu3nytrKuLGBur/XJEOycQUgEAAJABfOcH9Sf5BfZmU9GChXrzzf9hb0aa2NXSonuW3q1g0DkbZDnxnJyCkAoAAIC0FwoGddVVV9mbTb/3e79nb8IcysvL1cbmZm1sbrZ3xWX/vjZ7kzQLzzMTsc4JhFQAAABkiEuXLtmbTL/5zW/sTZhDuXl5WruuQWvXNdi7EipZz4OZIaQCAAAg7ZXceqteO3Pa3iyNh9c3+l7Tn+T/ib0LCRQMBtXf16/+vv6ErMMc9HoT+niJYD2n/r5+DQ8N2YfMmBNf52wjpAIAACDtPdz4sF797im9+OLxiPZLly7p0KHD+ujDD7Vq9aqIPiTO/n1t+uzCG7Syrk4r6+p0z9K7dc/Su2OGrmgbGhlOnezWnbcv0j1L7454vM8uvGHCFFpjsyPDyro6XTdvvjlusueZrmAwqF0tLfrswhsizmllXZ3uvH2RVtbVKRgMmuOnOidDrNd55+2LIjaZSkeEVAAAAKS94pIStezepfb9+/RX99+vgwcPa+/eb2r1l7+s0709euHYUeXk5NgPQwJs2bxZu1paJEmLl1RqY3OzapbXatDr1cq6L9uHT6q/r18PP/ighoeGzMfa2Nys0rJSMyxaw57b7VZpWan5c2FRkUrLSuV2u822y9X44IPmc9Ysr404J42fc+ODD5rjp3NOHUePma+zsKjIfMzCoiINDw1pZV2dTp3sNsennTAAzLJrr5lnfgEAMpPx34Fnnn7a3pVUw8PD4SefeCK8onZFeEXtinD788+Hg8GgfVhS1X5pWdr+d7Lv9T7ztR174WhEn/fcufBNCxaa/X2v90U9zuqhv/7r8LXXzAu3fXNfRHs4HA63fXNf+Npr5oVvWrDQ3hX1OcIxnsd4nL9csSJibLT2Yy8cNZ/Te+5cxPiw5Zhrr5kXHnrvvYi+WOc09N57Zt9Ur/Ojjz6yd6cFKqkAAADIGDk5OdqydauOHD2iI0ePaHV9vVwul30YEqTj2FFpvMJYs7w2oq+wqEhrGma2YVFofNpstEqoUcVc09AQMb12NgWDQRUWFWnxkkoVFhXZuyM2ZBoaGo7oi2V/21hVtrSsNOqGTmvXNaiwqEjBYFAdR4/Zu9MCIRUAAADArDCmpJaWltm7pPFgORO5eXnS+D1G9+9ri1jT6na7zZ16o4XY2bB2XYO+c+Jlbd+xw94lSXFtnDToHZQk3RrjmknS4spKSdIb/X32rrRASAUAAACQcNaA5ooRGmcaJmtqa+V2u831p8ZGQls2b57TNZrGzsX797VpV0uLuWnSnbcvsg+dkhG8T3V3R2zCZP3qODZWQTUCbbohpAIAAABIOOv0VutGQXaT9dkVFhXp+6+dUc3ysbCq8TBsbDT02YU3JD2s7t/Xpj8b38XXqPAau+/OtFJsZb+dTbRb2yRrWnOyEVIBAAAAzEgoFFJvT4+2b9umpYsrdd28+RrweCLG5OXlmt9PdsuUmVYD3W63tu/YoR++/WN958TLETvpBoNBPfzgg5M+XyIZldNgMKjSslJtbG7W4SNH9MO3f6wfvHYm5jTg6Th85IjeuXhhyq90REgFAAAAMCl7KL1pwUKtW7NWA2c9Kr6lRPsO7Fd+QUHEMbl5eWa109jwKJqZVgOt61ALi4q0dl2DDh85oh+8dsZcsxrr/quJdmB8k6Oa5bU6fOSI1q5riLidzExfmyzrbid7DcNDQ3Gtd00VhFQAAAAkzcHn2ydU3DJVKBTSpvUb9ObAgL1rzk0nlP7o3Ns6capbW7ZuVXlFRdRdkhcvGdvgx9jl124mu9MODw3punnzdc/Su6MGtNy8PLN6Ozw8sX82GCF0ceUSe5c0w9dnMKrCxrrTaLZs3qw7x6cYp6MrwuFw2N4IAIl03bz55vfpOi0FADA5638LJCk7O1vFJSXKyc2RJBWXlET0p6NAIKCRQECS5DnriRpO5+q/k4FAQH6fTwMejwbOeuT3+yVJNxcXq+SWEhWXjH3N1KDXq3uW3i1J2r5jR8QazUGvVyvrvmwGvcNHjpgBrb+v3wxg1muysq5O/X39Kiwq0uEj34rYeMn6ePbnMn7/NjY3R9zWJdrzGFN4S8tKdfjIEXNstPbPLrxBwWBQi5dU6tm9e82xGn/sxgcfjPr6NMk5DQ8N6Z6ldysYDKpmee2EKcPGeSjKY6YLQiqAWUdIBQDYQyqiS9Z/JwOBgBlIBzwejYyMSAkIpdF0HD2mLZs3S+PTcxdXVmp4eGyzo9y8PLMqOp2Qag2iuXl5Ki0rVW5ungYHvXqjr99cG2oNl7KEW4MRDKM9T7QwGqvdGhhLy0rN28YMDnp16mS3OXV3eGhoQhiNdU6yXbPcvDxVLqmUy+XWqe5ucxpwtACbLpjuCwAAgKS5u6paNV9eqesX3mDvyiju3/8Dff7PF2vTlq0qLrvN3p1wgUBAXZ2d2rR+gxaVlumOstvUvGGjAoGAqu6r1gsdx/TOxQs6+mKHGpuaEhZQNR6mnt27V7l5eRr0erWrpUUdR4+ptKxUz+79hn34pIwKamlZqbmr766WFnNH343Nzdpjq2ga7UZgVALvL7p2XYM2NjfL7Xarv69fu1patKulRW/09Wtjc7O+c+JlVY5PebY/52TnZKxxNV6nEYYHvV7l5uVpY3Nz2gZUUUkFkAxUUgEAxn8L6teu07Jl90X0eQd9ET+nsz+66lO66qpPRbRt3fo1DfS9LiXwv5PRKqVZWVnKLyhIeKV0Jga9XgWDIbndLhUWFdm7ZyQYDEbsDDydaa/DQ0MKBoOX/dzRGFXRmb62qc7J+jpn+tipipAKYNYRUgEAk4XUTJeIkOr3+eTxeOQ/P7au1AilxSUlKr6lRCUlJRN23wWcium+AAAAQIrx+3w62N6uhgfW6MaiBVpauUR7nm5VKBTSqvvrdaL7pN7ynlPbcwe0ur6egIqUQkgFAAAAHC5WKJWkxkebCKVIK4RUAAAAwGGihdJDz7fL5XIRSpH2WJMKYNaxJhUAwJrU2KxrUm8uLjbvn2rcS7Z4fKOjnJyxe8oC6Y6QCmDWEVIBAITUSN5Bn3znz+v8+UEzoErSvVVVhFJkPEIqgFlHSAUAZHpIjRZKc+fP1403fVY/8fv1L77zEv+dBCRCKgAAAJIhk0LqpUuX9O6F9yaE0usX3qCiBQuVX1CgP54/z7xfaiJuQQOkE0IqAAAAZl06h9RLly7JO+iT3+eT99zbOv/2jyVbKC0qLNCVV15pP1QipAITsLsvAAAAcBlaWnbqa19tlvfc2ypasFBP/LcWvXTihP7u6b/T6tUrVVL8uZgBFcBEhFQAAADgMjz00EOEUiCBCKkAAADAZbjqqk8lJJTeXFxsbwIyEiEVAAAAsy4rK0uSdP78oL0r4/1kkGsCWBFSAQAAMOvyCwokAtkE7164qOBHv5YkldxSYu8GMhIhFYAkqb+vX9fNmx9xT1MnG/R6Nej12psBAA5V/oUKSVLwo1/r1e+ftndnrFPd3eb35RVj1wjIdIRUAClnV0uL7ll6t4LBkL0LAOBQ1gB27IVv6dKlSxH9mejdCxf1clenJCk/P9+sNgOZjpAKIOXs39dmbwIAOFxOTo5W1a+WJA1fuKBDhw5ndFC9dOmSvrFnj/lz46NNEf1AJiOkAgAAICkam5qUn58vSXq5q1OPb3lc7164aB+W9t5//5d6fMvjOv/2jyVJd5WXM9UXsLgiHA6H7Y0AMk9/X79W1tVJkt65eEEaX/dpTKktLCqU2+2OOCYa6zFut0uFRUX2IVFZj5OkvLxc5eblRYwxGOtmDx85otKyUns3AMDB/D6fGh5Yo5GREbPt7qpqffZPP6eS4s9FjE037164qFPd3eYUX41P833hxQ65XK6IsUAmI6QCkGwh9TsnXtaWzY9N2Jho7boGrWloiBpWT53s1s6WFg0PDUW05+blafuOHVHDZDAY1IG2NnUcPaZgMGjvVmlZqfbs3Ws+3/59bdrV0mIfpo3NzVq7rsHeDABwqFAopIYH1ujNgQF7l65feIM+MX67mnQy0Pe6vUl3lZdr51O7CaiADSEVgGQLqW63W8FgUIuXVKqwsEinurvNwFqzvFbbd+yIOLbj6DFt2bxZklRYVKTFlZXS+I6FxnHP7t2rxUvG2g0r6+rU39cvt9utxUsqlZs7Vjl9o79P/X390nhQPXzkiDT+PKe6T5p9hUVFcrtdWly5RDXLay2PDABIBQMej555ujVqWE1n2dnZany0SVXV1fYuAIRUAAZrSC0sKtKze78RMd3WWsX84ds/Nqubw0NDuvP2RVKMiqZxnNvt1vdfO2MeZwRbt9utw0e+NWFasPX5fvDamYhzYbovAKSXQCCg3p4e+c/7FAgE7N1pweVyqeD6ApVXVLCLLzAFQioAyRZSo4W/YDCozy68YUL/ls2b1XH0WETF0+6epXdr0OuNCLH797XpVHe3CosKJ1RmDbHCaKx2AAAApD529wUwQbTgF20dqiQNegclSbeWltm7TMb03zf6+8y2tesa9J0TL8cMqPa1rQAAAMgMVFIBSDF297WLVsE02oz1odEMDQ1reGhIbrdbPxzfbt8QDAY16B3UoNerUCioQa/XHG+wV0yjnQcAAADSA5VUAAkx6PWqv68/6pcROO07+O7f16Y/u32RVtbVaVdLi/bvazM3RWIjJAAAgMxESAWQEIePHNE7Fy9M+WUwNkYKBoMqLSvVxuZmHT5yRD98+8f6wWtnYk4DBgAAQHojpAK4LMauu/Z7qloNDw1NWGN6oK1NGq+YHj5yRGvXNai0rNRc+2qvugIAACAzEFIBXBZjTWjHsWP2LtOWzZt15/i0XoMRQhdXLrGM/FjH0diPBwAAgPRFSAVwWdY2NMjtdmt4aEhbNm+2d0esM13TsM5sN++Xeuyo2Wbo7+s3K62Tmax6CwAAgNRESAVwWXLz8rSxuVkar37eefsicxOke5berV0tLdL4tF7rTrxrGsbul3rqZLdW1tVp/7427d/XpocffFAr6+rkcrtjTiU2HmdXS4uumzdf+/dNHWgBAACQGgipAC6bsa60tKxUw0ND5qZIg16vGWLtGyGtXdegjc3Ncrvd6u/r166WFu1qadEbff3a2Nys75x4WZVLJt5fVZI2NjebATZaPwAAAFIX90kFkFDGfU8lye12qbCoyD5kAmM68HTHG4aHhhQMBmd0DAAAAJyNkAoAAAAAcAym+wIAAAAAHIOQCgAAAABwDEIqAAAAAMAxCKkAAAAAAMcgpAIAAAAAHIOQCgAAAABwDEIqAAAAAMAxCKkAAAAAAMcgpAIAAAAAHIOQCgAAAABwDEIqAAAAAMAxCKkAAAAAAMcgpAIAAAAAHIOQCgAAAABwDEIqAAAAAMAxCKkAAAAAAMcgpAIAAAAAHIOQCgAAAABwDEIqAAAAAMAxCKkAAAAAAMcgpAIAAAAAHIOQCgAAAABwDEIqAAAAAMAx/n/5oEddMNPNngAAAABJRU5ErkJggg==" alt="Space for Q5(c) diagram: Distillation apparatus with water inlet arrow"></div>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>An arrow should be drawn pointing <span class="keyword">into the lower inlet</span> of the condenser's outer jacket.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>For a condenser to work efficiently, the outer jacket must be completely filled with cold water. To achieve this, water <span class="keyword">enters</span> at the <span class="keyword">lowest point</span> (the lower inlet) and <span class="keyword">exits</span> at the <span class="keyword">highest point</span> (the upper outlet).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(d) (i)</strong> The table shows some information about aldehydes. Complete the table.
+                    <span class="marks">[2]</span>
+                    <table>
+                        <tr>
+                            <td>name</td>
+                            <td></td>
+                            <td>ethanal</td>
+                            <td>propanal</td>
+                            <td>butanal</td>
+                        </tr>
+                        <tr>
+                            <td>molecular formula</td>
+                            <td><i>$CH₂O$</i></td>
+                            <td><i>$C₂H₄O$</i></td>
+                            <td><i>$C₃H₆O$</i></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>Based on the homologous series pattern (eth- 2C, prop- 3C):<br>
+                        The 1C aldehyde (meth-) is <span class="keyword">methanal</span>.<br>
+                        The 4C aldehyde (but-) is <span class="keyword"><i>C₄H₈O</i></span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>A <span class="keyword">homologous series</span> is a family of similar compounds. Each member differs from the next by a <span class="keyword">−CH₂− group</span>. The prefixes <span class="keyword">meth- (1C)</span>, <span class="keyword">eth- (2C)</span>, <span class="keyword">prop- (3C)</span>, and <span class="keyword">but- (4C)</span> denote the number of carbon atoms.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(d) (ii)</strong> Deduce the general formula of aldehydes.
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>The general formula is <span class="keyword"><i>CₙH₂ₙO</i></span> (for n≥1).</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>A <span class="keyword">general formula</span> can be written for each homologous series. For example, <span class="keyword">alkanes</span> are <i>$CₙH₂ₙ₊₂$</i> and <span class="keyword">alkenes</span> are <i>$CₙH₂ₙ$</i>. Based on the pattern in the table (<i>$C₂H₄O$</i>, <i>$C₃H₆O$</i>), the general formula for aldehydes is <i>$CₙH₂ₙO$</i>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(e) (i)</strong> The structural formula of ethanal is shown. [...] What is the name given to the reactive part of any organic molecule?
+                    <span class="marks">[1]</span>
+                    <div class="placeholder"><img src="data:image/png;base64,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" alt="Space for Q5(e)(i) diagram: Ethanal structure"></div>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>This is the <span class="keyword">functional group</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>A <span class="keyword">functional group</span> is an <span class="keyword">atom or group of atoms</span> that gives a compound its particular <span class="keyword">chemical properties</span> and defines its homologous series. For aldehydes, the functional group is the -CHO group.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(e) (ii)</strong> Complete the dot-and-cross diagram to show the electron arrangement of a molecule of ethanal. Inner shells have been drawn.
+                    <span class="marks">[3]</span>
+                    <div class="placeholder"><img src="data:image/png;base64,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" alt="Space for Q5(e)(ii) dot-and-cross diagram: Ethanal"></div>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>The completed diagram should show:
+                        <ul>
+                            <li>One <span class="keyword">C-C single bond</span> (one shared pair of electrons, 1 dot and 1 cross).</li>
+                            <li>Four <span class="keyword">C-H single bonds</span> (each with one shared pair).</li>
+                            <li>One <span class="keyword">C=O double bond</span> (two shared pairs, 2 dots and 2 crosses).</li>
+                            <li>The oxygen atom must also have <span class="keyword">two lone pairs</span> of electrons (4 non-bonding electrons) in its outer shell.</li>
+                        </ul>
+                        </p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p>A <span class="keyword">single covalent bond</span> is a <span class="keyword">shared pair</span> of electrons. A <span class="keyword">double covalent bond</span> is <span class="keyword">two shared pairs</span> of electrons. In dot-and-cross diagrams, electrons from different atoms are shown with different symbols (dots and crosses) to show their origin.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(f) (i)</strong> Propanone belongs to a homologous series called ketones. [...] Propanone has the same molecular formula as propanal, <i>$C₃H₆O$</i>. What term is used to describe molecules with different structures but with the same molecular formula?
+                    <span class="marks">[1]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>The term is (structural) <span class="keyword">isomers</span>.</p>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p><span class="keyword">Structural isomers</span> are compounds with the <span class="keyword">same molecular formula</span> but <span class="keyword">different structural formulae</span> (i.e., the atoms are arranged in a different way).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-question">
+                    <strong>(f) (ii)</strong> Suggest the structure of propanone, <i>$C₃H₆O$</i>. Show all of the atoms and all of the bonds.
+                    <span class="marks">[2]</span>
+                    <button class="answer-toggle" onclick="toggleVisibility(this)"></button>
+                    <div class="answer-content">
+                        <p>The structure should show a chain of three carbon atoms. The <span class="keyword">central carbon</span> atom (carbon-2) is bonded to the oxygen atom with a <span class="keyword">C=O double bond</span>. The two end carbon atoms are each bonded to three hydrogen atoms.<br>
+                        (Displayed formula for <i>$CH₃-CO-CH₃$</i>).</p>
+                        <div class="placeholder"><img src="data:image/png;base64,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" alt="Space for Q5(f)(ii) diagram: Structure of Propanone"></div>
+                        
+                        <button class="recap-toggle" onclick="toggleVisibility(this)"><h4>Recap</h4></button>
+                        <div class="recap-content">
+                            <p><span class="keyword">Structural isomers</span> have different arrangements. Propanal (an aldehyde) has the C=O bond on the end carbon: <i>$CH₃-CH₂-CHO$</i>. Propanone (a ketone) must have the C=O bond on a non-end carbon, which for a 3-carbon chain means the central carbon: <i>$CH₃-CO-CH₃$</i>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Question 5 -->
+
+    </div>
+
+    <script>
+        function toggleVisibility(element) {
+            // Stop the click from bubbling up to the parent answer block
+            event.stopPropagation(); 
+            
+            var content = element.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>

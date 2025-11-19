@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGCSE Chemistry Interactive Past Paper: 0620/41/M/J/22</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #0056b3;
+            text-align: center;
+        }
+        .question-block {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .metadata {
+            font-size: 0.85em;
+            color: #666;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        .question-text {
+            font-weight: bold;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        .sub-question {
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        .placeholder {
+            border: 2px dashed #ccc;
+            background-color: #fafafa;
+            color: #888;
+            padding: 20px;
+            text-align: center;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .answer-toggle {
+            background-color: #e9f5ff;
+            height: 40px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .answer-toggle:hover {
+            background-color: #d0e8ff;
+        }
+        .answer-content {
+            display: none;
+            padding: 15px;
+            border-left: 4px solid #0056b3;
+            background-color: #f9f9f9;
+            margin-top: 5px;
+        }
+        .keyword {
+            color: #d9534f;
+            font-weight: bold;
+        }
+        .recap-toggle {
+            background-color: #fffbeb;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid #ffeeba;
+            text-align: center;
+        }
+        .recap-content {
+            display: none;
+            padding: 15px;
+            background-color: #fffff0;
+            border: 1px solid #ffeeba;
+            border-top: none;
+            margin-top: -3px; /* overlap slightly */
+            font-size: 0.95em;
+        }
+        
+        /* Animations for Recap Title */
+        @keyframes float-animation {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0px); }
+        }
+        @keyframes color-change {
+            0% { color: #e6a700; }
+            50% { color: #ff8c00; }
+            100% { color: #e6a700; }
+        }
+        .recap-title {
+            margin: 0;
+            font-size: 1.1em;
+            animation: float-animation 2s ease-in-out infinite, color-change 4s linear infinite;
+        }
+        
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>IGCSE Chemistry (0620/41)</h1>
+    <h2>May/June 2022 - Paper 4 Theory (Extended)</h2>
+
+    <!-- Question 1 -->
+    <div class="question-block">
+        <div class="metadata">Question 1 | 0620/41/M/J/22 | Topic: Organic Chemistry, Periodic Table, Atmosphere, Carbon</div>
+        <div class="question-text">
+            1 A list of substances is shown.<br>
+            aluminium oxide<br>
+            carbon dioxide<br>
+            chlorine<br>
+            diamond<br>
+            ethanol<br>
+            glucose<br>
+            iron(III) oxide<br>
+            limestone<br>
+            nitrogen<br>
+            oxygen<br><br>
+            Answer the questions using the list of substances.<br>
+            Each substance may be used once, more than once or not at all.<br>
+            State which of the substances:
+        </div>
+
+        <div class="sub-question">
+            <p>(a) is a reactant in photosynthesis [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                The substance is <span class="keyword">carbon dioxide</span>.
+                
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Photosynthesis is the process by which plants make glucose and <span class="keyword">oxygen</span> from <span class="keyword">carbon dioxide</span> and <span class="keyword">water</span> in the presence of sunlight and <span class="keyword">chlorophyll</span>.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(b) is the main constituent of bauxite [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                The substance is <span class="keyword">aluminium oxide</span>.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Bauxite</span> is the main ore of aluminium which contains <span class="keyword">aluminium oxide</span>.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(c) are two products of fermentation [2]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                The products are <span class="keyword">ethanol</span> and <span class="keyword">carbon dioxide</span>.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Fermentation</span> of glucose produces <span class="keyword">ethanol</span> and <span class="keyword">carbon dioxide</span>. The conditions for fermentation are yeast, a temperature of 25-35 °C and absence of air.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(d) is used as a fuel [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                The substance is <span class="keyword">ethanol</span>.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Ethanol</span> undergoes <span class="keyword">complete combustion</span> to produce carbon dioxide and water, releasing energy. It can be used as a fuel for cars.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(e) is a gas used to convert iron into steel [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                The substance is <span class="keyword">oxygen</span>.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Steel is an alloy of iron made by adding controlled amounts of other metals or by adding or removing carbon. Basic oxygen steelmaking involves using <span class="keyword">oxygen</span> to oxidise impurities like carbon.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(f) is a greenhouse gas [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                The substance is <span class="keyword">carbon dioxide</span>.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Carbon dioxide</span> and methane are <span class="keyword">greenhouse gases</span> that cause global warming.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(g) is a gas that is approximately 78% of clean, dry air [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                The substance is <span class="keyword">nitrogen</span>.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Clean, dry air contains 78% <span class="keyword">nitrogen</span>, 21% oxygen, about 1% argon and 0.04% carbon dioxide.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(h) is a form of carbon. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                The substance is <span class="keyword">diamond</span>.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Diamond</span> and graphite are both giant covalent structures made of carbon atoms. Diamond has a structure of interlinked tetrahedrons.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-block">
+        <div class="metadata">Question 2 | 0620/41/M/J/22 | Topic: Atomic Structure</div>
+        <div class="question-text">
+            2 (a) Atoms are made of protons, neutrons and electrons. Atoms of the same element are known as isotopes.
+        </div>
+        
+        <div class="sub-question">
+            <p>(i) Complete the table. [2]</p>
+            <table>
+                <tr>
+                    <th>particle</th>
+                    <th>relative charge</th>
+                    <th>relative mass</th>
+                </tr>
+                <tr>
+                    <td>electron</td>
+                    <td>-1</td>
+                    <td>1/1840</td>
+                </tr>
+                <tr>
+                    <td>neutron</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>proton</td>
+                    <td>+1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                Electron relative charge: <span class="keyword">-1</span>.<br>
+                Neutron relative charge: <span class="keyword">0</span>; relative mass: <span class="keyword">1</span>.<br>
+                Proton relative mass: <span class="keyword">1</span>.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    The <span class="keyword">nucleus</span> of an atom contains positively charged <span class="keyword">protons</span> (relative mass 1) and uncharged <span class="keyword">neutrons</span> (relative mass 1). Outside the nucleus are the negatively charged <span class="keyword">electrons</span> in shells.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(ii) <sup>24</sup><sub>12</sub>Mg and <sup>25</sup><sub>12</sub>Mg are isotopes of magnesium. <br>
+            Complete the table to show the numbers of electrons, neutrons and protons in these isotopes of magnesium. [2]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <strong><sup>24</sup><sub>12</sub>Mg</strong>: Electrons: <span class="keyword">12</span>, Neutrons: <span class="keyword">12</span>, Protons: <span class="keyword">12</span>.<br>
+                <strong><sup>25</sup><sub>12</sub>Mg</strong>: Electrons: <span class="keyword">12</span>, Neutrons: <span class="keyword">13</span>, Protons: <span class="keyword">12</span>.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Isotopes</span> are different atoms of the same element that have the same number of <span class="keyword">protons</span> but a different number of <span class="keyword">neutrons</span>.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(iii) Explain why magnesium ions have a charge of 2+. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                They have <span class="keyword">2 more protons</span> than electrons (12 protons and 10 electrons). Alternatively, they <span class="keyword">lose 2 electrons</span>.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Positive ions</span> are formed when atoms lose one or more electrons. Magnesium is in Group II, so it loses 2 electrons to form a 2+ ion.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(b) Mg<sup>2+</sup> ions have the electronic structure 2,8. <br>
+            Give the formula of the following particles which have the same electronic structure as Mg<sup>2+</sup> ions. [3]<br>
+            a cation (positive ion)<br>
+            an anion (negative ion)<br>
+            an atom</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                Cation: <span class="keyword">Na<sup>+</sup></span> or <span class="keyword">Al<sup>3+</sup></span><br>
+                Anion: <span class="keyword">O<sup>2-</sup></span> or <span class="keyword">N<sup>3-</sup></span> or <span class="keyword">F<sup>-</sup></span><br>
+                Atom: <span class="keyword">Ne</span>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    The <span class="keyword">electronic configuration</span> of ions is that of the nearest <span class="keyword">noble gas</span>. Neon has the stable electronic configuration 2,8.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-block">
+        <div class="metadata">Question 3 | 0620/41/M/J/22 | Topic: Bonding, Electricity, Quantitative Chemistry</div>
+        <div class="question-text">
+            3 This question is about sodium and compounds of sodium.
+        </div>
+
+        <div class="sub-question">
+            <p>(a) (i) Describe the bonding in a metallic element such as sodium. You may include a diagram as part of your answer. [3]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                It consists of <span class="keyword">positive ions</span> (cations) in a <span class="keyword">sea of electrons</span> / mobile electrons / delocalised electrons. There is a strong <span class="keyword">attraction</span> between the positive ions and the electrons.
+                
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Metallic bonding</span> is the electrostatic attraction between the <span class="keyword">positive ions</span> in a giant metallic lattice and a 'sea' of <span class="keyword">delocalised electrons</span>.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(ii) Describe how solid sodium conducts electricity. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                The <span class="keyword">electrons move</span> / are mobile / flow.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Metals conduct electricity because the <span class="keyword">delocalised electrons</span> are able to move through the metallic lattice.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(b) Some properties of sodium chloride are shown:<br>
+            melting point of 801 °C<br>
+            non-conductor of electricity when solid<br>
+            conductor of electricity when molten<br>
+            soluble in water.<br>
+            (i) Name the type of bonding in sodium chloride. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <span class="keyword">Ionic</span> bonding.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    An <span class="keyword">ionic bond</span> is the strong electrostatic attraction between the positive and negative ions in the crystal lattice.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(ii) Explain why sodium chloride conducts electricity when molten. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                The <span class="keyword">ions move</span> / are mobile / flow.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Ionic structures conduct electricity when molten or in aqueous solution because the <span class="keyword">ions</span> can move from place to place.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(c) A student determines the concentration of a solution of dilute sulfuric acid, <i>H₂SO₄</i>, by titration with aqueous sodium hydroxide, NaOH.<br>
+            step 1 25.0 cm³ of 0.200 mol/dm³ NaOH is transferred into a conical flask.<br>
+            step 2 Three drops of methyl orange indicator are added to the conical flask.<br>
+            step 3 A burette is filled with <i>H₂SO₄</i>.<br>
+            step 4 The acid in the burette is added to the conical flask until the indicator changes colour. The volume of acid is recorded. This process is known as titration.<br>
+            step 5 The titration is repeated several times until a suitable number of results is obtained.<br>
+            (i) Name the piece of apparatus used to measure exactly 25.0 cm³ of 0.200 mol/dm³ NaOH in step 1. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                A <span class="keyword">pipette</span> (volumetric pipette).
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    A <span class="keyword">volumetric pipette</span> is used to measure out solutions accurately, typically for transferring a fixed volume like 25.0 cm³ into a flask.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(ii) State the colour change of the methyl orange indicator in step 4. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                From <span class="keyword">yellow</span> to <span class="keyword">orange</span> (or pink).
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Methyl orange</span> indicator is red in acid and <span class="keyword">yellow</span> in alkali.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(iii) State how the student decides that a suitable number of results have been obtained. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                At least two results are <span class="keyword">within 0.2 cm³</span> or less (concordant results).
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    In a titration, results are considered consistent if they are within a close range, typically 0.1 or 0.2 cm³.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(iv) 20.0 cm³ of <i>H₂SO₄</i> reacts with 25.0 cm³ of 0.200 mol/dm³ NaOH.<br>
+            The equation for the reaction is shown.<br>
+            <i>H₂SO₄</i> + 2NaOH → Na₂SO₄ + 2H₂O<br>
+            Calculate the concentration of <i>H₂SO₄</i> using the following steps.<br>
+            Calculate the number of moles in 25.0 cm³ of 0.200 mol/dm³ NaOH. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                Moles = concentration x volume (dm³) = 0.200 x (25.0 / 1000) = <span class="keyword">0.005</span> mol (or 5 x 10⁻³).
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Concentration of solution = amount of solute in moles / volume of solution in dm³.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>Determine the number of moles of <i>H₂SO₄</i> that react with the NaOH. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                Ratio of NaOH to <i>H₂SO₄</i> is 2:1. <br>
+                Moles <i>H₂SO₄</i> = 0.005 / 2 = <span class="keyword">0.0025</span> mol (or 2.5 x 10⁻³).
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    The <span class="keyword">stoichiometry</span> of a reaction is the ratio of each reactant and product in the balanced chemical equation.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>Calculate the concentration of <i>H₂SO₄</i>. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                Concentration = moles / volume (dm³) = 0.0025 / (20.0 / 1000) = <span class="keyword">0.125</span> mol/dm³.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    We can find the concentration of an acid by calculating the number of moles and dividing by the volume in dm³.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question-block">
+        <div class="metadata">Question 4 | 0620/41/M/J/22 | Topic: Sulfur, Covalent Bonding</div>
+        <div class="question-text">
+            4 This question is about compounds of sulfur. <br>
+            (a) Sulfuric acid, <i>H₂SO₄</i>, is manufactured using the Contact process. This manufacture involves four stages.<br>
+            stage 1 Molten sulfur burns in air to produce sulfur dioxide.<br>
+            stage 2 Sulfur dioxide reacts with oxygen to form sulfur trioxide.<br>
+            stage 3 Sulfur trioxide combines with concentrated sulfuric acid to form oleum, <i>H₂S₂O₇</i>.<br>
+            stage 4 Oleum reacts to form concentrated sulfuric acid.
+        </div>
+
+        <div class="sub-question">
+            <p>(i) Write a chemical equation for the reaction occurring in stage 1. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <i>S + O₂ → SO₂</i>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    In the <span class="keyword">Contact process</span>, sulfur dioxide is produced by burning <span class="keyword">sulfur</span> in air or roasting sulfide ores.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(ii) State the essential conditions that are necessary for stage 2. Write an equation for the chemical reaction that occurs. [4]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                Temperature: <span class="keyword">450 °C</span><br>
+                Pressure: <span class="keyword">1-2 atmosphere(s)</span><br>
+                Catalyst: <span class="keyword">vanadium(V) oxide</span><br>
+                Equation: <i>2SO₂ + O₂ ⇌ 2SO₃</i>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    The conditions for the <span class="keyword">Contact process</span> are 200 kPa (2 atm) pressure, 450 °C and a <span class="keyword">vanadium(V) oxide</span> catalyst. A compromise temperature is used.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(iii) Write a chemical equation for the reaction occurring in stage 3. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <i>SO₃ + H₂SO₄ → H₂S₂O₇</i>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Sulfur trioxide is dissolved in concentrated sulfuric acid to form <span class="keyword">oleum</span>.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(iv) Name the substance that reacts with oleum in stage 4. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <span class="keyword">Water</span>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Oleum reacts with <span class="keyword">water</span> to form concentrated sulfuric acid.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(b) Hydrogen sulfide has the formula <i>H₂S</i><br>
+            (i) Complete the dot-and-cross diagram to show the electron arrangement in a molecule of hydrogen sulfide. Show outer shell electrons only. [2]</p>
+            <div class="placeholder"><img src="data:image/png;base64,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" alt="Space for Diagram: H-S-H dot and cross diagram"></div>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                The diagram should show:
+                <span class="keyword">2 bonding pairs</span> (one pair between S and each H, e.g., one dot and one cross each).
+                <span class="keyword">2 lone pairs</span> on S (and no additional electrons on Hs) to complete the outer shell on S (8 electrons) and both Hs (2 electrons).
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    A <span class="keyword">covalent bond</span> is formed when two atoms share a pair of electrons so that the outer electrons of each atom have the noble gas configuration.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(ii) Balance the chemical equation for the reaction of hydrogen sulfide with sulfur dioxide shown.<br>
+            .....<i>H₂S</i> + <i>SO₂</i> → .....<i>S</i> + .....<i>H₂O</i> [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <i><span class="keyword">2</span>H₂S + SO₂ → <span class="keyword">3</span>S + <span class="keyword">2</span>H₂O</i>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Balancing chemical equations involves ensuring there is the same number of each type of atom on each side of the equation.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question-block">
+        <div class="metadata">Question 5 | 0620/41/M/J/22 | Topic: Equilibrium, Organic Chemistry</div>
+        <div class="question-text">
+            5 Ethanoic acid is manufactured by the reaction of methanol with carbon monoxide. An equilibrium mixture is produced.<br>
+            <i>CH₃OH(g) + CO(g) ⇌ CH₃COOH(g)</i>
+        </div>
+
+        <div class="sub-question">
+            <p>(a) State two characteristics of an equilibrium. [2]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                The <span class="keyword">rate</span> of the forward reaction equals the rate of the reverse reaction.
+                The <span class="keyword">concentrations</span> of reactants and products are constant.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    In an <span class="keyword">equilibrium</span> reaction, the reactants are converted to products at the same rate as products are converted back to reactants. This can only take place in a closed system.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(b) The purpose of the industrial process is to produce a high yield of ethanoic acid at a high rate of reaction.<br>
+            The manufacture is carried out at a temperature of 300 °C.<br>
+            The forward reaction is exothermic.<br>
+            Use this information to state why the manufacture is not carried out at temperatures:<br>
+            • below 300 °C<br>
+            • above 300 °C. [2]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                Below 300 °C: <span class="keyword">reaction too slow</span>.
+                Above 300 °C: <span class="keyword">yield of ethanoic acid too low</span>.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    For an <span class="keyword">exothermic</span> reaction, increasing the temperature moves the position of equilibrium in the direction of the formation of more reactants (lowers yield). However, increasing temperature increases the rate of reaction.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(c) Complete the table using only the words increases, decreases or no change. [3]</p>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>effect on the rate of the forward reaction</th>
+                    <th>effect on the equilibrium yield of <i>CH₃COOH(g)</i></th>
+                </tr>
+                <tr>
+                    <td>adding a catalyst</td>
+                    <td><span class="keyword">increases</span></td>
+                    <td>no change</td>
+                </tr>
+                <tr>
+                    <td>decreasing the pressure</td>
+                    <td><span class="keyword">decreases</span></td>
+                    <td><span class="keyword">decreases</span></td>
+                </tr>
+            </table>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                Adding a catalyst: rate <span class="keyword">increases</span>.
+                Decreasing pressure: rate <span class="keyword">decreases</span>, yield <span class="keyword">decreases</span>.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Catalysts</span> increase the rate but have no effect on the position of equilibrium. Decreasing <span class="keyword">pressure</span> moves equilibrium to the side with more moles of gas (reactants side here: 2 moles vs 1 mole).
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(d) Suggest which of the following metals is a suitable catalyst for the reaction. Give a reason for your answer.<br>
+            aluminium, calcium, cobalt, magnesium, potassium [2]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                Suitable catalyst: <span class="keyword">cobalt</span>.
+                Reason: it is a <span class="keyword">transition element</span>.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Transition elements</span> act (as elements and compounds) as <span class="keyword">catalysts</span>.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(e) Ethanoic acid is a member of the homologous series of carboxylic acids. State the general formula of this homologous series. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <i><span class="keyword">CₙH₂ₙ₊₁COOH</span></i>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Carboxylic acids</span> are a homologous series with the general formula CₙH₂ₙ₊₁COOH (where n starts from 0 for methanoic acid).
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(f) Draw the structure of the carboxylic acid containing three carbon atoms. Show all of the atoms and all of the bonds. [2]</p>
+            <div class="placeholder"><img src="data:image/png;base64,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" alt="Space for Propanoic Acid structure"></div>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                The structure must show the <span class="keyword">COOH fully displayed</span> (C=O and C-O-H) and the whole molecule completely correct (propanoic acid).
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    The <span class="keyword">displayed formula</span> shows all of the atoms and all of the bonds in a molecule. Propanoic acid has 3 carbon atoms.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(g) When carboxylic acids react with alcohols, esters are produced. The formula of ester X is <i>CH₃CH₂CH₂COOCH₃</i>.<br>
+            (i) Name ester X. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <span class="keyword">methyl butanoate</span>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    In naming <span class="keyword">esters</span>, the name begins with the alkyl group from the alcohol (methyl) and ends with the acid part (butanoate).
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(ii) Give the name of the carboxylic acid and the alcohol that react together to produce ester X. [2]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                Carboxylic acid: <span class="keyword">butanoic acid</span>.
+                Alcohol: <span class="keyword">methanol</span>.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Carboxylic acids</span> react with alcohols in the presence of an acid catalyst to produce an ester and water.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(h) Ester Y has the following composition by mass: C, 48.65%; H, 8.11%; O, 43.24%. Calculate the empirical formula of ester Y. [3]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                Moles C: 48.65 / 12 = 4.05
+                Moles H: 8.11 / 1 = 8.11
+                Moles O: 43.24 / 16 = 2.70
+                Ratio: 4.05 : 8.11 : 2.70
+                Divide by smallest (2.70): 1.5 : 3 : 1
+                Multiply by 2: <span class="keyword">3 : 6 : 2</span>
+                Empirical formula = <i><span class="keyword">C₃H₆O₂</span></i>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Empirical formula</span> is calculated by taking the mass (or percentage) of each element and dividing by its relative atomic mass to get the simplest ratio.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(i) Ester Z has the empirical formula <i>C₂H₄O</i> and a relative molecular mass of 88. Determine the molecular formula of ester Z. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                Mass of C₂H₄O = (2x12) + (4x1) + 16 = 44.
+                88 / 44 = 2.
+                Molecular formula = <i><span class="keyword">C₄H₈O₂</span></i>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Molecular formula</span> is deduced using the empirical formula and the relative molecular mass.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="question-block">
+        <div class="metadata">Question 6 | 0620/41/M/J/22 | Topic: Metals, Salts, Rates of Reaction</div>
+        <div class="question-text">
+            6 This question is about zinc and its compounds. (a) Zinc is extracted from its ore which is mainly zinc sulfide, ZnS.
+        </div>
+
+        <div class="sub-question">
+            <p>(i) Name the ore of zinc, which is mainly zinc sulfide. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <span class="keyword">zinc blende</span>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Ores</span> are rocks containing a metal or metal compound from which a metal can be extracted. Zinc blende is the main ore of zinc.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(ii) Describe how zinc sulfide is converted into zinc oxide in step 1. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <span class="keyword">heat</span> (zinc sulfide) strongly in air / <span class="keyword">roast</span> in air
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Sulfur dioxide is formed when sulfide ores are <span class="keyword">roasted</span> (heated in air).
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(iii) Name the reducing agent used in step 2. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <span class="keyword">carbon</span> or <span class="keyword">carbon monoxide</span>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Metal oxides below carbon in the reactivity series can be extracted by <span class="keyword">reduction</span> with carbon.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(iv) Explain why the zinc forms a gas in step 2 inside the furnace. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                the temperature in the furnace is <span class="keyword">above</span> or higher than the <span class="keyword">boiling point</span> of zinc.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Boiling</span> is the change in physical state from liquid to gas.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(v) State the name of the physical change occurring when zinc gas is converted into molten zinc. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <span class="keyword">condensation</span> / condensing / condense
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Condensation</span> is the change in state from gas to liquid.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(b) Zinc sulfate crystals... (i) In step 1, zinc carbonate is in excess when no more zinc carbonate dissolves. State one other observation that indicates the zinc carbonate is in excess in step 1. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <span class="keyword">no bubbles</span> or no fizzing or no effervescence
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    When a carbonate reacts with an acid, carbon dioxide gas is produced, causing bubbling. When the reaction stops, bubbling ceases.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(ii) Name a different substance, other than zinc carbonate, that can be added to dilute sulfuric acid to produce aqueous zinc sulfate in step 1. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <span class="keyword">zinc</span> / <span class="keyword">zinc oxide</span> / <span class="keyword">zinc hydroxide</span>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Soluble salts can be made by adding excess metal, metal oxide, or metal hydroxide to an acid.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(iii) Step 1 is repeated using powdered zinc carbonate instead of large pieces... Give a reason why the rate of reaction increases. Explain your answer in terms of particles. [2]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                (powder has) <span class="keyword">larger surface area</span> (1).
+                (powder has) <span class="keyword">more collisions</span> per unit time / more <span class="keyword">collision frequency</span> (1).
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Increasing the <span class="keyword">surface area</span> of a solid increases its rate of reaction because there are more particles available on the surface so that the <span class="keyword">frequency of collisions</span> is increased.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(iv) Suggest what is observed when the solution is saturated in step 3. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <span class="keyword">crystals</span> (form on glass rod or microscope slide)
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Crystallisation</span> involves heating to evaporate water until the solution is saturated (crystallisation point).
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(v) The formula of zinc sulfate crystals is <i>ZnSO₄•7H₂O</i>. Give the formula of the solid formed if the crystals are heated to dryness in step 3. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <i><span class="keyword">ZnSO₄</span></i>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Heating hydrated crystals removes the water of crystallisation, leaving the <span class="keyword">anhydrous</span> salt.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="question-block">
+        <div class="metadata">Question 7 | 0620/41/M/J/22 | Topic: Periodic Table</div>
+        <div class="question-text">
+            7 The Periodic Table can be used to classify elements.
+        </div>
+
+        <div class="sub-question">
+            <p>(a)(i) Place the Group I elements caesium, lithium, potassium, rubidium and sodium in their order of reactivity with water. Put the most reactive element first. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <span class="keyword">caesium → rubidium → potassium → sodium → lithium</span>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    The <span class="keyword">reactivity</span> of the alkali metals (Group I) increases down the group.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(a)(ii) Name the alkaline solution formed when caesium reacts with cold water. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <span class="keyword">caesium hydroxide</span>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Alkali metals react with water to form hydrogen and a solution of metal <span class="keyword">hydroxide</span>.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(b) Describe one other difference in the physical properties of Group I elements and transition elements. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                Group I element is <span class="keyword">less strong</span> / not strong.
+                OR Group I element has <span class="keyword">lower density</span>.
+                OR Group I element is <span class="keyword">softer</span>.
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Transition elements are metals with <span class="keyword">high melting</span> points and <span class="keyword">high densities</span>. Group I metals are soft and have low densities.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(c) Predict the physical state of astatine at room temperature and pressure. [1]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                <span class="keyword">solid</span>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    Melting and boiling points of the <span class="keyword">halogens</span> increase down the group (Gas -> Liquid -> Solid).
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(d)(i) Describe the colour change of the solution when aqueous chlorine is added to aqueous potassium bromide. [2]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                original: <span class="keyword">colourless</span> (1)
+                final: <span class="keyword">orange</span> / brown / yellow (1)
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    A more reactive halogen <span class="keyword">displaces</span> a less reactive halogen from a solution of its halide. Bromine is red-brown (orange in solution). Group I halides are colourless.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(d)(ii) Identify the species that is oxidised. Explain your decision. [2]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                species oxidised: <span class="keyword">Br⁻</span> (bromide ion)
+                explanation: <span class="keyword">loses electron(s)</span>
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    <span class="keyword">Oxidation</span> is loss of electrons.
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <p>(e) Calculate the overall energy change for the reaction using bond energies. [3]</p>
+            <div class="answer-toggle" onclick="toggleVisibility(this)"></div>
+            <div class="answer-content">
+                Bonds broken: 190 + 242 = <span class="keyword">432</span> kJ (1).
+                Bonds formed: 2 x 218 = <span class="keyword">436</span> kJ (1).
+                Energy change = 432 - 436 = <span class="keyword">-4</span> kJ/mol (1).
+
+                <div class="recap-toggle" onclick="toggleVisibility(this)">
+                    <h4 class="recap-title">Recap</h4>
+                </div>
+                <div class="recap-content">
+                    The overall energy change of a reaction is calculated by: (Energy needed to break bonds) - (Energy released forming bonds).
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function toggleVisibility(element) {
+        // Toggle the visibility of the next sibling (the content div)
+        var content = element.nextElementSibling;
+        
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
